@@ -269,6 +269,7 @@ Transforms are stored in Python files, and these Python files themselves are arr
     no matter which Entity it is.
 
 An example of this directory structure is the following, presented as a Python import (sometimes used like this):
+
     from EffectiveCouscous.transforms.metasploit.db.enumerate.netblock import EnumerateWorkspaceIP
 
 
