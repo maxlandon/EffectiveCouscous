@@ -1,4 +1,4 @@
-Effective Couscous - Metasploit Maltego (MSM) 
+Effective Couscous - Metasploit Maltego
 ================================================================
 
 
@@ -263,10 +263,13 @@ Transforms are stored in Python files, and these Python files themselves are arr
 *   Each Tool component has its own directory (eg. db/ for Database, rpc/ for rpc related transforms...)
 *   In each tool component directory, each functional domain has its own directory.
     (eg. enumerate/ for all enumeration transforms, push_pull/ for all update transforms, etc.)
-*   In each of these components directories are the Python files, named after the Entities **used as input**.
+*   In each of these functional directories are the Python files, named after the Entities **used as input**.
     (eg. ipv4address.py contains all transforms with IPv4Address as input, host.py for all Host-related Entities, etc.)
     This rule is not always perfectly enforced, such as for hosts: host.py regroups all transforms applying to a Host,
     no matter which Entity it is.
+
+An example of this directory structure is the following, presented as a Python import (sometimes used like this):
+    from EffectiveCouscous.transforms.metasploit.db.enumerate.netblock import EnumerateWorkspaceIP
 
 
 
