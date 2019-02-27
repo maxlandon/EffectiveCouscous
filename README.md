@@ -5,7 +5,7 @@ Effective Couscous - Metasploit Maltego
   OVERVIEW 
 -----------------------------------
 
-Effective-Couscous is a set of Maltego Transforms that interact with various security-related tools, 
+EffectiveCouscous is a set of Maltego Transforms that interact with various security-related tools, 
 among which is the Metasploit Framework. Metasploit is used in this description to illustrate the intents
 and aims of this project. Later on, other tools will be integrated in the same manner.
 The transforms, at the higher level, either:

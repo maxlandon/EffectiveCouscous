@@ -22,7 +22,7 @@ __status__ = 'Development'
 def get_raw_json(url, config, params=None, headers=None):
     headers = {
         'accept': 'application/json',
-        'Authorization': 'Bearer {0}'.format(config['MSM.local.userapitoken']),
+        'Authorization': 'Bearer {0}'.format(config['EffectiveCouscous.local.userapitoken']),
     }
 
     if headers is None:
@@ -34,7 +34,7 @@ def get_raw_json(url, config, params=None, headers=None):
 def get_json_dict(url, config, params=None, headers=None):
     headers = {
         'accept': 'application/json',
-        'Authorization': 'Bearer {0}'.format(config['MSM.local.userapitoken']),
+        'Authorization': 'Bearer {0}'.format(config['EffectiveCouscous.local.userapitoken']),
     }
 
     if headers is None:
@@ -51,7 +51,7 @@ def get_json_dict(url, config, params=None, headers=None):
 def post_json(url, data, config, headers=None):
     headers = {
             'accept': 'application/json',
-            'Authorization': 'Bearer {0}'.format(config['MSM.local.userapitoken']),
+            'Authorization': 'Bearer {0}'.format(config['EffectiveCouscous.local.userapitoken']),
             'Content-Type': 'application/json',
         }
 
@@ -64,7 +64,7 @@ def post_json(url, data, config, headers=None):
 def put_json(url, data, config, headers=None):
     headers = {
             'accept': 'application/json',
-            'Authorization': 'Bearer {0}'.format(config['MSM.local.userapitoken']),
+            'Authorization': 'Bearer {0}'.format(config['EffectiveCouscous.local.userapitoken']),
             'Content-Type': 'application/json',
         }
 
@@ -77,7 +77,7 @@ def put_json(url, data, config, headers=None):
 def delete_json(url, data, config, headers=None):
     headers = {
             'accept': 'application/json',
-            'Authorization': 'Bearer {0}'.format(config['MSM.local.userapitoken']),
+            'Authorization': 'Bearer {0}'.format(config['EffectiveCouscous.local.userapitoken']),
             'Content-Type': 'application/json',
         }
 

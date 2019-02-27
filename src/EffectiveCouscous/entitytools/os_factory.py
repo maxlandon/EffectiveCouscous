@@ -3,7 +3,10 @@
 # -------------------- Imports ----------------------- #
 
 # Custom Entities
-from EffectiveCouscous.transforms.common.entities import *
+from EffectiveCouscous.transforms.common.entities import (MetasploitHost,
+                                                          WindowsHost,
+                                                          LinuxHost,
+                                                          AppleHost)
 
 # Icons
 from EffectiveCouscous.resource import systems, devices
@@ -45,19 +48,19 @@ def getOsEntity(os_name, name):
             #....................................
             # Apple
             if re.search("macbook", name.lower(), re.I):
-                os_entity = AppleOperatingSystem()
+                os_entity = AppleHost()
                 os_entity.value = name
                 os_entity.icon_url = devices['macbook']
                 return os_entity
             elif re.search("ipad", name.lower(), re.I):
-                os_entity = AppleOperatingSystem()
+                os_entity = AppleHost()
                 os_entity.value = name
                 os_entity.icon_url = devices['ipad']
                 return os_entity
             #....................................
             # Linux
             elif ".home" in name.lower():
-                os_entity = LinuxOperatingSystem()
+                os_entity = LinuxHost()
                 os_entity.icon_url = systems['linux']
             # 2) ________________________________________________________
             # If the Name has not confirmed any device, use OS Name 
@@ -66,31 +69,31 @@ def getOsEntity(os_name, name):
                     # Windows
                     if "windows" in os_name.lower():
                         if "windows 2003" in os_name.lower():
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windows2003']
                         elif "windows 2000" in os_name.lower():
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windows2000']
                         elif "windows 2008" in os_name.lower():
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windows2008']
                         elif "windows 2012" in os_name.lower():
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windows2012']
                         elif "windows xp" in os_name.lower():
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windowsxp']
                         elif "windows 7" in os_name.lower():
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windows7']
                         elif "windows vista" in os_name.lower():
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windowsvista']
                         elif "windows 10" in os_name.lower():
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windows10']
                         else:
-                            os_entity = WindowsOperatingSystem()
+                            os_entity = WindowsHost()
                             os_entity.icon_url = systems['windows']
                         return os_entity
                     #....................................
@@ -104,12 +107,12 @@ def getOsEntity(os_name, name):
                     # Linux
                     elif "linux" in os_name.lower():
                         if "arch" in os_name.lower():
-                            os_entity = LinuxOperatingSystem()
+                            os_entity = LinuxHost()
                             os_entity.icon_url = systems['archlinux']
                         #  if "debian"
                         #  if "ubuntu", etc...
                         else:
-                            os_entity = LinuxOperatingSystem()
+                            os_entity = LinuxHost()
                             os_entity.icon_url = systems['linux']
                         return os_entity
                     #....................................

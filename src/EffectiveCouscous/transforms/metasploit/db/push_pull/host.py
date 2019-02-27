@@ -8,9 +8,9 @@ from EffectiveCouscous.transforms.metasploit.db.push_pull.netblock import (Netbl
                                                              NetblockDeleteWorkspace)
 # Custom Entities
 from EffectiveCouscous.transforms.common.entities import (MetasploitHost,
-                                            WindowsOperatingSystem,
-                                            LinuxOperatingSystem,
-                                            AppleOperatingSystem)
+                                            WindowsHost,
+                                            LinuxHost,
+                                            AppleHost)
 
 # Maltego Messages
 from canari.maltego.message import MaltegoException
@@ -76,7 +76,7 @@ class WindowsPushWorkspace(NetblockPushWorkspace):
 
     display_name = 'Push Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = WindowsOperatingSystem
+    input_type = WindowsHost
 
 
 class WindowsPullWorkspace(NetblockPullWorkspace):
@@ -84,7 +84,7 @@ class WindowsPullWorkspace(NetblockPullWorkspace):
 
     display_name = 'Pull Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = WindowsOperatingSystem
+    input_type = WindowsHost
 
 
 class WindowsDeleteWorkspace(NetblockDeleteWorkspace):
@@ -92,7 +92,7 @@ class WindowsDeleteWorkspace(NetblockDeleteWorkspace):
 
     display_name = 'Delete Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = WindowsOperatingSystem
+    input_type = WindowsHost
 
 
 
@@ -103,7 +103,7 @@ class LinuxPushWorkspace(NetblockPushWorkspace):
 
     display_name = 'Push Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = LinuxOperatingSystem
+    input_type = LinuxHost
 
 
 class LinuxPullWorkspace(NetblockPullWorkspace):
@@ -111,7 +111,7 @@ class LinuxPullWorkspace(NetblockPullWorkspace):
 
     display_name = 'Pull Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = LinuxOperatingSystem
+    input_type = LinuxHost
 
 
 class LinuxDeleteWorkspace(NetblockDeleteWorkspace):
@@ -119,7 +119,7 @@ class LinuxDeleteWorkspace(NetblockDeleteWorkspace):
 
     display_name = 'Delete Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = LinuxOperatingSystem
+    input_type = LinuxHost
 
 
 
@@ -130,7 +130,7 @@ class ApplePushWorkspace(NetblockPushWorkspace):
 
     display_name = 'Push Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = AppleOperatingSystem
+    input_type = AppleHost
 
 
 class ApplePullWorkspace(NetblockPullWorkspace):
@@ -138,7 +138,7 @@ class ApplePullWorkspace(NetblockPullWorkspace):
 
     display_name = 'Pull Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = AppleOperatingSystem
+    input_type = AppleHost
 
 
 class AppleDeleteWorkspace(NetblockDeleteWorkspace):
@@ -146,7 +146,7 @@ class AppleDeleteWorkspace(NetblockDeleteWorkspace):
 
     display_name = 'Delete Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
-    input_type = AppleOperatingSystem
+    input_type = AppleHost
 
 
 
@@ -290,7 +290,7 @@ class WindowsPushHost(PushHost):
     
     display_name = 'Push Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = WindowsOperatingSystem
+    input_type = WindowsHost
 
 
 class WindowsPullHost(PullHost):
@@ -298,7 +298,7 @@ class WindowsPullHost(PullHost):
     
     display_name = 'Pull Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = WindowsOperatingSystem
+    input_type = WindowsHost
 
 
 class WindowsDeleteHost(DeleteHost):
@@ -306,7 +306,7 @@ class WindowsDeleteHost(DeleteHost):
     
     display_name = 'Delete Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = WindowsOperatingSystem
+    input_type = WindowsHost
 
 
 
@@ -317,7 +317,7 @@ class LinuxPushHost(PushHost):
     
     display_name = 'Push Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = LinuxOperatingSystem
+    input_type = LinuxHost
 
 
 class LinuxPullHost(PullHost):
@@ -325,7 +325,7 @@ class LinuxPullHost(PullHost):
     
     display_name = 'Pull Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = LinuxOperatingSystem
+    input_type = LinuxHost
 
 
 class LinuxDeleteHost(DeleteHost):
@@ -333,7 +333,7 @@ class LinuxDeleteHost(DeleteHost):
     
     display_name = 'Delete Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = LinuxOperatingSystem
+    input_type = LinuxHost
 
 
 
@@ -344,7 +344,7 @@ class ApplePushHost(PushHost):
     
     display_name = 'Push Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = AppleOperatingSystem
+    input_type = AppleHost
 
 
 class ApplePullHost(PullHost):
@@ -352,7 +352,7 @@ class ApplePullHost(PullHost):
     
     display_name = 'Pull Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = AppleOperatingSystem
+    input_type = AppleHost
 
 
 class AppleDeleteHost(DeleteHost):
@@ -360,4 +360,4 @@ class AppleDeleteHost(DeleteHost):
     
     display_name = 'Delete Host'
     transform_set = 'Metasploit | DB | Host'
-    input_type = AppleOperatingSystem
+    input_type = AppleHost

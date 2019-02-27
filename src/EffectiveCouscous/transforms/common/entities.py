@@ -34,37 +34,37 @@ class MetasploitHost(Entity):
     # Metasploit Host, or spawned and creating an equivalent Metasploit
     # Host, will be an instance of this class
     _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host'
+    _namespace_ = 'metasploit.host.GenericHost'
     _type_ = 'Generic Host'
     
     # Entity properties
-    ipv4address = StringEntityField('address', display_name='IPv4 Address')
-    id = StringEntityField('id', display_name='Host ID')
-    created_at = StringEntityField('created_at', display_name="Host created at")
-    mac = StringEntityField('mac', display_name='MAC')
-    comm = StringEntityField('comm', display_name='Comm')
-    name = StringEntityField('name', display_name='Host Name', is_value=True)
-    state = StringEntityField('state', display_name='State')
-    os_name = StringEntityField('os_name', display_name='OS Name')
-    os_flavor = StringEntityField('os_flavor', display_name='OS Flavor')
-    os_sp = StringEntityField('os_sp', display_name='OS SP')
-    os_lang = StringEntityField('os_lang', display_name='OS Language')
-    arch = StringEntityField('arch', display_name='Architecture')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    updated_at = StringEntityField('updated_at', display_name='Host updated_at')
-    purpose = StringEntityField('purpose', display_name='Purpose')
-    info = StringEntityField('info', display_name='Info')
-    comments = StringEntityField('comments', display_name='Comments')
-    scope = StringEntityField('scope', display_name='Scope')
-    virtual_host = StringEntityField('virtual_host', display_name='Virtual Host')
-    note_count = StringEntityField('note_count', display_name='Note Count')
-    vuln_count = StringEntityField('vuln_count', display_name='Vuln Count')
-    service_count = StringEntityField('service_count', display_name='Service Count')
+    ipv4address = Field('address', display_name='IPv4 Address')
+    id = Field('id', display_name='Host ID')
+    created_at = Field('created_at', display_name="Host created at")
+    mac = Field('mac', display_name='MAC')
+    comm = Field('comm', display_name='Comm')
+    name = Field('name', display_name='Host Name', is_value=True)
+    state = Field('state', display_name='State')
+    os_name = Field('os_name', display_name='OS Name')
+    os_flavor = Field('os_flavor', display_name='OS Flavor')
+    os_sp = Field('os_sp', display_name='OS SP')
+    os_lang = Field('os_lang', display_name='OS Language')
+    arch = Field('arch', display_name='Architecture')
+    workspace_id = Field('workspace_id', display_name='Workspace ID')
+    updated_at = Field('updated_at', display_name='Host updated_at')
+    purpose = Field('purpose', display_name='Purpose')
+    info = Field('info', display_name='Info')
+    comments = Field('comments', display_name='Comments')
+    scope = Field('scope', display_name='Scope')
+    virtual_host = Field('virtual_host', display_name='Virtual Host')
+    note_count = Field('note_count', display_name='Note Count')
+    vuln_count = Field('vuln_count', display_name='Vuln Count')
+    service_count = Field('service_count', display_name='Service Count')
     host_detail_count = IntegerEntityField('host_detail_count', display_name='Host Detail Count')
     exploit_attempt_count = IntegerEntityField('exploit_attempt_count', display_name='Exploit Attempt Count')
-    cred_count = StringEntityField('cred_count', display_name='Cred Count')
-    detected_arch = StringEntityField('detected_arch', display_name='Detected Arch')
-    os_family = StringEntityField('os_family', display_name='OS Family')
+    cred_count = Field('cred_count', display_name='Cred Count')
+    detected_arch = Field('detected_arch', display_name='Detected Arch')
+    os_family = Field('os_family', display_name='OS Family')
 
 
 
@@ -76,116 +76,31 @@ class MetasploitHost(Entity):
 # One example is Powershell Empire (a post-exploitation framework), which would only -mostly- apply
 # to Windows hosts.
 
-class LinuxOperatingSystem(MetasploitHost):
+class LinuxHost(MetasploitHost):
     _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-    _type_ = 'Linux OS'
+    _namespace_ = 'metasploit.host.LinuxHost'
+    _type_ = 'Linux Host'
 
 
 
-class WindowsOperatingSystem(MetasploitHost):
+class WindowsHost(MetasploitHost):
     _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-    _type_ = 'Windows OS'
+    _namespace_ = 'metasploit.host.WindowsHost'
+    _type_ = 'Windows Host'
 
 
 
-class AppleOperatingSystem(MetasploitHost):
+class AppleHost(MetasploitHost):
     _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-    _type_ = 'Apple OS'
-
-
-
-# Microsoft
-# --------------------------
-
-class Windows2000(WindowsOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class Windows2003(WindowsOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class Windows2012(WindowsOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class Windows7(WindowsOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class WindowsXP(WindowsOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class Windows2008(WindowsOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class WindowsVista(WindowsOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class Windows10(WindowsOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-# Apple
-# --------------------------
-
-# Linux
-# --------------------------
-
-class DebianLinux(LinuxOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class UbuntuLinux(LinuxOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class ArchLinux(LinuxOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class GentooLinux(LinuxOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class RedHatEnterpriseLinux(LinuxOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class FedoraLinux(LinuxOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
-
-
-class KaliLinux(LinuxOperatingSystem):
-    _category_ = 'Operating Systems'
-    _namespace_ = 'metasploit.host.os'
+    _namespace_ = 'metasploit.host.AppleHost'
+    _type_ = 'Apple Host'
 
 
 
 # Embedded
 # --------------------------
 
-class EmbeddedOS(LinuxOperatingSystem):
+class EmbeddedOS(LinuxHost):
     _category_ = 'Penetration Testing'
     _namespace_ = 'metasploit.host.os'
 
@@ -203,17 +118,17 @@ class MetasploitService(Entity):
     _namespace_ = 'metasploit.service'
     _type_ = 'Metasploit Service' 
 
-    display_name = StringEntityField('display_name', display_name='Display Name', is_value=True)
-    info = StringEntityField('info', display_name='Info')
-    name = StringEntityField('name', display_name='Name')
-    proto = StringEntityField('proto', display_name='Protocol')
-    port = StringEntityField('port', display_name='Port')
-    host_id = StringEntityField('host_id', display_name='Host ID')
-    id = StringEntityField('id', display_name='Service ID')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    created_at = StringEntityField('created_at', display_name='Created at')
-    updated_at = StringEntityField('updated_at', display_name='Updated at')
-    state = StringEntityField('state', display_name='State')
+    display_name = Field('display_name', display_name='Display Name', is_value=True)
+    info = Field('info', display_name='Info')
+    name = Field('name', display_name='Name')
+    proto = Field('proto', display_name='Protocol')
+    port = Field('port', display_name='Port')
+    host_id = Field('host_id', display_name='Host ID')
+    id = Field('id', display_name='Service ID')
+    workspace_id = Field('workspace_id', display_name='Workspace ID')
+    created_at = Field('created_at', display_name='Created at')
+    updated_at = Field('updated_at', display_name='Updated at')
+    state = Field('state', display_name='State')
 
     # Icon
     # TO BE IMPLEMENTED INSTEAD OF IN TRANSFORMS
@@ -233,17 +148,17 @@ class MetasploitCredential(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'metasploit.credential'
     
-    name = StringEntityField('name', display_name='Name', is_value=True)
-    id = StringEntityField('id', display_name='Credential ID' ) 
-    logins_count = StringEntityField('logins_count', display_name='Logins Count')
-    pub_username = StringEntityField('pub_username', display_name='Public Username')
-    pub_type = StringEntityField('pub_type', display_name='Public Type')
-    priv_data = StringEntityField('priv_data', display_name='Private Data')
-    priv_type = StringEntityField('priv_type', display_name='Private Type')
-    priv_jtr_format = StringEntityField('priv_jtr_format', display_name='Private JTR Format')
-    origin_service_id = StringEntityField('origin_service_id', display_name='Origin Service ID')
-    origin_type = StringEntityField('origin_type', display_name='Origin Type')
-    origin_module = StringEntityField('origin_module', display_name='Origin Module')
+    name = Field('name', display_name='Name', is_value=True)
+    id = Field('id', display_name='Credential ID' ) 
+    logins_count = Field('logins_count', display_name='Logins Count')
+    pub_username = Field('pub_username', display_name='Public Username')
+    pub_type = Field('pub_type', display_name='Public Type')
+    priv_data = Field('priv_data', display_name='Private Data')
+    priv_type = Field('priv_type', display_name='Private Type')
+    priv_jtr_format = Field('priv_jtr_format', display_name='Private JTR Format')
+    origin_service_id = Field('origin_service_id', display_name='Origin Service ID')
+    origin_type = Field('origin_type', display_name='Origin Type')
+    origin_module = Field('origin_module', display_name='Origin Module')
 
 
 

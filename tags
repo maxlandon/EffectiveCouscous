@@ -21,13 +21,12 @@ AppendHostProperties	src/EffectiveCouscous/transforms/metasploit/db/association/
 AppleDeleteHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class AppleDeleteHost(DeleteHost):$/;"	c
 AppleDeleteWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class AppleDeleteWorkspace(NetblockDeleteWorkspace):$/;"	c
 AppleEnumerateHostIP	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^class AppleEnumerateHostIP(EnumerateHostIP):$/;"	c
+AppleHost	src/EffectiveCouscous/transforms/common/entities.py	/^class AppleHost(MetasploitHost):$/;"	c
 AppleHostToMetasploitWorkspace	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^class AppleHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):$/;"	c
-AppleOperatingSystem	src/EffectiveCouscous/transforms/common/entities.py	/^class AppleOperatingSystem(MetasploitHost):$/;"	c
 ApplePullHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class ApplePullHost(PullHost):$/;"	c
 ApplePullWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class ApplePullWorkspace(NetblockPullWorkspace):$/;"	c
 ApplePushHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class ApplePushHost(PushHost):$/;"	c
 ApplePushWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class ApplePushWorkspace(NetblockPushWorkspace):$/;"	c
-ArchLinux	src/EffectiveCouscous/transforms/common/entities.py	/^class ArchLinux(LinuxOperatingSystem):$/;"	c
 AutoLoadStdapi	src/EffectiveCouscous/transforms/common/entities.py	/^    AutoLoadStdapi = EnumEntityField('AutoLoadStdapi', choices=['true', 'false'], display_name='/;"	v	class:MetasploitBindHandler
 AutoRunScript	src/EffectiveCouscous/transforms/common/entities.py	/^    AutoRunScript = StringEntityField('AutoRunScript', display_name='AutoRunScript')$/;"	v	class:MetasploitBindHandler
 AutoSystemInfo	src/EffectiveCouscous/transforms/common/entities.py	/^    AutoSystemInfo = EnumEntityField('AutoSystemInfo', choices=['true', 'false'], display_name='/;"	v	class:MetasploitBindHandler
@@ -40,7 +39,6 @@ Bebo	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^cla
 BuiltWithRelationship	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class BuiltWithRelationship(Entity):$/;"	c
 BuiltWithTechnology	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class BuiltWithTechnology(Entity):$/;"	c
 CISCO	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class CISCO(Entity):$/;"	c
-CODE STRUCTURE	README.md	/^   CODE STRUCTURE $/;"	s
 CSFR	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class CSFR(Entity):$/;"	c
 Checked	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Checked(Entity):$/;"	c
 CircularArea	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class CircularArea(Entity):$/;"	c
@@ -48,15 +46,11 @@ CiscoVPN	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/
 ClosedPort	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ClosedPort(Entity):$/;"	c
 CommuniDatePro	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class CommuniDatePro(Entity):$/;"	c
 Company	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Company(Entity):$/;"	c
-Config Files	README.md	/^#### Config Files$/;"	t
 Credentials	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Credentials(Entity):$/;"	c
-DATA MODEL	README.md	/^  DATA MODEL$/;"	s
 DHCP	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class DHCP(Entity):$/;"	c
 DNSInformation	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class DNSInformation(Entity):$/;"	c
 DNSName	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class DNSName(Entity):$/;"	c
 DNSService	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class DNSService(Entity):$/;"	c
-Database Interaction	README.md	/^### Database Interaction$/;"	S
-DebianLinux	src/EffectiveCouscous/transforms/common/entities.py	/^class DebianLinux(LinuxOperatingSystem):$/;"	c
 DeleteCredential	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^class DeleteCredential(Transform):$/;"	c
 DeleteHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class DeleteHost(Transform):$/;"	c
 DeleteService	src/EffectiveCouscous/transforms/metasploit/db/push_pull/service.py	/^class DeleteService(Transform):$/;"	c
@@ -67,15 +61,14 @@ Domain	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^c
 EXITFUNC	src/EffectiveCouscous/transforms/common/entities.py	/^    EXITFUNC = EnumEntityField('EXITFUNC', choices=['', 'seh', 'thread', 'process', 'none'])$/;"	v	class:MetasploitBindHandler
 EXITFUNC	src/EffectiveCouscous/transforms/common/entities.py	/^    EXITFUNC = EnumEntityField('EXITFUNC', choices=['', 'seh', 'thread', 'process', 'none'])$/;"	v	class:MetasploitReverseHandler
 Effective Couscous - Metasploit Maltego	README.md	/^Effective Couscous - Metasploit Maltego$/;"	c
+EffectiveCouscous.local	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^[EffectiveCouscous.local]$/;"	s
+EffectiveCouscous.remote	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^[EffectiveCouscous.remote]$/;"	s
 EmailAddress	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class EmailAddress(Entity):$/;"	c
-EmbeddedOS	src/EffectiveCouscous/transforms/common/entities.py	/^class EmbeddedOS(LinuxOperatingSystem):$/;"	c
+EmbeddedOS	src/EffectiveCouscous/transforms/common/entities.py	/^class EmbeddedOS(LinuxHost):$/;"	c
 EmbeddedOS	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class EmbeddedOS(Entity):$/;"	c
 EnableStageEncoding	src/EffectiveCouscous/transforms/common/entities.py	/^    EnableStageEncoding= EnumEntityField('EnableStageEncoding', choices=['true', 'false'], displ/;"	v	class:MetasploitBindHandler
 EnableUnicodeEncoding	src/EffectiveCouscous/transforms/common/entities.py	/^    EnableUnicodeEncoding= EnumEntityField('EnableUnicodeEncoding', choices=['true', 'false'], d/;"	v	class:MetasploitBindHandler
 EncryptedPassword	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class EncryptedPassword(Entity):$/;"	c
-Entity Appearance	README.md	/^#### Entity Appearance$/;"	t
-Entity Diversity	README.md	/^#### Entity Diversity$/;"	t
-Entity Merging	README.md	/^#### Entity Merging $/;"	t
 EnumerateHost	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^class EnumerateHost(Transform):$/;"	c
 EnumerateHostIP	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^class EnumerateHostIP(Transform):$/;"	c
 EnumerateServiceCredentials	src/EffectiveCouscous/transforms/metasploit/db/enumeration/service.py	/^class EnumerateServiceCredentials(Transform):$/;"	c
@@ -87,14 +80,12 @@ FTPVulnerability	src/EffectiveCouscous/transforms/common/entities_msploitego_bac
 Facebook	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Facebook(Entity):$/;"	c
 FacebookObject	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class FacebookObject(Entity):$/;"	c
 FalsePositive	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class FalsePositive(Entity):$/;"	c
-FedoraLinux	src/EffectiveCouscous/transforms/common/entities.py	/^class FedoraLinux(LinuxOperatingSystem):$/;"	c
 File	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class File(Entity):$/;"	c
 FileContents	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class FileContents(Entity):$/;"	c
 Fingerprint	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Fingerprint(Entity):$/;"	c
 Flickr	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Flickr(Entity):$/;"	c
 FreeBSD	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class FreeBSD(Entity):$/;"	c
 GPS	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class GPS(Entity):$/;"	c
-GentooLinux	src/EffectiveCouscous/transforms/common/entities.py	/^class GentooLinux(LinuxOperatingSystem):$/;"	c
 GoAheadWebServer	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class GoAheadWebServer(Entity):$/;"	c
 HTTPFileServer	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class HTTPFileServer(Entity):$/;"	c
 Hacked	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Hacked(Entity):$/;"	c
@@ -107,17 +98,13 @@ HostPushWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.
 HostToMetasploitWorkspace	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^class HostToMetasploitWorkspace(NetblockToMetasploitWorkspace):$/;"	c
 Hostname	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Hostname(Entity):$/;"	c
 IISWebservice	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class IISWebservice(Entity):$/;"	c
-IMPLEMENTATIONS	README.md	/^  IMPLEMENTATIONS$/;"	s
 IOS	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class IOS(Entity):$/;"	c
 IPv4Address	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class IPv4Address(Entity):$/;"	c
-ISSUES	README.md	/^   ISSUES	$/;"	s
-Icons	README.md	/^#### Icons$/;"	t
 Image	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Image(Entity):$/;"	c
 InitialAutoRunScript	src/EffectiveCouscous/transforms/common/entities.py	/^    InitialAutoRunScript= StringEntityField('InitialAutoRunScript', display_name='InitialAutoRun/;"	v	class:MetasploitBindHandler
 IsVulnerable	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class IsVulnerable(Entity):$/;"	c
 JavaRMI	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class JavaRMI(Entity):$/;"	c
 Jetty	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Jetty(Entity):$/;"	c
-KaliLinux	src/EffectiveCouscous/transforms/common/entities.py	/^class KaliLinux(LinuxOperatingSystem):$/;"	c
 KeyServer	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class KeyServer(Entity):$/;"	c
 LDAP	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class LDAP(Entity):$/;"	c
 LHOST	src/EffectiveCouscous/transforms/common/entities.py	/^    LHOST = StringEntityField('LHOST', display_name='LHOST') $/;"	v	class:MetasploitReverseHandler
@@ -129,8 +116,8 @@ Linkedin	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/
 LinuxDeleteHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxDeleteHost(DeleteHost):$/;"	c
 LinuxDeleteWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxDeleteWorkspace(NetblockDeleteWorkspace):$/;"	c
 LinuxEnumerateHostIP	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^class LinuxEnumerateHostIP(EnumerateHostIP):$/;"	c
+LinuxHost	src/EffectiveCouscous/transforms/common/entities.py	/^class LinuxHost(MetasploitHost):$/;"	c
 LinuxHostToMetasploitWorkspace	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^class LinuxHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):$/;"	c
-LinuxOperatingSystem	src/EffectiveCouscous/transforms/common/entities.py	/^class LinuxOperatingSystem(MetasploitHost):$/;"	c
 LinuxOperatingSystem	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class LinuxOperatingSystem(Entity):$/;"	c
 LinuxPullHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxPullHost(PullHost):$/;"	c
 LinuxPullWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxPullWorkspace(NetblockPullWorkspace):$/;"	c
@@ -138,13 +125,9 @@ LinuxPushHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/
 LinuxPushWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxPushWorkspace(NetblockPushWorkspace):$/;"	c
 Location	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Location(Entity):$/;"	c
 LootFile	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class LootFile(Entity):$/;"	c
-MACHINES	README.md	/^   MACHINES$/;"	s
 MSExchangeLogCopier	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class MSExchangeLogCopier(Entity):$/;"	c
-MSM.local	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^[MSM.local]$/;"	s
-MSM.remote	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^[MSM.remote]$/;"	s
 MXRecord	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class MXRecord(Entity):$/;"	c
 MetasploitBindHandler	src/EffectiveCouscous/transforms/common/entities.py	/^class MetasploitBindHandler(Entity):$/;"	c
-MetasploitCredential	README.md	/^#### MetasploitCredential$/;"	t
 MetasploitCredential	src/EffectiveCouscous/transforms/common/entities.py	/^class MetasploitCredential(Entity):$/;"	c
 MetasploitDbXMLFile	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class MetasploitDbXMLFile(Entity):$/;"	c
 MetasploitExploitHandler	src/EffectiveCouscous/transforms/common/entities.py	/^class MetasploitExploitHandler(Entity):$/;"	c
@@ -164,7 +147,6 @@ MsfEntity	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	
 MySpace	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class MySpace(Entity):$/;"	c
 NAS	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class NAS(Entity):$/;"	c
 NSRecord	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class NSRecord(Entity):$/;"	c
-Naming	README.md	/^#### Naming$/;"	t
 NessusReport	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class NessusReport(Entity):$/;"	c
 NessusVulnerability	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class NessusVulnerability(Entity):$/;"	c
 Netblock	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Netblock(Entity):$/;"	c
@@ -188,7 +170,6 @@ OracleHTTPServer	src/EffectiveCouscous/transforms/common/entities_msploitego_bac
 OracleXMLDB	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class OracleXMLDB(Entity):$/;"	c
 Organization	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Organization(Entity):$/;"	c
 Orkut	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Orkut(Entity):$/;"	c
-PAST APPROACHES	README.md	/^  PAST APPROACHES$/;"	s
 Password	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Password(Entity):$/;"	c
 PayloadProcessCommandLine	src/EffectiveCouscous/transforms/common/entities.py	/^    PayloadProcessCommandLine = StringEntityField('PayloadProcessCommandLine', display_name='Pay/;"	v	class:MetasploitBindHandler
 PayloadUUIDName	src/EffectiveCouscous/transforms/common/entities.py	/^    PayloadUUIDName = StringEntityField('PayloadUUIDName', display_name='PayloadUUIDName')$/;"	v	class:MetasploitBindHandler
@@ -216,7 +197,6 @@ RDPVulnerability	src/EffectiveCouscous/transforms/common/entities_msploitego_bac
 RHOST	src/EffectiveCouscous/transforms/common/entities.py	/^    RHOST = StringEntityField('RHOST', display_name='RHOST')$/;"	v	class:MetasploitBindHandler
 RPC	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class RPC(Entity):$/;"	c
 RPCoverhttp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class RPCoverhttp(Entity):$/;"	c
-RedHatEnterpriseLinux	src/EffectiveCouscous/transforms/common/entities.py	/^class RedHatEnterpriseLinux(LinuxOperatingSystem):$/;"	c
 RelevantInformation	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class RelevantInformation(Entity):$/;"	c
 RocketWebServer	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class RocketWebServer(Entity):$/;"	c
 RoutingIP	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class RoutingIP(Entity):$/;"	c
@@ -256,22 +236,16 @@ SquidProxyServer	src/EffectiveCouscous/transforms/common/entities_msploitego_bac
 StageEncoder	src/EffectiveCouscous/transforms/common/entities.py	/^    StageEncoder = StringEntityField('StageEncoder', display_name='StageEncoder')$/;"	v	class:MetasploitBindHandler
 StageEncoderSaveRegisters	src/EffectiveCouscous/transforms/common/entities.py	/^    StageEncoderSaveRegisters = StringEntityField('StageEncoderSaveRegisters', display_name='Sta/;"	v	class:MetasploitBindHandler
 StageEncodingFallback	src/EffectiveCouscous/transforms/common/entities.py	/^    StageEncodingFallback = EnumEntityField('StageEncodingFallback', choices=['true', 'false'], /;"	v	class:MetasploitBindHandler
-TODO	README.md	/^   TODO $/;"	s
-TRANSFORMS	README.md	/^   TRANSFORMS $/;"	s
-To add	README.md	/^#### To add$/;"	t
 ToMetasploitService	src/EffectiveCouscous/transforms/metasploit/db/association/service.py	/^class ToMetasploitService(Transform):$/;"	c
 TrackingCode	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class TrackingCode(Entity):$/;"	c
-Transfrom Categorization	README.md	/^### Transfrom Categorization$/;"	S
 Tweet	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Tweet(Entity):$/;"	c
 Twit	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Twit(Entity):$/;"	c
 Twitter	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Twitter(Entity):$/;"	c
 TwitterUserList	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class TwitterUserList(Entity):$/;"	c
 UDPPort	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class UDPPort(Entity):$/;"	c
 URL	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class URL(Entity):$/;"	c
-UbuntuLinux	src/EffectiveCouscous/transforms/common/entities.py	/^class UbuntuLinux(LinuxOperatingSystem):$/;"	c
 Unknown	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Unknown(Entity):$/;"	c
 UserGroup	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class UserGroup(Entity):$/;"	c
-Utilities	README.md	/^#### Utilities$/;"	t
 VERBOSE	src/EffectiveCouscous/transforms/common/entities.py	/^    VERBOSE = EnumEntityField('VERBOSE', choices=['true', 'false'], display_name='VERBOSE')$/;"	v	class:MetasploitBindHandler
 Vulnerability	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Vulnerability(Entity):$/;"	c
 WAF	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WAF(Entity):$/;"	c
@@ -286,33 +260,24 @@ Webdir	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^c
 Webmin	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Webmin(Entity):$/;"	c
 Website	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Website(Entity):$/;"	c
 WikiEdit	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WikiEdit(Entity):$/;"	c
-Windows10	src/EffectiveCouscous/transforms/common/entities.py	/^class Windows10(WindowsOperatingSystem):$/;"	c
-Windows2000	src/EffectiveCouscous/transforms/common/entities.py	/^class Windows2000(WindowsOperatingSystem):$/;"	c
 Windows2000	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Windows2000(Entity):$/;"	c
-Windows2003	src/EffectiveCouscous/transforms/common/entities.py	/^class Windows2003(WindowsOperatingSystem):$/;"	c
 Windows2003	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Windows2003(Entity):$/;"	c
-Windows2008	src/EffectiveCouscous/transforms/common/entities.py	/^class Windows2008(WindowsOperatingSystem):$/;"	c
 Windows2008	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Windows2008(Entity):$/;"	c
-Windows2012	src/EffectiveCouscous/transforms/common/entities.py	/^class Windows2012(WindowsOperatingSystem):$/;"	c
 Windows2012	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Windows2012(Entity):$/;"	c
-Windows7	src/EffectiveCouscous/transforms/common/entities.py	/^class Windows7(WindowsOperatingSystem):$/;"	c
 Windows7	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Windows7(Entity):$/;"	c
 WindowsDeleteHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsDeleteHost(DeleteHost):$/;"	c
 WindowsDeleteWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsDeleteWorkspace(NetblockDeleteWorkspace):$/;"	c
 WindowsEnumerateHostIP	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^class WindowsEnumerateHostIP(EnumerateHostIP):$/;"	c
+WindowsHost	src/EffectiveCouscous/transforms/common/entities.py	/^class WindowsHost(MetasploitHost):$/;"	c
 WindowsHostToMetasploitWorkspace	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^class WindowsHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):$/;"	c
 WindowsMasterBrowser	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WindowsMasterBrowser(Entity):$/;"	c
-WindowsOperatingSystem	src/EffectiveCouscous/transforms/common/entities.py	/^class WindowsOperatingSystem(MetasploitHost):$/;"	c
 WindowsOperatingSystem	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WindowsOperatingSystem(Entity):$/;"	c
 WindowsPullHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsPullHost(PullHost):$/;"	c
 WindowsPullWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsPullWorkspace(NetblockPullWorkspace):$/;"	c
 WindowsPushHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsPushHost(PushHost):$/;"	c
 WindowsPushWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsPushWorkspace(NetblockPushWorkspace):$/;"	c
-WindowsVista	src/EffectiveCouscous/transforms/common/entities.py	/^class WindowsVista(WindowsOperatingSystem):$/;"	c
-WindowsXP	src/EffectiveCouscous/transforms/common/entities.py	/^class WindowsXP(WindowsOperatingSystem):$/;"	c
 WindowsXP	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WindowsXP(Entity):$/;"	c
 WordpressInfo	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WordpressInfo(Entity):$/;"	c
-Workspace Integration	README.md	/^### Workspace Integration$/;"	S
 X11	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class X11(Entity):$/;"	c
 XSSVulnerability	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class XSSVulnerability(Entity):$/;"	c
 Zoominfo	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Zoominfo(Entity):$/;"	c
@@ -534,25 +499,10 @@ __version__	src/EffectiveCouscous/transforms/metasploit/db/push_pull/service.py	
 _category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Metasploit Handler'$/;"	v	class:MetasploitBindHandler
 _category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Metasploit Handler'$/;"	v	class:MetasploitExploitHandler
 _category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Metasploit Handler'$/;"	v	class:MetasploitReverseHandler
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:AppleOperatingSystem
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:ArchLinux
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:DebianLinux
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:FedoraLinux
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:GentooLinux
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:KaliLinux
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:LinuxOperatingSystem
+_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:AppleHost
+_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:LinuxHost
 _category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:MetasploitHost
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:RedHatEnterpriseLinux
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:UbuntuLinux
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:Windows10
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:Windows2000
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:Windows2003
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:Windows2008
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:Windows2012
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:Windows7
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:WindowsOperatingSystem
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:WindowsVista
-_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:WindowsXP
+_category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Operating Systems'$/;"	v	class:WindowsHost
 _category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Penetration Testing'$/;"	v	class:EmbeddedOS
 _category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Penetration Testing'$/;"	v	class:MetasploitCredential
 _category_	src/EffectiveCouscous/transforms/common/entities.py	/^    _category_ = 'Penetration Testing'$/;"	v	class:MetasploitService
@@ -796,26 +746,11 @@ _namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace
 _namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit'$/;"	v	class:MetasploitExploitHandler
 _namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit'$/;"	v	class:MetasploitReverseHandler
 _namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.credential'$/;"	v	class:MetasploitCredential
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host'$/;"	v	class:MetasploitHost
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:AppleOperatingSystem
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:ArchLinux
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:DebianLinux
+_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.AppleHost'$/;"	v	class:AppleHost
+_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.GenericHost'$/;"	v	class:MetasploitHost
+_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.LinuxHost'$/;"	v	class:LinuxHost
+_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.WindowsHost'$/;"	v	class:WindowsHost
 _namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:EmbeddedOS
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:FedoraLinux
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:GentooLinux
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:KaliLinux
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:LinuxOperatingSystem
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:RedHatEnterpriseLinux
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:UbuntuLinux
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:Windows10
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:Windows2000
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:Windows2003
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:Windows2008
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:Windows2012
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:Windows7
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:WindowsOperatingSystem
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:WindowsVista
-_namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.host.os'$/;"	v	class:WindowsXP
 _namespace_	src/EffectiveCouscous/transforms/common/entities.py	/^    _namespace_ = 'metasploit.service'$/;"	v	class:MetasploitService
 _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    _namespace_ = 'canari'$/;"	v	class:Unknown
 _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    _namespace_ = 'haveibeenpwned'$/;"	v	class:Password
@@ -1055,17 +990,17 @@ _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.p
 _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    _namespace_ = 'sploitego'$/;"	v	class:Service
 _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    _namespace_ = 'sploitego'$/;"	v	class:SiteCategory
 _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    _namespace_ = 'yourorganization'$/;"	v	class:NetworkService
-_type_	src/EffectiveCouscous/transforms/common/entities.py	/^    _type_ = 'Apple OS'$/;"	v	class:AppleOperatingSystem
+_type_	src/EffectiveCouscous/transforms/common/entities.py	/^    _type_ = 'Apple Host'$/;"	v	class:AppleHost
 _type_	src/EffectiveCouscous/transforms/common/entities.py	/^    _type_ = 'Generic Host'$/;"	v	class:MetasploitHost
-_type_	src/EffectiveCouscous/transforms/common/entities.py	/^    _type_ = 'Linux OS'$/;"	v	class:LinuxOperatingSystem
+_type_	src/EffectiveCouscous/transforms/common/entities.py	/^    _type_ = 'Linux Host'$/;"	v	class:LinuxHost
 _type_	src/EffectiveCouscous/transforms/common/entities.py	/^    _type_ = 'Metasploit Service' $/;"	v	class:MetasploitService
-_type_	src/EffectiveCouscous/transforms/common/entities.py	/^    _type_ = 'Windows OS'$/;"	v	class:WindowsOperatingSystem
+_type_	src/EffectiveCouscous/transforms/common/entities.py	/^    _type_ = 'Windows Host'$/;"	v	class:WindowsHost
 additional	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    additional = StringEntityField('additional', display_name='Additional Info')$/;"	v	class:PossibleEntryPoint
 after	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    after = DateEntityField('after', display_name='After')$/;"	v	class:Hash
 ajp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ajp(Entity):$/;"	c
 alias	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    alias = StringEntityField('properties.alias', display_name='Alias')$/;"	v	class:Alias
 ansys	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ansys(Entity):$/;"	c
-arch	src/EffectiveCouscous/transforms/common/entities.py	/^    arch = StringEntityField('arch', display_name='Architecture')$/;"	v	class:MetasploitHost
+arch	src/EffectiveCouscous/transforms/common/entities.py	/^    arch = Field('arch', display_name='Architecture')$/;"	v	class:MetasploitHost
 area	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    area = StringEntityField('location.area', display_name='Area')$/;"	v	class:Location
 area_circular	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    area_circular = StringEntityField('area.circular', display_name='Circular Area')$/;"	v	class:CircularArea
 areacode	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    areacode = StringEntityField('location.areacode', display_name='Area Code')$/;"	v	class:Location
@@ -1078,7 +1013,7 @@ backorifice	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.p
 bakbonenetvault	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class bakbonenetvault(Entity):$/;"	c
 banner	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    banner = StringEntityField('banner.text', display_name='Service Banner')$/;"	v	class:Service
 base_name	.mrbob.ini	/^entity.base_name = EffectivecouscousEntity$/;"	k	section:variables
-baseurl	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^baseurl = https:\/\/localhost:8080\/api\/v1\/$/;"	k	section:MSM.local
+baseurl	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^baseurl = https:\/\/localhost:8080\/api\/v1\/$/;"	k	section:EffectiveCouscous.local
 before	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    before = DateEntityField('before', display_name='Before')$/;"	v	class:Hash
 blackjack	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class blackjack(Entity):$/;"	c
 boinc	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class boinc(Entity):$/;"	c
@@ -1090,8 +1025,8 @@ cifs	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^cla
 city	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    city = StringEntityField('city', display_name='City')$/;"	v	class:Location
 citycode	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    citycode = StringEntityField('phonenumber.citycode', display_name='City Code')$/;"	v	class:PhoneNumber
 closedport	src/EffectiveCouscous/resource.py	/^closedport = imageicon('networking', 'closedport.gif')$/;"	v
-comm	src/EffectiveCouscous/transforms/common/entities.py	/^    comm = StringEntityField('comm', display_name='Comm')$/;"	v	class:MetasploitHost
-comments	src/EffectiveCouscous/transforms/common/entities.py	/^    comments = StringEntityField('comments', display_name='Comments')$/;"	v	class:MetasploitHost
+comm	src/EffectiveCouscous/transforms/common/entities.py	/^    comm = Field('comm', display_name='Comm')$/;"	v	class:MetasploitHost
+comments	src/EffectiveCouscous/transforms/common/entities.py	/^    comments = Field('comments', display_name='Comments')$/;"	v	class:MetasploitHost
 compressnet	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class compressnet(Entity):$/;"	c
 content	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    content = StringEntityField('content', display_name='Content')$/;"	v	class:Tweet
 content	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    content = StringEntityField('content', display_name='Content')$/;"	v	class:Twit
@@ -1100,9 +1035,9 @@ country	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^
 countrycode	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    countrycode = StringEntityField('countrycode', display_name='Country Code')$/;"	v	class:Location
 countrycode	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    countrycode = StringEntityField('phonenumber.countrycode', display_name='Country Code')$/;"	v	class:PhoneNumber
 create_example	.mrbob.ini	/^project.create_example = False$/;"	k	section:variables
-created_at	src/EffectiveCouscous/transforms/common/entities.py	/^    created_at = StringEntityField('created_at', display_name="Host created at")$/;"	v	class:MetasploitHost
-created_at	src/EffectiveCouscous/transforms/common/entities.py	/^    created_at = StringEntityField('created_at', display_name='Created at')$/;"	v	class:MetasploitService
-cred_count	src/EffectiveCouscous/transforms/common/entities.py	/^    cred_count = StringEntityField('cred_count', display_name='Cred Count')$/;"	v	class:MetasploitHost
+created_at	src/EffectiveCouscous/transforms/common/entities.py	/^    created_at = Field('created_at', display_name="Host created at")$/;"	v	class:MetasploitHost
+created_at	src/EffectiveCouscous/transforms/common/entities.py	/^    created_at = Field('created_at', display_name='Created at')$/;"	v	class:MetasploitService
+cred_count	src/EffectiveCouscous/transforms/common/entities.py	/^    cred_count = Field('cred_count', display_name='Cred Count')$/;"	v	class:MetasploitHost
 dBase	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class dBase(Entity):$/;"	c
 date_published	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    date_published = StringEntityField('pubdate', display_name='Date published')$/;"	v	class:Tweet
 db_guess	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    db_guess = StringEntityField('db_guess', display_name='None')$/;"	v	class:PossibleInjectionPoint
@@ -1111,11 +1046,11 @@ description	.mrbob.ini	/^project.description = A structured set of transforms th
 description	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    description = StringEntityField('description', display_name='Description')$/;"	v	class:File
 description	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    description = StringEntityField('properties.image', display_name='Description')$/;"	v	class:Image
 description	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    description = StringEntityField('twitter.list.description', display_name='Description')$/;"	v	class:TwitterUserList
-detected_arch	src/EffectiveCouscous/transforms/common/entities.py	/^    detected_arch = StringEntityField('detected_arch', display_name='Detected Arch')$/;"	v	class:MetasploitHost
+detected_arch	src/EffectiveCouscous/transforms/common/entities.py	/^    detected_arch = Field('detected_arch', display_name='Detected Arch')$/;"	v	class:MetasploitHost
 device	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    device = StringEntityField('properties.device', display_name='Device')$/;"	v	class:Device
 devices	src/EffectiveCouscous/resource.py	/^devices = dict($/;"	v
 directplaysrvr	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class directplaysrvr(Entity):$/;"	c
-display_name	src/EffectiveCouscous/transforms/common/entities.py	/^    display_name = StringEntityField('display_name', display_name='Display Name', is_value=True)$/;"	v	class:MetasploitService
+display_name	src/EffectiveCouscous/transforms/common/entities.py	/^    display_name = Field('display_name', display_name='Display Name', is_value=True)$/;"	v	class:MetasploitService
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    display_name = "To Metasploit Host Workspace"$/;"	v	class:AppleHostToMetasploitWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    display_name = "To Metasploit Host Workspace"$/;"	v	class:HostToMetasploitWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    display_name = "To Metasploit Host Workspace"$/;"	v	class:LinuxHostToMetasploitWorkspace
@@ -1223,12 +1158,12 @@ haschecked	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py
 hash	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    hash = StringEntityField('properties.hash', display_name='Hash')$/;"	v	class:Hash
 hashtag	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    hashtag = StringEntityField('twitter.hashtag', display_name='Hashtag')$/;"	v	class:Hashtag
 host_detail_count	src/EffectiveCouscous/transforms/common/entities.py	/^    host_detail_count = IntegerEntityField('host_detail_count', display_name='Host Detail Count'/;"	v	class:MetasploitHost
-host_id	src/EffectiveCouscous/transforms/common/entities.py	/^    host_id = StringEntityField('host_id', display_name='Host ID')$/;"	v	class:MetasploitService
+host_id	src/EffectiveCouscous/transforms/common/entities.py	/^    host_id = Field('host_id', display_name='Host ID')$/;"	v	class:MetasploitService
 hostid	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    hostid = StringEntityField('hostid', display_name='Host ID')$/;"	v	class:MetasploitService
 httpsecureheaders	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class httpsecureheaders(Entity):$/;"	c
-id	src/EffectiveCouscous/transforms/common/entities.py	/^    id = StringEntityField('id', display_name='Credential ID' ) $/;"	v	class:MetasploitCredential
-id	src/EffectiveCouscous/transforms/common/entities.py	/^    id = StringEntityField('id', display_name='Host ID')$/;"	v	class:MetasploitHost
-id	src/EffectiveCouscous/transforms/common/entities.py	/^    id = StringEntityField('id', display_name='Service ID')$/;"	v	class:MetasploitService
+id	src/EffectiveCouscous/transforms/common/entities.py	/^    id = Field('id', display_name='Credential ID' ) $/;"	v	class:MetasploitCredential
+id	src/EffectiveCouscous/transforms/common/entities.py	/^    id = Field('id', display_name='Host ID')$/;"	v	class:MetasploitHost
+id	src/EffectiveCouscous/transforms/common/entities.py	/^    id = Field('id', display_name='Service ID')$/;"	v	class:MetasploitService
 id	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    id = StringEntityField('id', display_name='Twit ID')$/;"	v	class:Twit
 id	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    id = StringEntityField('vulnerability.id', display_name='ID')$/;"	v	class:Vulnerability
 id_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    id_ = StringEntityField('twitter.list.id', display_name='ID')$/;"	v	class:TwitterUserList
@@ -1241,20 +1176,20 @@ images	src/EffectiveCouscous/resource.py	/^images = 'EffectiveCouscous.resources
 imap	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class imap(Entity):$/;"	c
 img_link	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    img_link = StringEntityField('img_link', display_name='Image Link')$/;"	v	class:Twit
 included_media_types	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    included_media_types = StringEntityField('includeMediaType', display_name='Included Media Ty/;"	v	class:Hash
-info	src/EffectiveCouscous/transforms/common/entities.py	/^    info = StringEntityField('info', display_name='Info')$/;"	v	class:MetasploitHost
-info	src/EffectiveCouscous/transforms/common/entities.py	/^    info = StringEntityField('info', display_name='Info')$/;"	v	class:MetasploitService
+info	src/EffectiveCouscous/transforms/common/entities.py	/^    info = Field('info', display_name='Info')$/;"	v	class:MetasploitHost
+info	src/EffectiveCouscous/transforms/common/entities.py	/^    info = Field('info', display_name='Info')$/;"	v	class:MetasploitService
 info	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    info = StringEntityField('info', display_name='Info')$/;"	v	class:MetasploitService
-input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = AppleOperatingSystem$/;"	v	class:AppleHostToMetasploitWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = LinuxOperatingSystem$/;"	v	class:LinuxHostToMetasploitWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = AppleHost$/;"	v	class:AppleHostToMetasploitWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxHostToMetasploitWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = MetasploitHost$/;"	v	class:HostToMetasploitWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = WindowsOperatingSystem$/;"	v	class:WindowsHostToMetasploitWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsHostToMetasploitWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/association/ipv4address.py	/^    input_type = IPv4Address $/;"	v	class:AppendHostProperties
 input_type	src/EffectiveCouscous/transforms/metasploit/db/association/netblock.py	/^    input_type = Netblock$/;"	v	class:NetblockToMetasploitWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/association/service.py	/^    input_type = Service $/;"	v	class:ToMetasploitService
-input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = AppleOperatingSystem$/;"	v	class:AppleEnumerateHostIP
-input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = LinuxOperatingSystem$/;"	v	class:LinuxEnumerateHostIP
+input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = AppleHost$/;"	v	class:AppleEnumerateHostIP
+input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxEnumerateHostIP
 input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = MetasploitHost$/;"	v	class:EnumerateHostIP
-input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = WindowsOperatingSystem$/;"	v	class:WindowsEnumerateHostIP
+input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsEnumerateHostIP
 input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    input_type = IPv4Address $/;"	v	class:EnumerateSubnetIP
 input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    input_type = IPv4Address$/;"	v	class:EnumerateHost
 input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    input_type = IPv4Address$/;"	v	class:EnumerateServices
@@ -1263,30 +1198,30 @@ input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/service.py
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    input_type = MetasploitCredential $/;"	v	class:DeleteCredential
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    input_type = MetasploitCredential$/;"	v	class:PullCredential
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    input_type = MetasploitCredential$/;"	v	class:PushCredential
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleOperatingSystem$/;"	v	class:AppleDeleteHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleOperatingSystem$/;"	v	class:AppleDeleteWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleOperatingSystem$/;"	v	class:ApplePullHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleOperatingSystem$/;"	v	class:ApplePullWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleOperatingSystem$/;"	v	class:ApplePushHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleOperatingSystem$/;"	v	class:ApplePushWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxOperatingSystem$/;"	v	class:LinuxDeleteHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxOperatingSystem$/;"	v	class:LinuxDeleteWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxOperatingSystem$/;"	v	class:LinuxPullHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxOperatingSystem$/;"	v	class:LinuxPullWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxOperatingSystem$/;"	v	class:LinuxPushHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxOperatingSystem$/;"	v	class:LinuxPushWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:AppleDeleteHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:AppleDeleteWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:ApplePullHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:ApplePullWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:ApplePushHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:ApplePushWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxDeleteHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxDeleteWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxPullHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxPullWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxPushHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxPushWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost $/;"	v	class:DeleteHost
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost $/;"	v	class:HostDeleteWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost $/;"	v	class:HostPullWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost$/;"	v	class:HostPushWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost$/;"	v	class:PullHost
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost$/;"	v	class:PushHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsOperatingSystem$/;"	v	class:WindowsDeleteHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsOperatingSystem$/;"	v	class:WindowsDeleteWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsOperatingSystem$/;"	v	class:WindowsPullHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsOperatingSystem$/;"	v	class:WindowsPullWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsOperatingSystem$/;"	v	class:WindowsPushHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsOperatingSystem$/;"	v	class:WindowsPushWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsDeleteHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsDeleteWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsPullHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsPullWorkspace
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsPushHost
+input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsPushWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    input_type = Netblock $/;"	v	class:NetblockDeleteWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    input_type = Netblock $/;"	v	class:NetblockPullWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    input_type = Netblock $/;"	v	class:NetblockPushWorkspace
@@ -1299,7 +1234,7 @@ ip_destination	src/EffectiveCouscous/transforms/common/entities_msploitego_backu
 ip_port	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    ip_port = IntegerEntityField('ip.port', display_name='Port')$/;"	v	class:SNMPCommunity
 ip_source	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    ip_source = StringEntityField('ip.source', display_name='Source IP')$/;"	v	class:Port
 ipp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ipp(Entity):$/;"	c
-ipv4address	src/EffectiveCouscous/transforms/common/entities.py	/^    ipv4address = StringEntityField('address', display_name='IPv4 Address')$/;"	v	class:MetasploitHost
+ipv4address	src/EffectiveCouscous/transforms/common/entities.py	/^    ipv4address = Field('address', display_name='IPv4 Address')$/;"	v	class:MetasploitHost
 ipv4address	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    ipv4address = StringEntityField('ipv4-address', display_name='IP Address')$/;"	v	class:IPv4Address
 ipv4range	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    ipv4range = StringEntityField('ipv4-range', display_name='IP Range')$/;"	v	class:Netblock
 irc	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class irc(Entity):$/;"	c
@@ -1311,11 +1246,11 @@ latitude	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/
 latitude	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    latitude = FloatEntityField('latitude', display_name='Latitude')$/;"	v	class:Location
 lighttpd	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class lighttpd(Entity):$/;"	c
 llmnr	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class llmnr(Entity):$/;"	c
-logins_count	src/EffectiveCouscous/transforms/common/entities.py	/^    logins_count = StringEntityField('logins_count', display_name='Logins Count')$/;"	v	class:MetasploitCredential
+logins_count	src/EffectiveCouscous/transforms/common/entities.py	/^    logins_count = Field('logins_count', display_name='Logins Count')$/;"	v	class:MetasploitCredential
 longitude	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    longitude = FloatEntityField('longitude', display_name='Longitude')$/;"	v	class:CircularArea
 longitude	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    longitude = FloatEntityField('longitude', display_name='Longitude')$/;"	v	class:GPS
 longitude	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    longitude = FloatEntityField('longitude', display_name='Longitude')$/;"	v	class:Location
-mac	src/EffectiveCouscous/transforms/common/entities.py	/^    mac = StringEntityField('mac', display_name='MAC')$/;"	v	class:MetasploitHost
+mac	src/EffectiveCouscous/transforms/common/entities.py	/^    mac = Field('mac', display_name='MAC')$/;"	v	class:MetasploitHost
 major_version	.mrbob.ini	/^canari.major_version = 3$/;"	k	section:variables
 matches	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    matches = StringEntityField('matches', display_name='Matches')$/;"	v	class:BuiltWithRelationship
 member_count	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    member_count = StringEntityField('twitter.list.members', display_name='Member Count')$/;"	v	class:TwitterUserList
@@ -1329,9 +1264,9 @@ mssql	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^cl
 mysql	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class mysql(Entity):$/;"	c
 name	.mrbob.ini	/^author.name = Maxime Landon$/;"	k	section:variables
 name	.mrbob.ini	/^project.name = EffectiveCouscous$/;"	k	section:variables
-name	src/EffectiveCouscous/transforms/common/entities.py	/^    name = StringEntityField('name', display_name='Host Name', is_value=True)$/;"	v	class:MetasploitHost
-name	src/EffectiveCouscous/transforms/common/entities.py	/^    name = StringEntityField('name', display_name='Name')$/;"	v	class:MetasploitService
-name	src/EffectiveCouscous/transforms/common/entities.py	/^    name = StringEntityField('name', display_name='Name', is_value=True)$/;"	v	class:MetasploitCredential
+name	src/EffectiveCouscous/transforms/common/entities.py	/^    name = Field('name', display_name='Host Name', is_value=True)$/;"	v	class:MetasploitHost
+name	src/EffectiveCouscous/transforms/common/entities.py	/^    name = Field('name', display_name='Name')$/;"	v	class:MetasploitService
+name	src/EffectiveCouscous/transforms/common/entities.py	/^    name = Field('name', display_name='Name', is_value=True)$/;"	v	class:MetasploitCredential
 name	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    name = StringEntityField('directory.name', display_name='Name')$/;"	v	class:Webdir
 name	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    name = StringEntityField('location.name', display_name='Name')$/;"	v	class:Location
 name	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    name = StringEntityField('name', display_name='Name')$/;"	v	class:MetasploitService
@@ -1360,21 +1295,21 @@ nginx	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^cl
 niktodetail	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class niktodetail(Entity):$/;"	c
 nmap	src/EffectiveCouscous/resource.py	/^nmap = imagepath('logos', 'nmap.gif')$/;"	v
 nominatim	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    nominatim = StringEntityField('properties.nominatimlocation', display_name='Nominatim Locati/;"	v	class:NominatimLocation
-note_count	src/EffectiveCouscous/transforms/common/entities.py	/^    note_count = StringEntityField('note_count', display_name='Note Count')$/;"	v	class:MetasploitHost
+note_count	src/EffectiveCouscous/transforms/common/entities.py	/^    note_count = Field('note_count', display_name='Note Count')$/;"	v	class:MetasploitHost
 ntp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ntp(Entity):$/;"	c
 number	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    number = IntegerEntityField('as.number', display_name='AS Number')$/;"	v	class:AS
 number	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    number = IntegerEntityField('twitter.number', display_name='Twitter Number')$/;"	v	class:Twitter
 number	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    number = StringEntityField('port.number', display_name='Ports')$/;"	v	class:Port
 object	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    object = StringEntityField('properties.facebookobject', display_name='Facebook Object')$/;"	v	class:FacebookObject
 openport	src/EffectiveCouscous/resource.py	/^openport = imageicon('networking', 'openport.gif')$/;"	v
-origin_module	src/EffectiveCouscous/transforms/common/entities.py	/^    origin_module = StringEntityField('origin_module', display_name='Origin Module')$/;"	v	class:MetasploitCredential
-origin_service_id	src/EffectiveCouscous/transforms/common/entities.py	/^    origin_service_id = StringEntityField('origin_service_id', display_name='Origin Service ID')$/;"	v	class:MetasploitCredential
-origin_type	src/EffectiveCouscous/transforms/common/entities.py	/^    origin_type = StringEntityField('origin_type', display_name='Origin Type')$/;"	v	class:MetasploitCredential
-os_family	src/EffectiveCouscous/transforms/common/entities.py	/^    os_family = StringEntityField('os_family', display_name='OS Family')$/;"	v	class:MetasploitHost
-os_flavor	src/EffectiveCouscous/transforms/common/entities.py	/^    os_flavor = StringEntityField('os_flavor', display_name='OS Flavor')$/;"	v	class:MetasploitHost
-os_lang	src/EffectiveCouscous/transforms/common/entities.py	/^    os_lang = StringEntityField('os_lang', display_name='OS Language')$/;"	v	class:MetasploitHost
-os_name	src/EffectiveCouscous/transforms/common/entities.py	/^    os_name = StringEntityField('os_name', display_name='OS Name')$/;"	v	class:MetasploitHost
-os_sp	src/EffectiveCouscous/transforms/common/entities.py	/^    os_sp = StringEntityField('os_sp', display_name='OS SP')$/;"	v	class:MetasploitHost
+origin_module	src/EffectiveCouscous/transforms/common/entities.py	/^    origin_module = Field('origin_module', display_name='Origin Module')$/;"	v	class:MetasploitCredential
+origin_service_id	src/EffectiveCouscous/transforms/common/entities.py	/^    origin_service_id = Field('origin_service_id', display_name='Origin Service ID')$/;"	v	class:MetasploitCredential
+origin_type	src/EffectiveCouscous/transforms/common/entities.py	/^    origin_type = Field('origin_type', display_name='Origin Type')$/;"	v	class:MetasploitCredential
+os_family	src/EffectiveCouscous/transforms/common/entities.py	/^    os_family = Field('os_family', display_name='OS Family')$/;"	v	class:MetasploitHost
+os_flavor	src/EffectiveCouscous/transforms/common/entities.py	/^    os_flavor = Field('os_flavor', display_name='OS Flavor')$/;"	v	class:MetasploitHost
+os_lang	src/EffectiveCouscous/transforms/common/entities.py	/^    os_lang = Field('os_lang', display_name='OS Language')$/;"	v	class:MetasploitHost
+os_name	src/EffectiveCouscous/transforms/common/entities.py	/^    os_name = Field('os_name', display_name='OS Name')$/;"	v	class:MetasploitHost
+os_sp	src/EffectiveCouscous/transforms/common/entities.py	/^    os_sp = Field('os_sp', display_name='OS SP')$/;"	v	class:MetasploitHost
 oscp_fingerprint	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    oscp_fingerprint = StringEntityField('oscp.fingerprint', display_name='Fingerprint', is_valu/;"	v	class:Fingerprint
 oscp_servername	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    oscp_servername = StringEntityField('oscp.servername', display_name='Server Name', is_value=/;"	v	class:ServerInfo
 oscp_source	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    oscp_source = StringEntityField('oscp.source', display_name='OSCP Host', is_value=True)$/;"	v	class:OHost
@@ -1395,7 +1330,7 @@ person_name	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.p
 person_name	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    person_name = StringEntityField('person.name', display_name='Name')$/;"	v	class:Zoominfo
 phonenumber	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    phonenumber = StringEntityField('phonenumber', display_name='Phone Number')$/;"	v	class:PhoneNumber
 pop3	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class pop3(Entity):$/;"	c
-port	src/EffectiveCouscous/transforms/common/entities.py	/^    port = StringEntityField('port', display_name='Port')$/;"	v	class:MetasploitService
+port	src/EffectiveCouscous/transforms/common/entities.py	/^    port = Field('port', display_name='Port')$/;"	v	class:MetasploitService
 port	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    port = IntegerEntityField('port', display_name='Port', is_value=True)$/;"	v	class:Port
 port	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    port = StringEntityField('port', display_name='Port')$/;"	v	class:Service
 port_response	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    port_response = StringEntityField('port.response', display_name='Port Response')$/;"	v	class:Port
@@ -1405,9 +1340,9 @@ ports	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^  
 post_json	src/EffectiveCouscous/msftools/apitools.py	/^def post_json(url, data, config, headers=None):$/;"	f
 postdata	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    postdata = StringEntityField('postdata', display_name='None')$/;"	v	class:PossibleInjectionPoint
 priority	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    priority = IntegerEntityField('mxrecord.priority', display_name='Priority')$/;"	v	class:MXRecord
-priv_data	src/EffectiveCouscous/transforms/common/entities.py	/^    priv_data = StringEntityField('priv_data', display_name='Private Data')$/;"	v	class:MetasploitCredential
-priv_jtr_format	src/EffectiveCouscous/transforms/common/entities.py	/^    priv_jtr_format = StringEntityField('priv_jtr_format', display_name='Private JTR Format')$/;"	v	class:MetasploitCredential
-priv_type	src/EffectiveCouscous/transforms/common/entities.py	/^    priv_type = StringEntityField('priv_type', display_name='Private Type')$/;"	v	class:MetasploitCredential
+priv_data	src/EffectiveCouscous/transforms/common/entities.py	/^    priv_data = Field('priv_data', display_name='Private Data')$/;"	v	class:MetasploitCredential
+priv_jtr_format	src/EffectiveCouscous/transforms/common/entities.py	/^    priv_jtr_format = Field('priv_jtr_format', display_name='Private JTR Format')$/;"	v	class:MetasploitCredential
+priv_type	src/EffectiveCouscous/transforms/common/entities.py	/^    priv_type = Field('priv_type', display_name='Private Type')$/;"	v	class:MetasploitCredential
 profile_url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    profile_url = StringEntityField('affiliation.profile-url', display_name='Profile URL')$/;"	v	class:Affiliation
 profile_url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    profile_url = StringEntityField('affiliation.profile-url', display_name='Profile URL')$/;"	v	class:Bebo
 profile_url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    profile_url = StringEntityField('affiliation.profile-url', display_name='Profile URL')$/;"	v	class:Facebook
@@ -1455,14 +1390,14 @@ properties_webform	src/EffectiveCouscous/transforms/common/entities_msploitego_b
 properties_weburl	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    properties_weburl = StringEntityField('properties.weburl', display_name='Web URL', is_value=/;"	v	class:WebURL
 properties_windowsmasterbrowser	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    properties_windowsmasterbrowser = StringEntityField('properties.windowsmasterbrowser', displ/;"	v	class:WindowsMasterBrowser
 properties_wordpressinfo	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    properties_wordpressinfo = StringEntityField('properties.wordpressinfo', display_name='Wordp/;"	v	class:WordpressInfo
-proto	src/EffectiveCouscous/transforms/common/entities.py	/^    proto = StringEntityField('proto', display_name='Protocol')$/;"	v	class:MetasploitService
+proto	src/EffectiveCouscous/transforms/common/entities.py	/^    proto = Field('proto', display_name='Protocol')$/;"	v	class:MetasploitService
 proto	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    proto = StringEntityField('proto', display_name='Protocol')$/;"	v	class:MetasploitService
 protocol	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    protocol = StringEntityField('protocol', display_name='Protocol')$/;"	v	class:Port
 protocol	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    protocol = StringEntityField('protocol', display_name='Protocol')$/;"	v	class:Service
-pub_type	src/EffectiveCouscous/transforms/common/entities.py	/^    pub_type = StringEntityField('pub_type', display_name='Public Type')$/;"	v	class:MetasploitCredential
-pub_username	src/EffectiveCouscous/transforms/common/entities.py	/^    pub_username = StringEntityField('pub_username', display_name='Public Username')$/;"	v	class:MetasploitCredential
+pub_type	src/EffectiveCouscous/transforms/common/entities.py	/^    pub_type = Field('pub_type', display_name='Public Type')$/;"	v	class:MetasploitCredential
+pub_username	src/EffectiveCouscous/transforms/common/entities.py	/^    pub_username = Field('pub_username', display_name='Public Username')$/;"	v	class:MetasploitCredential
 pubdate	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    pubdate = StringEntityField('pubdate', display_name='Date published')$/;"	v	class:Twit
-purpose	src/EffectiveCouscous/transforms/common/entities.py	/^    purpose = StringEntityField('purpose', display_name='Purpose')$/;"	v	class:MetasploitHost
+purpose	src/EffectiveCouscous/transforms/common/entities.py	/^    purpose = Field('purpose', display_name='Purpose')$/;"	v	class:MetasploitHost
 put_json	src/EffectiveCouscous/msftools/apitools.py	/^def put_json(url, data, config, headers=None):$/;"	f
 radius	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    radius = IntegerEntityField('radius', display_name='Radius (m)')$/;"	v	class:CircularArea
 rdp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class rdp(Entity):$/;"	c
@@ -1471,10 +1406,10 @@ report_file	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.p
 rtsp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class rtsp(Entity):$/;"	c
 sambaservices	src/EffectiveCouscous/entitytools/service_factory.py	/^sambaservices = ['samba', 'netbios-ssn', 'smb', 'microsoft-ds', 'netbios-ns', 'netbios-dgm', 'ne/;"	v
 scan_command	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    scan_command = StringEntityField('scan.command', display_name='Nmap Command')$/;"	v	class:NmapReport
-scope	src/EffectiveCouscous/transforms/common/entities.py	/^    scope = StringEntityField('scope', display_name='Scope')$/;"	v	class:MetasploitHost
+scope	src/EffectiveCouscous/transforms/common/entities.py	/^    scope = Field('scope', display_name='Scope')$/;"	v	class:MetasploitHost
 screenname	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    screenname = StringEntityField('twitter.screen-name', display_name='Screen Name')$/;"	v	class:Twitter
 sentiment	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    sentiment = StringEntityField('properties.sentiment', display_name='Sentiment')$/;"	v	class:Sentiment
-service_count	src/EffectiveCouscous/transforms/common/entities.py	/^    service_count = StringEntityField('service_count', display_name='Service Count')$/;"	v	class:MetasploitHost
+service_count	src/EffectiveCouscous/transforms/common/entities.py	/^    service_count = Field('service_count', display_name='Service Count')$/;"	v	class:MetasploitHost
 serviceid	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    serviceid = StringEntityField('serviceid', display_name='Service ID')$/;"	v	class:MetasploitService
 servicename	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    servicename = StringEntityField('servicename', display_name='Service', is_value=True)$/;"	v	class:Service
 short_title	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    short_title = StringEntityField('short-title', display_name='Short title')$/;"	v	class:URL
@@ -1487,8 +1422,8 @@ source	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^ 
 ssdp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ssdp(Entity):$/;"	c
 ssl	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ssl(Entity):$/;"	c
 ssl_enabled	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    ssl_enabled = BooleanEntityField('website.ssl-enabled', display_name='SSL Enabled')$/;"	v	class:Website
-state	src/EffectiveCouscous/transforms/common/entities.py	/^    state = StringEntityField('state', display_name='State')$/;"	v	class:MetasploitHost
-state	src/EffectiveCouscous/transforms/common/entities.py	/^    state = StringEntityField('state', display_name='State')$/;"	v	class:MetasploitService
+state	src/EffectiveCouscous/transforms/common/entities.py	/^    state = Field('state', display_name='State')$/;"	v	class:MetasploitHost
+state	src/EffectiveCouscous/transforms/common/entities.py	/^    state = Field('state', display_name='State')$/;"	v	class:MetasploitService
 streetaddress	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    streetaddress = StringEntityField('streetaddress', display_name='Street Address')$/;"	v	class:Location
 subscriber_count	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    subscriber_count = StringEntityField('twitter.list.subscribers', display_name='Subscriber Co/;"	v	class:TwitterUserList
 systems	src/EffectiveCouscous/resource.py	/^systems = dict($/;"	v
@@ -1567,21 +1502,21 @@ uid	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    
 uid	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    uid = StringEntityField('affiliation.uid', display_name='UID')$/;"	v	class:Zoominfo
 unavailableport	src/EffectiveCouscous/resource.py	/^unavailableport = imageicon('networking', 'unavailableport.gif')$/;"	v
 unique_identifier	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    unique_identifier = StringEntityField('properties.uniqueidentifier', display_name='Uniqueide/;"	v	class:TrackingCode
-updated_at	src/EffectiveCouscous/transforms/common/entities.py	/^    updated_at = StringEntityField('updated_at', display_name='Host updated_at')$/;"	v	class:MetasploitHost
-updated_at	src/EffectiveCouscous/transforms/common/entities.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated at')$/;"	v	class:MetasploitService
+updated_at	src/EffectiveCouscous/transforms/common/entities.py	/^    updated_at = Field('updated_at', display_name='Host updated_at')$/;"	v	class:MetasploitHost
+updated_at	src/EffectiveCouscous/transforms/common/entities.py	/^    updated_at = Field('updated_at', display_name='Updated at')$/;"	v	class:MetasploitService
 uri	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    uri = StringEntityField('twitter.list.uri', display_name='URI')$/;"	v	class:TwitterUserList
 url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    url = StringEntityField('fullImage', display_name='URL')$/;"	v	class:Image
 url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    url = StringEntityField('url', display_name='None')$/;"	v	class:PossibleInjectionPoint
 url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    url = StringEntityField('url', display_name='URL')$/;"	v	class:Document
 url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    url = StringEntityField('url', display_name='URL')$/;"	v	class:URL
 user	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    user = StringEntityField('user', display_name='None')$/;"	v	class:PostgresqlDB
-userapitoken	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^userapitoken = c3fab752a8496f3e5809ded19caa23359081a5cd54607364342a4a65fe2affb5712ae61e326a6ba4$/;"	k	section:MSM.local
+userapitoken	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^userapitoken = c3fab752a8496f3e5809ded19caa23359081a5cd54607364342a4a65fe2affb5712ae61e326a6ba4$/;"	k	section:EffectiveCouscous.local
 variables	.mrbob.ini	/^[variables]$/;"	s
 varstocheck	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    varstocheck = StringEntityField('varstocheck', display_name='None')$/;"	v	class:PossibleInjectionPoint
 version	.mrbob.ini	/^canari.version = 3.3.9$/;"	k	section:variables
-virtual_host	src/EffectiveCouscous/transforms/common/entities.py	/^    virtual_host = StringEntityField('virtual_host', display_name='Virtual Host')$/;"	v	class:MetasploitHost
+virtual_host	src/EffectiveCouscous/transforms/common/entities.py	/^    virtual_host = Field('virtual_host', display_name='Virtual Host')$/;"	v	class:MetasploitHost
 vnc	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class vnc(Entity):$/;"	c
-vuln_count	src/EffectiveCouscous/transforms/common/entities.py	/^    vuln_count = StringEntityField('vuln_count', display_name='Vuln Count')$/;"	v	class:MetasploitHost
+vuln_count	src/EffectiveCouscous/transforms/common/entities.py	/^    vuln_count = Field('vuln_count', display_name='Vuln Count')$/;"	v	class:MetasploitHost
 vulnerability	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    vulnerability = StringEntityField('vulnerability', display_name='Nessus Vulnerability', is_v/;"	v	class:NessusVulnerability
 wapwsp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class wapwsp(Entity):$/;"	c
 webservices	src/EffectiveCouscous/entitytools/service_factory.py	/^webservices = ['http', 'https', 'possible_wls', "www", "ncacn_http", "ccproxy-http", "ssl\/http"/;"	v
@@ -1589,7 +1524,7 @@ websites	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/
 wfremotertm	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class wfremotertm(Entity):$/;"	c
 whois_info	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    whois_info = StringEntityField('whois-info', display_name='WHOIS Info')$/;"	v	class:Domain
 winrm	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class winrm(Entity):$/;"	c
-workspace_id	src/EffectiveCouscous/transforms/common/entities.py	/^    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')$/;"	v	class:MetasploitHost
-workspace_id	src/EffectiveCouscous/transforms/common/entities.py	/^    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')$/;"	v	class:MetasploitService
+workspace_id	src/EffectiveCouscous/transforms/common/entities.py	/^    workspace_id = Field('workspace_id', display_name='Workspace ID')$/;"	v	class:MetasploitHost
+workspace_id	src/EffectiveCouscous/transforms/common/entities.py	/^    workspace_id = Field('workspace_id', display_name='Workspace ID')$/;"	v	class:MetasploitService
 xmpp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class xmpp(Entity):$/;"	c
 year	.mrbob.ini	/^created.year = 2019$/;"	k	section:variables

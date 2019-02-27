@@ -4,9 +4,9 @@
 
 # Custom Entities
 from EffectiveCouscous.transforms.common.entities import (MetasploitHost,
-                                            WindowsOperatingSystem,
-                                            LinuxOperatingSystem,
-                                            AppleOperatingSystem)
+                                            WindowsHost,
+                                            LinuxHost,
+                                            AppleHost)
 
 # Maltego Entities
 from canari.maltego.entities import IPv4Address
@@ -93,7 +93,7 @@ class WindowsEnumerateHostIP(EnumerateHostIP):
 
     display_name = "Enumerate Host IPs"
     transform_set = 'Metasploit | DB | Enumerate'
-    input_type = WindowsOperatingSystem
+    input_type = WindowsHost
 
 
 #   Linux OS
@@ -103,7 +103,7 @@ class LinuxEnumerateHostIP(EnumerateHostIP):
 
     display_name = "Enumerate Host IPs"
     transform_set = 'Metasploit | DB | Enumerate'
-    input_type = LinuxOperatingSystem
+    input_type = LinuxHost
 
 
 #   Apple OS
@@ -113,5 +113,5 @@ class AppleEnumerateHostIP(EnumerateHostIP):
 
     display_name = "Enumerate Host IPs"
     transform_set = 'Metasploit | DB | Enumerate'
-    input_type = AppleOperatingSystem
+    input_type = AppleHost
 

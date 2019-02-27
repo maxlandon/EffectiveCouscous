@@ -108,10 +108,7 @@ class EnumerateHost(Transform):
         # Spawn Host (NEW)
         h = getOsEntity(host['os_name'], host['name'])
 
-        # Spawn Host
-        #  h = MetasploitHost()
         h.ipv4address = ipAddress['ipv4-address']
-        h.os_name = '-' if host['name'] is None else host['name']
         h.id = '-' if host['id'] is None else host['id']
         h.mac = '-' if host['mac'] is None else host['mac']
         h.comm = '-' if host['comm'] == '' else host['comm']

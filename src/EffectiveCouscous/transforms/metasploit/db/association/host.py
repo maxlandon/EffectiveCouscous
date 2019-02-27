@@ -13,9 +13,9 @@ from canari.maltego.transform import Transform
 
 # Custom Host Entities
 from EffectiveCouscous.transforms.common.entities import (MetasploitHost, 
-                                                          LinuxOperatingSystem, 
-                                                          WindowsOperatingSystem, 
-                                                          AppleOperatingSystem)
+                                                          LinuxHost, 
+                                                          WindowsHost, 
+                                                          AppleHost)
 
 # API
 import json
@@ -62,7 +62,7 @@ class WindowsHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):
 
     display_name = "To Metasploit Host Workspace"
     transform_set = 'Metasploit | DB | Association'
-    input_type = WindowsOperatingSystem
+    input_type = WindowsHost
     
 
 # Apple OS
@@ -72,7 +72,7 @@ class AppleHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):
 
     display_name = "To Metasploit Host Workspace"
     transform_set = 'Metasploit | DB | Association'
-    input_type = AppleOperatingSystem
+    input_type = AppleHost
     
 
 # Linux OS
@@ -82,6 +82,6 @@ class LinuxHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):
 
     display_name = "To Metasploit Host Workspace"
     transform_set = 'Metasploit | DB | Association'
-    input_type = LinuxOperatingSystem
+    input_type = LinuxHost
     
 
