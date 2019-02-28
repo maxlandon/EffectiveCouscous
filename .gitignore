@@ -2,7 +2,7 @@
 
 #------- Python Files & Directories --------#
 # Byte-compiled, optimized, DLL
-**/__pycache__/
+__pycache__/
 *.py[cod]
 
 
