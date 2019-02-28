@@ -1,0 +1,10 @@
+# Ignore all logs
+
+#------- Python Files & Directories --------#
+# Byte-compiled, optimized, DLL
+**/__pycache__/
+*.py[cod]
+
+
+#------------ Config Files -------------#
+~/src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf
