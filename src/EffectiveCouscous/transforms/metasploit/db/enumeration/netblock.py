@@ -17,6 +17,9 @@ from EffectiveCouscous.msftools import apitools
 
 # GUI
 import canari.easygui as gui
+
+# Icons
+from EffectiveCouscous.resource import networkinterface
 # ---------------------------------------------------- #
 
 
@@ -78,6 +81,7 @@ class EnumerateWorkspaceIP(Transform):
                             entity['ipv4-address'] = host['address']
                             entity += Field('id', host['id'], display_name='Host ID')
                             entity += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
+                            entity.icon_url = networkinterface
                             # Link Style
                             entity.link_color = LinkColor.LightGray
                             entity.link_thickness = 4

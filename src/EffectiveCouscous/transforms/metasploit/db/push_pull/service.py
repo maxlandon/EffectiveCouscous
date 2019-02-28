@@ -3,7 +3,7 @@
 # -------------------- Imports --------------------- #
 
 # Custom Entities
-from EffectiveCouscous.transforms.common.entities import MetasploitService
+from EffectiveCouscous.entities.service.base import MetasploitService
 
 # Maltego Messages
 from canari.maltego.message import MaltegoException

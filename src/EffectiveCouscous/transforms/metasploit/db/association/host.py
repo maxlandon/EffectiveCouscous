@@ -12,10 +12,10 @@ from canari.maltego.message import Field
 from canari.maltego.transform import Transform
 
 # Custom Host Entities
-from EffectiveCouscous.transforms.common.entities import (MetasploitHost, 
-                                                          LinuxHost, 
-                                                          WindowsHost, 
-                                                          AppleHost)
+from EffectiveCouscous.entities.host.hosts import (MetasploitHost, 
+                                                    LinuxHost, 
+                                                    WindowsHost, 
+                                                    AppleHost)
 
 # API
 import json

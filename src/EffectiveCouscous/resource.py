@@ -4,6 +4,7 @@
 
 from pkg_resources import resource_filename
 from os import path
+# ---------------------------------------------------- #
 
 
 __author__ = 'Maxime Landon'
@@ -84,6 +85,7 @@ systems = dict(
 #------------------------------------------------------
 
 devices = dict(
+    #________________
     # Apple
     ipad = imageicon('device', 'ipad.png'),
     macbook = imageicon('device', 'macbook.png')
@@ -93,14 +95,29 @@ devices = dict(
 #                   Networking
 #------------------------------------------------------
 
+# Ports
 unavailableport = imageicon('networking', 'unavailableport.gif')
 openport = imageicon('networking', 'openport.gif')
 timedoutport = imageicon('networking', 'timedoutport.gif')
 closedport = imageicon('networking', 'closedport.gif')
 
+# Interfaces
+networkinterface = imageicon('networking', 'networkinterface.png')
+
 
 #                   Services
 #------------------------------------------------------
+
+services = dict(
+    generic_service = imageicon('services', 'service-icon.png'),
+    #________________
+    # Web Services
+    #  iis_web_service = imageicon('services/web', 'microsoft-iis.png')
+
+    #________________
+    # Samba Services
+
+        )
 
 
 

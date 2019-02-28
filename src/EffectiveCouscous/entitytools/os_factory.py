@@ -52,10 +52,10 @@ __status__ = 'Development'
 # ----------------------------   General Functions   --------------------------------- #
 
 def getOsEntity(os_name, name):
-    from EffectiveCouscous.transforms.common.entities import (MetasploitHost,
-                                                              WindowsHost,
-                                                              LinuxHost,
-                                                              AppleHost)
+    from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
+                                                        WindowsHost,
+                                                        LinuxHost,
+                                                        AppleHost)
     os_entity = MetasploitHost()
     os_entity.icon_url = systems['generic']
 
@@ -78,50 +78,48 @@ def getOsEntity(os_name, name):
             # 2) ________________________________________________________
             # If the Name has not confirmed any device, use OS Name 
             elif os_name:
-                    #....................................
-                    # Windows
-                    if "windows" in os_name.lower():
-                        if "windows 2003" in os_name.lower():
-                            os_entity = WindowsHost()
-                        elif "windows 2000" in os_name.lower():
-                            os_entity = WindowsHost()
-                        elif "windows 2008" in os_name.lower():
-                            os_entity = WindowsHost()
-                        elif "windows 2012" in os_name.lower():
-                            os_entity = WindowsHost()
-                        elif "windows xp" in os_name.lower():
-                            os_entity = WindowsHost()
-                        elif "windows 7" in os_name.lower():
-                            os_entity = WindowsHost()
-                        elif "windows vista" in os_name.lower():
-                            os_entity = WindowsHost()
-                        elif "windows 10" in os_name.lower():
-                            os_entity = WindowsHost()
-                        else:
-                            os_entity = WindowsHost()
-                        return os_entity
-                    #....................................
-                    # Apple
-                    elif re.search("ios", os_name.lower(), re.I):
-                        os_entity = AppleHost()
-                        return os_entity
+                #....................................
+                # Windows
+                if "windows" in os_name.lower():
+                    if "windows 2003" in os_name.lower():
+                        os_entity = WindowsHost()
+                    elif "windows 2000" in os_name.lower():
+                        os_entity = WindowsHost()
+                    elif "windows 2008" in os_name.lower():
+                        os_entity = WindowsHost()
+                    elif "windows 2012" in os_name.lower():
+                        os_entity = WindowsHost()
+                    elif "windows xp" in os_name.lower():
+                        os_entity = WindowsHost()
+                    elif "windows 7" in os_name.lower():
+                        os_entity = WindowsHost()
+                    elif "windows vista" in os_name.lower():
+                        os_entity = WindowsHost()
+                    elif "windows 10" in os_name.lower():
+                        os_entity = WindowsHost()
+                    else:
+                        os_entity = WindowsHost()
+                    return os_entity
+                #....................................
+                # Apple
+                elif re.search("ios", os_name.lower(), re.I):
+                    os_entity = AppleHost()
+                    return os_entity
 
-                    #....................................
-                    # Linux
-                    elif "linux" in os_name.lower():
-                        if "arch" in os_name.lower():
-                            os_entity = LinuxHost()
-                        #  if "debian"
-                        #  if "ubuntu", etc...
-                        else:
-                            os_entity = LinuxHost()
-                        return os_entity
-                    #....................................
-                    # BSD
-                    #....................................
-                    # Embedded
-                    elif "embedded" in os_name.lower():
-                        os_entity = EmbeddedOS()
+                #....................................
+                # Linux
+                elif "linux" in os_name.lower():
+                    if "arch" in os_name.lower():
+                        os_entity = LinuxHost()
+                    else:
+                        os_entity = LinuxHost()
+                    return os_entity
+                #....................................
+                # BSD
+                #....................................
+                # Embedded
+                elif "embedded" in os_name.lower():
+                    os_entity = EmbeddedOS()
         # 3) _______________________________________________________________
         # Both lookup methods failed if this point is reached. Spawn generic
         else:
@@ -136,10 +134,10 @@ def getOsEntity(os_name, name):
 # ----------------------------   Decorator Functions   ------------------------------- #
 
 def getOsIcon(host, os):
-    from EffectiveCouscous.transforms.common.entities import (MetasploitHost,
-                                                              WindowsHost,
-                                                              LinuxHost,
-                                                              AppleHost)
+    from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
+                                                        WindowsHost,
+                                                        LinuxHost,
+                                                        AppleHost)
     if host.os_name or host.name:
         if host.name:
             # 1) ________________________________________________________

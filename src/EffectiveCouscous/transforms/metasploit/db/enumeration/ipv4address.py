@@ -2,9 +2,6 @@
 
 # -------------------- Imports ----------------------- #
 
-# Custom Entities
-from EffectiveCouscous.transforms.common.entities import MetasploitService
-
 # Maltego Entities
 from canari.maltego.entities import IPv4Address
 
@@ -22,7 +19,10 @@ from EffectiveCouscous.msftools import apitools
 from EffectiveCouscous.entitytools.os_factory import getOsEntity
 
 # Service Factory
-from EffectiveCouscous.resource import (openport, closedport, timedoutport, unavailableport)
+from EffectiveCouscous.entitytools.service_factory import getServiceEntity
+
+# Icons
+from EffectiveCouscous.resource import (networkinterface, openport, closedport, timedoutport, unavailableport)
 # ---------------------------------------------------- #
 
 
@@ -73,6 +73,7 @@ class EnumerateSubnetIP(Transform):
                 new['ipv4-address'] = host['address']
                 new += Field('id', host['id'], display_name='Host ID')
                 new += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
+                new.icon_url = networkinterface
                 # Link Style
                 new.link_color = LinkColor.LightGray
                 new.link_thickness = 4
@@ -174,7 +175,9 @@ class EnumerateServices(Transform):
         # Fill properties 
         for service in services:
             if int(service['host']['id']) == int(host['id']):
-                msfService = MetasploitService()
+                # Get Service Entity
+                msfService = getServiceEntity(service['name'], service['info'])
+                
                 msfService.display_name = "{port}:{proto}/{name}".format(port=service['port'],
                                                                 proto=service['proto'],
                                                                 name=service['name'])
@@ -189,14 +192,14 @@ class EnumerateServices(Transform):
                 msfService.updated_at = service['updated_at']
                 msfService.state = service['state']
                 # Added Dynamic Icon Selection here, but should placed somewhere else
-                if service['state'] == 'open':
-                    msfService.icon_url = openport
-                if service['state'] == 'closed':
-                    msfService.icon_url = closedport
-                if service['state'] == 'filtered':
-                    msfService.icon_url = timedoutport
-                if service['state'] == 'unknown':
-                    msfService.icon_url = unavailableport
+                #  if service['state'] == 'open':
+                #      msfService.icon_url = openport
+                #  if service['state'] == 'closed':
+                #      msfService.icon_url = closedport
+                #  if service['state'] == 'filtered':
+                #      msfService.icon_url = timedoutport
+                #  if service['state'] == 'unknown':
+                #      msfService.icon_url = unavailableport
                 # Link Style
                 msfService.link_color = LinkColor.LightGray
                 msfService.link_thickness = 3

@@ -15,6 +15,9 @@ from EffectiveCouscous.msftools import apitools
 
 # GUI
 import canari.easygui as gui
+
+# Icons
+from EffectiveCouscous.resource import networkinterface
 #--------------------------------------------------- #
 
 
@@ -95,6 +98,7 @@ class AppendHostProperties(Transform):
             ipAddress['ipv4-address'] = host['address']
             ipAddress += IntegerEntityField('id', host['id'], display_name='Host ID')
             ipAddress += IntegerEntityField('workspace_id', host['workspace_id'], display_name='Workspace ID')
+            ipv4address.icon_url = networkinterface
             response + ipAddress
 
         # If New Host
@@ -141,6 +145,7 @@ class AppendHostProperties(Transform):
             ipAddress['ipv4-address'] = host_dict['address']
             ipAddress += IntegerEntityField('id', host_dict['id'], display_name='Host ID')
             ipAddress += IntegerEntityField('workspace_id', host['workspace_id'], display_name='Workspace ID')
+            ipv4address.icon_url = networkinterface
             response + ipAddress
 
         return response

@@ -3,10 +3,10 @@
 # -------------------- Imports ----------------------- #
 
 # Custom Entities
-from EffectiveCouscous.transforms.common.entities import (MetasploitHost,
-                                            WindowsHost,
-                                            LinuxHost,
-                                            AppleHost)
+from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
+                                                    WindowsHost,
+                                                    LinuxHost,
+                                                    AppleHost)
 
 # Maltego Entities
 from canari.maltego.entities import IPv4Address
@@ -20,6 +20,9 @@ from canari.maltego.transform import Transform
 # API
 import json
 from EffectiveCouscous.msftools import apitools
+
+# Icons
+from EffectiveCouscous.resource import networkinterface
 # ---------------------------------------------------- #
 
 
@@ -78,6 +81,8 @@ class EnumerateHostIP(Transform):
                 entity['ipv4-address'] = host['address']
                 entity += Field('id', hostInput['id'], display_name='Host ID')
                 entity += Field('workspace_id', hostInput['workspace_id'], display_name='Workspace ID')
+                entity.icon_url = networkinterface
+
                 # Link Style
                 entity.link_color = LinkColor.Black
                 entity.link_thickness = 3

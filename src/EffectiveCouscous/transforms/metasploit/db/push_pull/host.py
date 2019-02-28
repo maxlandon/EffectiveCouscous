@@ -4,13 +4,13 @@
 
 # Base Transforms
 from EffectiveCouscous.transforms.metasploit.db.push_pull.netblock import (NetblockPushWorkspace,
-                                                             NetblockPullWorkspace,
-                                                             NetblockDeleteWorkspace)
+                                                                           NetblockPullWorkspace,
+                                                                           NetblockDeleteWorkspace)
 # Custom Entities
-from EffectiveCouscous.transforms.common.entities import (MetasploitHost,
-                                            WindowsHost,
-                                            LinuxHost,
-                                            AppleHost)
+from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
+                                                   WindowsHost,
+                                                   LinuxHost,
+                                                   AppleHost)
 
 # Maltego Messages
 from canari.maltego.message import MaltegoException

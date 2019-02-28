@@ -9,7 +9,7 @@ from canari.maltego.entities import Service
 from canari.maltego.transform import Transform
 
 # Custom Entities
-from EffectiveCouscous.transforms.common.entities import MetasploitService
+from EffectiveCouscous.entities.service.base import MetasploitService
 
 # Config
 from EffectiveCouscous.resource import (systems, openport, closedport, timedoutport, unavailableport)

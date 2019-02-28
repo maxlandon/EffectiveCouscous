@@ -3,7 +3,8 @@
 # -------------------- Imports ----------------------- #
 
 # Custom Entities
-from EffectiveCouscous.transforms.common.entities import MetasploitService, MetasploitCredential
+from EffectiveCouscous.entities.service.base import MetasploitService 
+from EffectiveCouscous.entities.credential.credentials import MetasploitCredential
 
 # Maltego Message
 from canari.maltego.message import Field, MaltegoException, LinkStyle, LinkColor

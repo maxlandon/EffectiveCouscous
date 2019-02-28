@@ -27,19 +27,7 @@ class ssl(Entity):
 
 
 
-class ApacheTomcat(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
 class SambaAccountInformation(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class SquidProxyServer(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
 
@@ -125,18 +113,6 @@ class EncryptedPassword(Entity):
 
 
 
-class ApachePHP(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class nginx(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
 class WebFile(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
@@ -152,12 +128,6 @@ class UDPPort(Entity):
 
 
 class msdp(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class OracleXMLDB(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
 
@@ -232,12 +202,6 @@ class SambaService(Entity):
 
 
 
-class EmbeddedOS(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
 class Service(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'sploitego'
@@ -256,12 +220,6 @@ class WebURL(Entity):
 
 
 class AdvancedMultithreadedServer(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class CiscoVPN(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
 
@@ -355,12 +313,6 @@ class SiteURL(Entity):
     properties_siteurl = StringEntityField('properties.siteurl', display_name='Site URL', is_value=True)
 
 
-class GoAheadWebServer(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
 class SambaFile(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
@@ -383,12 +335,6 @@ class UserGroup(Entity):
 
 
 class natpmp(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class IISWebservice(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
 
@@ -457,12 +403,6 @@ class DNSInformation(Entity):
 
 
 
-class WAF(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
 class SNMP(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
@@ -500,12 +440,6 @@ class msdtc(Entity):
 
 
 
-class RocketWebServer(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
 class SambaOSInformation(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
@@ -515,18 +449,6 @@ class SambaOSInformation(Entity):
 class vnc(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
-
-
-
-class MetasploitService(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-    properties_metasploitservice = StringEntityField('properties.metasploitservice', display_name='Metasploit Service', is_value=True)
-    info = StringEntityField('info', display_name='Info')
-    name = StringEntityField('name', display_name='Name')
-    proto = StringEntityField('proto', display_name='Protocol')
-    hostid = StringEntityField('hostid', display_name='Host ID')
 
 
 class SSHAuthenticationMethod(Entity):
@@ -555,24 +477,6 @@ class mssql(Entity):
 
 
 class RDPVulnerability(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class CommuniDatePro(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class OracleHTTPServer(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class Nodejs(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
 
@@ -664,12 +568,6 @@ class AccessDenied(Entity):
     _namespace_ = 'msploitego'
 
     properties_accessdenied = StringEntityField('properties.accessdenied', display_name='Access Denied', is_value=True)
-
-
-class WebService(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
 
 
 class NAS(Entity):
@@ -804,12 +702,6 @@ class SessionDetail(Entity):
     properties_sessiondetail = StringEntityField('properties.sessiondetail', display_name='Session Detail', is_value=True)
 
 
-class HTTPFileServer(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
 class PossibleInjectionPoint(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'paterva'
@@ -821,12 +713,6 @@ class PossibleInjectionPoint(Entity):
     haschecked = BooleanEntityField('haschecked', display_name='None')
     varstocheck = StringEntityField('varstocheck', display_name='None')
     db_guess = StringEntityField('db_guess', display_name='None')
-
-
-class Jetty(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
 
 
 class SambaUser(Entity):
@@ -867,12 +753,6 @@ class WindowsMasterBrowser(Entity):
 
 
 class MetasploitDbXMLFile(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class Webmin(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
 
@@ -929,12 +809,6 @@ class CISCO(Entity):
 
 
 class NetworkService(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class MicrosoftHTTPAPI(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
 
@@ -1019,12 +893,6 @@ class winrm(Entity):
 
 
 
-class Apachehttpd(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
 class chargen(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
@@ -1058,12 +926,6 @@ class WebDirectoryInfo(Entity):
 
 
 class RPC(Entity):
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'msploitego'
-
-
-
-class RPCoverhttp(Entity):
     _category_ = 'Penetration Testing'
     _namespace_ = 'msploitego'
 
