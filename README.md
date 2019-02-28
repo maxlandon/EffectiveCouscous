@@ -58,13 +58,13 @@ The documentation for the EffectiveCouscous project is articulated around the fo
 
 1. [Installation](https://github.com/maxlandon/EffectiveCouscous/wiki/Installation)
 2. [Usage](https://github.com/maxlandon/EffectiveCouscous/wiki/Usage)
-3. [Data Model](https://github.com/maxlandon/EffectiveCouscous/wiki/Data-Model)
-4. [Previous Approaches & Implementations](https://github.com/maxlandon/EffectiveCouscous/wiki/Previous-Approaches-&-Implementations)
-5. [Transforms List](https://github.com/maxlandon/EffectiveCouscous/wiki/Transforms-List)
-6. [Machines List](https://github.com/maxlandon/EffectiveCouscous/wiki/Machines-List)
-7. [Code Structure (Developers)](https://github.com/maxlandon/EffectiveCouscous/wiki/Code-Structure-(Developers))
-8. [Issues & Todo](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues-&-Todo)
-
+3. [Data Model Presentation](https://github.com/maxlandon/EffectiveCouscous/wiki/Data-Model-Presentation)
+4. [Entity Code Structure (Developers)](https://github.com/maxlandon/EffectiveCouscous/wiki/Entity-Code-Structure-(Developers))
+5. [Transform Code Structure (Developers)](https://github.com/maxlandon/EffectiveCouscous/wiki/Transform-Code-Structure-(Developers))
+6. [Previous Approaches & Implementations](https://github.com/maxlandon/EffectiveCouscous/wiki/Previous-Approaches-&-Implementations(Developers))
+7. [Transforms List](https://github.com/maxlandon/EffectiveCouscous/wiki/Transforms-List)
+8. [Machines List](https://github.com/maxlandon/EffectiveCouscous/wiki/Machines-List)
+9. [Issues & Todo](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues-&-Todo) 
 
 ## Warmest Thanks
 To @allfro, for the Canari Framework, an absolutely amazing tool.
