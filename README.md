@@ -50,3 +50,15 @@ The major benefits would be:
 <!-- *A demonstration of Maltego transforms interacting with Metasploit Database. (Much faster than what -->
 <!-- the Gif demo implies.)* -->
 <!-- ![full_demo](./docpics/full_demo.gif)  -->
+
+
+The documentation for the EffectiveCouscous project is articulated around the following pages:
+
+1. [Installation](https://github.com/maxlandon/EffectiveCouscous/wiki/Installation)
+2. [Usage](https://github.com/maxlandon/EffectiveCouscous/wiki/Usage)
+3. [Data Model](https://github.com/maxlandon/EffectiveCouscous/wiki/Data-Model)
+4. [Previous Approaches & Implementations](https://github.com/maxlandon/EffectiveCouscous/wiki/Previous-Approaches-&-Implementations)
+5. [Transforms List](https://github.com/maxlandon/EffectiveCouscous/wiki/Transforms-List)
+6. [Machines List](https://github.com/maxlandon/EffectiveCouscous/wiki/Machines-List)
+7. [Code Structure (Developers)](https://github.com/maxlandon/EffectiveCouscous/wiki/Code-Structure-(Developers))
+8. [Issues & Todo](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues-&-Todo)
