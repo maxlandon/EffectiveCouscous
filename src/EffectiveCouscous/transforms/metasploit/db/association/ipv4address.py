@@ -47,6 +47,15 @@ class AppendHostProperties(Transform):
         ipAddress = request.entity
         ipValue = request.entity.value
 
+        # Test for properties
+        if ipAddress['id'] is not None:
+            title = "Confirmation"
+            msg = """This IPv4Address is already bound to a Metasploit Host. \n
+                Do you really want to change the concerned properties ?"""
+            confirm = gui.choicebox(title=title, msg=msg, choices=['Yes', 'No'])
+        if confirm == 'No':
+            return response
+
         # Select Workspaces 
         url = config['EffectiveCouscous.local.baseurl'] + 'workspaces' 
         workspaces = apitools.get_json_dict(url, config)
@@ -84,8 +93,8 @@ class AppendHostProperties(Transform):
         # If existing host
         if host['name'] != "Add Host":
             ipAddress['ipv4-address'] = host['address']
-            ipAddress += Field('id', host['id'], display_name='Host ID')
-            ipAddress += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
+            ipAddress += IntegerEntityField('id', host['id'], display_name='Host ID')
+            ipAddress += IntegerEntityField('workspace_id', host['workspace_id'], display_name='Workspace ID')
             response + ipAddress
 
         # If New Host
@@ -130,8 +139,8 @@ class AppendHostProperties(Transform):
             # Fetch attributes of new Host
             host_dict = post.json()['data']
             ipAddress['ipv4-address'] = host_dict['address']
-            ipAddress += Field('id', host_dict['id'], display_name='Host ID')
-            ipAddress += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
+            ipAddress += IntegerEntityField('id', host_dict['id'], display_name='Host ID')
+            ipAddress += IntegerEntityField('workspace_id', host['workspace_id'], display_name='Workspace ID')
             response + ipAddress
 
         return response
