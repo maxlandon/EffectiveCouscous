@@ -54,6 +54,9 @@ The major benefits would be:
 <!-- ![full_demo](./docpics/full_demo.gif)  -->
 
 
+  Documentation
+-----------------------------------
+
 The documentation for the EffectiveCouscous project is articulated around the following pages:
 
 1. [Installation](https://github.com/maxlandon/EffectiveCouscous/wiki/Installation)
