@@ -64,7 +64,7 @@ The documentation for the EffectiveCouscous project is articulated around the fo
 3. [Data Model Presentation](https://github.com/maxlandon/EffectiveCouscous/wiki/Data-Model-Presentation)
 4. [Entity Code Structure (Developers)](https://github.com/maxlandon/EffectiveCouscous/wiki/Entity-Code-Structure-(Developers))
 5. [Transform Code Structure (Developers)](https://github.com/maxlandon/EffectiveCouscous/wiki/Transform-Code-Structure-(Developers))
-6. [Previous Approaches & Implementations](https://github.com/maxlandon/EffectiveCouscous/wiki/Previous-Approaches-&-Implementations(Developers))
+6. [Previous Approaches & Implementations](https://github.com/maxlandon/EffectiveCouscous/wiki/Previous-Approaches-&-Implementations)
 7. [Transforms List](https://github.com/maxlandon/EffectiveCouscous/wiki/Transforms-List)
 8. [Machines List](https://github.com/maxlandon/EffectiveCouscous/wiki/Machines-List)
 9. [Issues & Todo](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues-&-Todo) 
