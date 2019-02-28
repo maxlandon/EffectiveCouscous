@@ -2,7 +2,7 @@ Effective Couscous - Metasploit Maltego
 ================================================================
 
 
-  OVERVIEW 
+  Overview
 -----------------------------------
 
 EffectiveCouscous is a set of Maltego Transforms that interact with various security-related tools, 
@@ -66,5 +66,5 @@ The documentation for the EffectiveCouscous project is articulated around the fo
 8. [Issues & Todo](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues-&-Todo)
 
 
-#### Warmest Thanks
+## Warmest Thanks
 To @allfro, for the Canari Framework, an absolutely amazing tool.
