@@ -15,5 +15,6 @@ __all__ = [
     'logos',
     'networking',
     'os',
-    'device'
+    'device',
+    'services'
 ]
