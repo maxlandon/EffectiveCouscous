@@ -60,7 +60,7 @@ Document	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/
 Domain	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Domain(Entity):$/;"	c
 EXITFUNC	src/EffectiveCouscous/transforms/common/entities.py	/^    EXITFUNC = EnumEntityField('EXITFUNC', choices=['', 'seh', 'thread', 'process', 'none'])$/;"	v	class:MetasploitBindHandler
 EXITFUNC	src/EffectiveCouscous/transforms/common/entities.py	/^    EXITFUNC = EnumEntityField('EXITFUNC', choices=['', 'seh', 'thread', 'process', 'none'])$/;"	v	class:MetasploitReverseHandler
-Effective Couscous - Metasploit Maltego	README.md	/^Effective Couscous - Metasploit Maltego$/;"	c
+Effective Couscous - Metasploit & Maltego for Python 3.X	README.md	/^Effective Couscous - Metasploit & Maltego for Python 3.X$/;"	c
 EffectiveCouscous.local	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^[EffectiveCouscous.local]$/;"	s
 EffectiveCouscous.remote	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^[EffectiveCouscous.remote]$/;"	s
 EmailAddress	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class EmailAddress(Entity):$/;"	c

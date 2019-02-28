@@ -45,7 +45,7 @@ __status__ = 'Development'
 # GENERIC HOST
 #--------------------------------------------------
 class HostPushWorkspace(NetblockPushWorkspace):
-    """ Push Maltego properties to Metasploit workspace. NEEDS TO BE A WORKSPACE !"""
+    """ Push Maltego properties to Metasploit workspace."""
 
     display_name = 'Push Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
@@ -53,7 +53,7 @@ class HostPushWorkspace(NetblockPushWorkspace):
 
 
 class HostPullWorkspace(NetblockPullWorkspace):
-    """ Pull Metasploit properties to Maltego workspace. NEEDS TO BE A WORKSPACE !"""
+    """ Pull Metasploit properties to Maltego workspace."""
 
     display_name = 'Pull Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
@@ -61,7 +61,7 @@ class HostPullWorkspace(NetblockPullWorkspace):
 
 
 class HostDeleteWorkspace(NetblockDeleteWorkspace):
-    """ Delete Workspace associated to this Netblock. NEEDS TO BE A WORKSPACE !"""
+    """ Delete Workspace associated to this Netblock."""
 
     display_name = 'Delete Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
@@ -72,7 +72,7 @@ class HostDeleteWorkspace(NetblockDeleteWorkspace):
 # Windows 0S
 #--------------------------------------------------
 class WindowsPushWorkspace(NetblockPushWorkspace):
-    """ Push Metasploit properties to Maltego workspace. NEEDS TO BE A WORKSPACE !"""
+    """ Push Metasploit properties to Maltego workspace."""
 
     display_name = 'Push Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
@@ -80,7 +80,7 @@ class WindowsPushWorkspace(NetblockPushWorkspace):
 
 
 class WindowsPullWorkspace(NetblockPullWorkspace):
-    """ Pull Metasploit properties to Maltego workspace. NEEDS TO BE A WORKSPACE !"""
+    """ Pull Metasploit properties to Maltego workspace."""
 
     display_name = 'Pull Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
@@ -88,7 +88,7 @@ class WindowsPullWorkspace(NetblockPullWorkspace):
 
 
 class WindowsDeleteWorkspace(NetblockDeleteWorkspace):
-    """ Delete Workspace associated to this Netblock. NEEDS TO BE A WORKSPACE !"""
+    """ Delete Workspace associated to this Netblock."""
 
     display_name = 'Delete Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
@@ -99,7 +99,7 @@ class WindowsDeleteWorkspace(NetblockDeleteWorkspace):
 # Linux OS
 #--------------------------------------------------
 class LinuxPushWorkspace(NetblockPushWorkspace):
-    """ Push Metasploit properties to Maltego workspace. NEEDS TO BE A WORKSPACE !"""
+    """ Push Metasploit properties to Maltego workspace."""
 
     display_name = 'Push Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
@@ -107,7 +107,7 @@ class LinuxPushWorkspace(NetblockPushWorkspace):
 
 
 class LinuxPullWorkspace(NetblockPullWorkspace):
-    """ Pull Metasploit properties to Maltego workspace. NEEDS TO BE A WORKSPACE !"""
+    """ Pull Metasploit properties to Maltego workspace."""
 
     display_name = 'Pull Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
@@ -115,7 +115,7 @@ class LinuxPullWorkspace(NetblockPullWorkspace):
 
 
 class LinuxDeleteWorkspace(NetblockDeleteWorkspace):
-    """ Delete Workspace associated to this Netblock. NEEDS TO BE A WORKSPACE !"""
+    """ Delete Workspace associated to this Netblock."""
 
     display_name = 'Delete Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'

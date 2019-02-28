@@ -1,4 +1,4 @@
-Effective Couscous - Metasploit Maltego
+Effective Couscous - Metasploit & Maltego for Python 3.X
 ================================================================
 
 
