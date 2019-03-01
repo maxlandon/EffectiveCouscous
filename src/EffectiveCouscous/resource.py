@@ -112,11 +112,10 @@ services = dict(
     generic_service = imageicon('services', 'service-icon.png'),
     #________________
     # Web Services
-    #  iis_web_service = imageicon('services/web', 'microsoft-iis.png')
+    iis_web_service = imageicon('services.web', 'microsoft-iis.png')
 
     #________________
     # Samba Services
-
         )
 
 

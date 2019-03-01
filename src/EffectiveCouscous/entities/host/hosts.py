@@ -40,7 +40,7 @@ class MetasploitHost(Entity):
 
     # Static Properties
     _category_ = 'Operating Systems'
-    _namespace_ = 'EffectiveCouscous.metasploit.host.MetasploitHost'
+    _namespace_ = 'EffectiveCouscous.metasploit.host'
     alias = "Metasploit Host"
     
     # Entity properties

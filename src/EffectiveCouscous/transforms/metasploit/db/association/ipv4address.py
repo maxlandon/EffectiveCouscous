@@ -51,13 +51,17 @@ class AppendHostProperties(Transform):
         ipValue = request.entity.value
 
         # Test for properties
-        if ipAddress['id'] is not None:
-            title = "Confirmation"
-            msg = """This IPv4Address is already bound to a Metasploit Host. \n
-                Do you really want to change the concerned properties ?"""
-            confirm = gui.choicebox(title=title, msg=msg, choices=['Yes', 'No'])
-        if confirm == 'No':
-            return response
+        try: 
+            test = ipAddress['id']
+            if ipAddress['id'] is not None:
+                title = "Confirmation"
+                msg = """This IPv4Address is already bound to a Metasploit Host. \n
+                    Do you really want to change the concerned properties ?"""
+                confirm = gui.choicebox(title=title, msg=msg, choices=['Yes', 'No'])
+            if confirm == 'No':
+                return response
+        except KeyError:
+            pass
 
         # Select Workspaces 
         url = config['EffectiveCouscous.local.baseurl'] + 'workspaces' 
@@ -74,9 +78,7 @@ class AppendHostProperties(Transform):
         params = (('workspace', '{0}'.format(choice)),)
         hosts = apitools.get_json_dict(url, config, params=params)
         title = "Host Choice"
-        msg = """Choose a Metasploit Host to associate with this workspace \n
-            Note: This will not automatically assign the IPv4Address
-            value to workspace's network boundary."""
+        msg = "Choose a Metasploit Host to associate with this IPv4Address"
         hostInfos = []
         hostNames = []
         for host in hosts:
@@ -96,9 +98,9 @@ class AppendHostProperties(Transform):
         # If existing host
         if host['name'] != "Add Host":
             ipAddress['ipv4-address'] = host['address']
-            ipAddress += IntegerEntityField('id', host['id'], display_name='Host ID')
-            ipAddress += IntegerEntityField('workspace_id', host['workspace_id'], display_name='Workspace ID')
-            ipv4address.icon_url = networkinterface
+            ipAddress += Field('id', host['id'], display_name='Host ID')
+            ipAddress += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
+            ipAddress.icon_url = networkinterface
             response + ipAddress
 
         # If New Host
@@ -143,9 +145,9 @@ class AppendHostProperties(Transform):
             # Fetch attributes of new Host
             host_dict = post.json()['data']
             ipAddress['ipv4-address'] = host_dict['address']
-            ipAddress += IntegerEntityField('id', host_dict['id'], display_name='Host ID')
-            ipAddress += IntegerEntityField('workspace_id', host['workspace_id'], display_name='Workspace ID')
-            ipv4address.icon_url = networkinterface
+            ipAddress += Field('id', host_dict['id'], display_name='Host ID')
+            ipAddress += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
+            ipAddress.icon_url = networkinterface
             response + ipAddress
 
         return response

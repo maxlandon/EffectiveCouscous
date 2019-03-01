@@ -866,8 +866,8 @@ _login	src/EffectiveCouscous/msftools/rpctools.py	/^    def _login(self):$/;"	m	
 _namespace_	src/EffectiveCouscous/entities/credential/credentials.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.credential'$/;"	v	class:MetasploitCredential
 _namespace_	src/EffectiveCouscous/entities/host/hosts.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.host'$/;"	v	class:AppleHost
 _namespace_	src/EffectiveCouscous/entities/host/hosts.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.host'$/;"	v	class:LinuxHost
+_namespace_	src/EffectiveCouscous/entities/host/hosts.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.host'$/;"	v	class:MetasploitHost
 _namespace_	src/EffectiveCouscous/entities/host/hosts.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.host'$/;"	v	class:WindowsHost
-_namespace_	src/EffectiveCouscous/entities/host/hosts.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.host.MetasploitHost'$/;"	v	class:MetasploitHost
 _namespace_	src/EffectiveCouscous/entities/host/hosts.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.host.os'$/;"	v	class:EmbeddedOS
 _namespace_	src/EffectiveCouscous/entities/service/base.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.service'$/;"	v	class:MetasploitService
 _namespace_	src/EffectiveCouscous/entities/service/web.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.service.web'$/;"	v	class:ApacheHttpd

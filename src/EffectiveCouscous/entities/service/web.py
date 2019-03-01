@@ -3,7 +3,7 @@
 # -------------------- Imports --------------------- #
 
 # Base Custom entities
-from EffectiveCouscous.transforms.common.entities.service.base import MetasploitService
+from EffectiveCouscous.entities.service.base import MetasploitService
 
 # Fields
 from canari.maltego.message import *
@@ -33,7 +33,6 @@ __status__ = 'Development'
 
 # The WebService class is the base class for all Web Services
 class WebService(MetasploitService):
-
     # Static properties
     _category_ = 'Penetration Testing'
     _namespace_ = 'EffectiveCouscous.metasploit.service.web'
