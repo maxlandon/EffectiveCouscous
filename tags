@@ -1398,10 +1398,10 @@ os_lang	src/EffectiveCouscous/entities/host/hosts.py	/^    os_lang = StringEntit
 os_lang	src/EffectiveCouscous/entities/host/hosts.py	/^    os_lang = StringEntityField('os_lang', display_name='OS Language')$/;"	v	class:LinuxHost
 os_lang	src/EffectiveCouscous/entities/host/hosts.py	/^    os_lang = StringEntityField('os_lang', display_name='OS Language')$/;"	v	class:MetasploitHost
 os_lang	src/EffectiveCouscous/entities/host/hosts.py	/^    os_lang = StringEntityField('os_lang', display_name='OS Language')$/;"	v	class:WindowsHost
-os_name	src/EffectiveCouscous/entities/host/hosts.py	/^    os_name = StringEntityField('os_name', display_name='OS Name')$/;"	v	class:AppleHost
-os_name	src/EffectiveCouscous/entities/host/hosts.py	/^    os_name = StringEntityField('os_name', display_name='OS Name')$/;"	v	class:LinuxHost
-os_name	src/EffectiveCouscous/entities/host/hosts.py	/^    os_name = StringEntityField('os_name', display_name='OS Name')$/;"	v	class:MetasploitHost
-os_name	src/EffectiveCouscous/entities/host/hosts.py	/^    os_name = StringEntityField('os_name', display_name='OS Name')$/;"	v	class:WindowsHost
+os_name	src/EffectiveCouscous/entities/host/hosts.py	/^    os_name = StringEntityField('os_name', display_name='OS Name', decorator=getOsIcon)$/;"	v	class:AppleHost
+os_name	src/EffectiveCouscous/entities/host/hosts.py	/^    os_name = StringEntityField('os_name', display_name='OS Name', decorator=getOsIcon)$/;"	v	class:LinuxHost
+os_name	src/EffectiveCouscous/entities/host/hosts.py	/^    os_name = StringEntityField('os_name', display_name='OS Name', decorator=getOsIcon)$/;"	v	class:MetasploitHost
+os_name	src/EffectiveCouscous/entities/host/hosts.py	/^    os_name = StringEntityField('os_name', display_name='OS Name', decorator=getOsIcon)$/;"	v	class:WindowsHost
 os_sp	src/EffectiveCouscous/entities/host/hosts.py	/^    os_sp = StringEntityField('os_sp', display_name='OS SP')$/;"	v	class:AppleHost
 os_sp	src/EffectiveCouscous/entities/host/hosts.py	/^    os_sp = StringEntityField('os_sp', display_name='OS SP')$/;"	v	class:LinuxHost
 os_sp	src/EffectiveCouscous/entities/host/hosts.py	/^    os_sp = StringEntityField('os_sp', display_name='OS SP')$/;"	v	class:MetasploitHost
