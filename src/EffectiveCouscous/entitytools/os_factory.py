@@ -41,7 +41,7 @@ __status__ = 'Development'
 #                                   It looks at different fields of a Metasploit Host, 
 #                                   prioritizes them and finds the good Entity.
 
-# I - Decorator Functions
+# II - Decorator Functions
 #__________________________________
 # 2) getOsIcon(host, os):           Responsible for determining the type of Icon to be
 #                                   returned for a given Entity Field of a Host.
@@ -204,4 +204,5 @@ def getOsIcon(host, os):
         # Both lookup methods failed if this point is reached. Spawn generic
         else:
             pass
+
 
