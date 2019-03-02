@@ -6,7 +6,8 @@
 from canari.maltego.message import * 
 
 # Icons
-from EffectiveCouscous.resource import systems
+from EffectiveCouscous.entitytools.tool_factory import getOriginTool
+from EffectiveCouscous.entitytools.service_factory import getStateIcon
 # -------------------------------------------------- #
 
 
@@ -30,23 +31,23 @@ __status__ = 'Development'
 
 # Generic Service
 class MetasploitService(Entity):
-    
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service'
-    _type_ = 'Metasploit Service' 
-
+    _category_ = 'Metasploit | Services'
+    _namespace_ = 'EffectiveCouscous'
 
     # Entity properties
-    display_name = StringEntityField('display_name', display_name='Display Name', is_value=True)
-    info = StringEntityField('info', display_name='Info')
-    name = StringEntityField('name', display_name='Name')
+    display = StringEntityField('display', display_name='Display Name', is_value=True)
     proto = StringEntityField('proto', display_name='Protocol')
+    name = StringEntityField('name', display_name='Name')
+    info = StringEntityField('info', display_name='Info')
     port = StringEntityField('port', display_name='Port')
+    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
     host_id = StringEntityField('host_id', display_name='Host ID')
     id = StringEntityField('id', display_name='Service ID')
     workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    created_at = StringEntityField('created_at', display_name='Created at')
-    updated_at = StringEntityField('updated_at', display_name='Updated at')
-    state = StringEntityField('state', display_name='State')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
 
+    # Decorator properties
+    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
+    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
+    state_icon = StringEntityField('state_icon', display_name='State Icon')
