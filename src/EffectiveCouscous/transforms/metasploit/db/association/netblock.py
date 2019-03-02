@@ -2,9 +2,11 @@
 
 # -------------------- Imports --------------------- #
 
+# Custom Entities
+from EffectiveCouscous.entities.infrastructure import Netblock
+
 # Maltego Entities
-from canari.maltego.entities import Netblock
-from canari.maltego.message import StringEntityField
+from canari.maltego.message import StringEntityField, Field
 
 # Maltego Transforms
 from canari.maltego.transform import Transform
@@ -15,6 +17,9 @@ from EffectiveCouscous.msftools import apitools
 
 # GUI
 import canari.easygui as gui
+
+# Icons
+from EffectiveCouscous.resource import tools
 #--------------------------------------------------- #
 
 
@@ -69,19 +74,23 @@ class NetblockToMetasploitWorkspace(Transform):
 
         # If Existing Workspace
         if workspace['name'] != "Add Workspace":
-            netblock += StringEntityField('workspace_id', workspace['id'], display_name='Workspace ID' )
-            netblock += StringEntityField('name', workspace['name'], display_name='Workspace Name')
-            if workspace['boundary'] is None: netblock += StringEntityField('boundary', '-', display_name='Workspace Boundary')
-            else: netblock += StringEntityField('boundary', workspace['boundary'], display_name='Workspace Boundary')
-            if workspace['description'] is None: netblock += StringEntityField('description', '-', display_name='Workspace Description')
-            else: netblock += StringEntityField('description', workspace['description'], display_name='Workspace Description')
-            if workspace['owner_id'] is None: netblock += StringEntityField('owner_id', '-', display_name='Workspace Owner ID')
-            else: netblock += StringEntityField('owner_id', workspace['owner_id'], display_name='Workspace Owner ID')
-            netblock += StringEntityField('limit_to_network', workspace['limit_to_network'], display_name='Limit to Network')
-            if workspace['import_fingerprint'] is None: netblock += StringEntityField('import_fingerprint', '-', display_name='Import fingerprint')
-            else: netblock += StringEntityField('import_fingerprint', workspace['import_fingerprint'], display_name='Import fingerprint')
-            netblock += StringEntityField('created_at', workspace['created_at'], display_name='Workspace Created at')
-            netblock += StringEntityField('updated_at', workspace['updated_at'], display_name='Workspace Updated at')
+
+            # Set tool icon
+            netblock.origin_tool = 'Metasploit'
+            # Add workspace Properties
+            netblock += Field('workspace_id', workspace['id'], display_name='Workspace ID' )
+            netblock += Field('name', workspace['name'], display_name='Workspace Name')
+            if workspace['boundary'] is None: netblock += Field('boundary', '-', display_name='Workspace Boundary')
+            else: netblock += Field('boundary', workspace['boundary'], display_name='Workspace Boundary')
+            if workspace['description'] is None: netblock += Field('description', '-', display_name='Workspace Description')
+            else: netblock += Field('description', workspace['description'], display_name='Workspace Description')
+            if workspace['owner_id'] is None: netblock += Field('owner_id', '-', display_name='Workspace Owner ID')
+            else: netblock += Field('owner_id', workspace['owner_id'], display_name='Workspace Owner ID')
+            netblock += Field('limit_to_network', workspace['limit_to_network'], display_name='Limit to Network')
+            if workspace['import_fingerprint'] is None: netblock += Field('import_fingerprint', '-', display_name='Import fingerprint')
+            else: netblock += Field('import_fingerprint', workspace['import_fingerprint'], display_name='Import fingerprint')
+            netblock += Field('created_at', workspace['created_at'], display_name='Workspace Created at')
+            netblock += Field('updated_at', workspace['updated_at'], display_name='Workspace Updated at')
             # Add to response
             response + netblock
 
@@ -114,19 +123,21 @@ class NetblockToMetasploitWorkspace(Transform):
                     ws.append(workspace)      
             workspace = ws[0]
 
+            # Set tool icon
+            netblock.origin_tool = 'Metasploit'
             # Set Workspace Properties
-            netblock += StringEntityField('workspace_id', workspace['id'], display_name='Workspace ID' )
-            netblock += StringEntityField('name', workspace['name'], display_name='Workspace Name')
-            netblock += StringEntityField('boundary', netblockBoundary, display_name='Workspace Boundary')
-            if workspace['description'] is None: netblock += StringEntityField('description', '-', display_name='Workspace Description')
-            else: netblock += StringEntityField('description', workspace['description'], display_name='Workspace Description')
-            if workspace['owner_id'] is None: netblock += StringEntityField('owner_id', '-', display_name='Workspace Owner ID')
-            else: netblock += StringEntityField('owner_id', workspace['owner_id'], display_name='Workspace Owner ID')
-            netblock += StringEntityField('limit_to_network', workspace['limit_to_network'], display_name='Limit to Network')
-            if workspace['import_fingerprint'] is None: netblock += StringEntityField('import_fingerprint', '-', display_name='Import fingerprint')
-            else: netblock += StringEntityField('import_fingerprint', workspace['import_fingerprint'], display_name='Import fingerprint')
-            netblock += StringEntityField('created_at', workspace['created_at'], display_name='Workspace Created at')
-            netblock += StringEntityField('updated_at', workspace['updated_at'], display_name='Workspace Updated at')
+            netblock += Field('workspace_id', workspace['id'], display_name='Workspace ID' )
+            netblock += Field('name', workspace['name'], display_name='Workspace Name')
+            netblock += Field('boundary', netblockBoundary, display_name='Workspace Boundary')
+            if workspace['description'] is None: netblock += Field('description', '-', display_name='Workspace Description')
+            else: netblock += Field('description', workspace['description'], display_name='Workspace Description')
+            if workspace['owner_id'] is None: netblock += Field('owner_id', '-', display_name='Workspace Owner ID')
+            else: netblock += Field('owner_id', workspace['owner_id'], display_name='Workspace Owner ID')
+            netblock += Field('limit_to_network', workspace['limit_to_network'], display_name='Limit to Network')
+            if workspace['import_fingerprint'] is None: netblock += Field('import_fingerprint', '-', display_name='Import fingerprint')
+            else: netblock += Field('import_fingerprint', workspace['import_fingerprint'], display_name='Import fingerprint')
+            netblock += Field('created_at', workspace['created_at'], display_name='Workspace Created at')
+            netblock += Field('updated_at', workspace['updated_at'], display_name='Workspace Updated at')
             # Add to response
             response += netblock
 

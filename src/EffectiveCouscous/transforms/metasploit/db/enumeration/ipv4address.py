@@ -2,8 +2,8 @@
 
 # -------------------- Imports ----------------------- #
 
-# Maltego Entities
-from canari.maltego.entities import IPv4Address
+# Custom Entities
+from EffectiveCouscous.entities.infrastructure import IPv4Address
 
 # Maltego Message
 from canari.maltego.message import Field, MaltegoException, LinkStyle, LinkColor
@@ -74,6 +74,7 @@ class EnumerateSubnetIP(Transform):
                 new += Field('id', host['id'], display_name='Host ID')
                 new += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
                 new.icon_url = networkinterface
+                new.origin_tool = 'Metasploit'
                 # Link Style
                 new.link_color = LinkColor.LightGray
                 new.link_thickness = 4
@@ -136,6 +137,8 @@ class EnumerateHost(Transform):
         h.detected_arch = '-' if host['detected_arch'] is None else host['detected_arch']
         h.created_at = host['created_at']
         h.updated_at = host['updated_at']
+
+        h.origin_tool = 'Metasploit'
 
         # Link Style
         h.link_color = LinkColor.Black

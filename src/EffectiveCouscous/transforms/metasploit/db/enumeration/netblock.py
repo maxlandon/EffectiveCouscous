@@ -2,8 +2,8 @@
 
 # -------------------- Imports ----------------------- #
 
-# Maltego Entities
-from canari.maltego.entities import Netblock, IPv4Address
+# Custom Entities
+from EffectiveCouscous.entities.infrastructure import Netblock, IPv4Address
 
 # Maltego Message
 from canari.maltego.message import Field, MaltegoException, LinkStyle, LinkColor
@@ -82,6 +82,7 @@ class EnumerateWorkspaceIP(Transform):
                             entity += Field('id', host['id'], display_name='Host ID')
                             entity += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
                             entity.icon_url = networkinterface
+                            entity.origin_tool = 'Metasploit'
                             # Link Style
                             entity.link_color = LinkColor.LightGray
                             entity.link_thickness = 4

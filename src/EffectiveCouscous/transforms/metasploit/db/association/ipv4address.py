@@ -2,8 +2,9 @@
 
 # -------------------- Imports --------------------- #
 
+# Custom Entities
+from EffectiveCouscous.entities.infrastructure import IPv4Address
 # Maltego Entities
-from canari.maltego.entities import IPv4Address
 from canari.maltego.message import Field
 
 # Maltego Transforms
@@ -101,6 +102,8 @@ class AppendHostProperties(Transform):
             ipAddress += Field('id', host['id'], display_name='Host ID')
             ipAddress += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
             ipAddress.icon_url = networkinterface
+            # Set tool icon
+            ipAddress.origin_tool = 'Metasploit'
             response + ipAddress
 
         # If New Host
@@ -148,6 +151,8 @@ class AppendHostProperties(Transform):
             ipAddress += Field('id', host_dict['id'], display_name='Host ID')
             ipAddress += Field('workspace_id', host['workspace_id'], display_name='Workspace ID')
             ipAddress.icon_url = networkinterface
+            # Set tool icon
+            ipAddress.origin_tool = 'Metasploit'
             response + ipAddress
 
         return response

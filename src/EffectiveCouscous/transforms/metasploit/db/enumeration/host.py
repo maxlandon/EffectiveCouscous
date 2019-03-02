@@ -8,8 +8,8 @@ from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
                                                     LinuxHost,
                                                     AppleHost)
 
-# Maltego Entities
-from canari.maltego.entities import IPv4Address
+# Custom Entities
+from EffectiveCouscous.entities.infrastructure import IPv4Address
 
 # Maltego Message
 from canari.maltego.message import Field, MaltegoException, LinkStyle, LinkColor
@@ -82,6 +82,7 @@ class EnumerateHostIP(Transform):
                 entity += Field('id', hostInput['id'], display_name='Host ID')
                 entity += Field('workspace_id', hostInput['workspace_id'], display_name='Workspace ID')
                 entity.icon_url = networkinterface
+                entity.origin_tool = 'Metasploit'
 
                 # Link Style
                 entity.link_color = LinkColor.Black

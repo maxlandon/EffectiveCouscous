@@ -2,8 +2,8 @@
 
 # -------------------- Imports --------------------- #
 
-# Maltego Entities
-from canari.maltego.entities import Netblock
+# Custom Entities
+from EffectiveCouscous.entities.infrastructure import Netblock
 
 # Maltego Messages
 from canari.maltego.message import MaltegoException
