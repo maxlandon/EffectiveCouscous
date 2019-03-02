@@ -6,7 +6,7 @@ import json
 
 
 __author__ = 'Maxime Landon'
-__copyright__ = ''
+__copyright__ = 'Copyright 2019, EffectiveCouscous Project'
 __credits__ = []
 
 __license__ = 'GPL'

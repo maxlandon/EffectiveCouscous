@@ -8,7 +8,7 @@ from canari.maltego.message import *
 
 
 __author__ = 'Maxime Landon'
-__copyright__ = 'Copyright 2019, MSM Project'
+__copyright__ = 'Copyright 2019, EffectiveCouscous Project'
 __credits__ = []
 
 __license__ = 'GPLv3'

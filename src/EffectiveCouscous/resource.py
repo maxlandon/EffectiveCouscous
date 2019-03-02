@@ -8,7 +8,7 @@ from os import path
 
 
 __author__ = 'Maxime Landon'
-__copyright__ = '2018'
+__copyright__ = 'Copyright 2019, EffectiveCouscous Project'
 __credits__ = []
 
 __license__ = 'GPL'
@@ -19,6 +19,7 @@ __status__ = 'Development'
 
 images = 'EffectiveCouscous.resources.images'
 etc = 'EffectiveCouscous.resources.etc'
+
 
 
 # -----------------------   Utility Functions   ------------------------- #

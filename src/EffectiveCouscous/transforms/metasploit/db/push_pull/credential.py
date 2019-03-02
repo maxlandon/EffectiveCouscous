@@ -18,7 +18,7 @@ from EffectiveCouscous.msftools import apitools
 
 
 __author__ = 'Maxime Landon'
-__copyright__ = 'Copyright 2019, Effective-Couscous Project'
+__copyright__ = 'Copyright 2019, EffectiveCouscous Project'
 __credits__ = []
 
 __license__ = 'GPLv3'
