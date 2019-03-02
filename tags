@@ -207,7 +207,7 @@ Warmest Thanks	README.md	/^## Warmest Thanks$/;"	s
 WebDirectoryInfo	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WebDirectoryInfo(Entity):$/;"	c
 WebFile	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WebFile(Entity):$/;"	c
 WebForm	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WebForm(Entity):$/;"	c
-WebService	src/EffectiveCouscous/entities/service/web.py	/^class WebService(MetasploitService):$/;"	c
+WebService	src/EffectiveCouscous/entities/service/web.py	/^class WebService(Entity):$/;"	c
 WebTitle	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WebTitle(Entity):$/;"	c
 WebURL	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WebURL(Entity):$/;"	c
 Webdir	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Webdir(Entity):$/;"	c
@@ -520,7 +520,7 @@ _category_	src/EffectiveCouscous/entities/host/hosts.py	/^    _category_ = 'Meta
 _category_	src/EffectiveCouscous/entities/host/hosts.py	/^    _category_ = 'Operating Systems'$/;"	v	class:EmbeddedOS
 _category_	src/EffectiveCouscous/entities/infrastructure.py	/^    _category_ = 'Infrastructure'$/;"	v	class:IPv4Address
 _category_	src/EffectiveCouscous/entities/infrastructure.py	/^    _category_ = 'Infrastructure'$/;"	v	class:Netblock
-_category_	src/EffectiveCouscous/entities/service/base.py	/^    _category_ = 'Penetration Testing'$/;"	v	class:MetasploitService
+_category_	src/EffectiveCouscous/entities/service/base.py	/^    _category_ = 'Metasploit | Services'$/;"	v	class:MetasploitService
 _category_	src/EffectiveCouscous/entities/service/web.py	/^    _category_ = 'Penetration Testing'$/;"	v	class:ApacheHttpd
 _category_	src/EffectiveCouscous/entities/service/web.py	/^    _category_ = 'Penetration Testing'$/;"	v	class:ApachePHP
 _category_	src/EffectiveCouscous/entities/service/web.py	/^    _category_ = 'Penetration Testing'$/;"	v	class:ApacheTomcat
@@ -765,7 +765,7 @@ _namespace_	src/EffectiveCouscous/entities/host/hosts.py	/^    _namespace_ = 'Ef
 _namespace_	src/EffectiveCouscous/entities/host/hosts.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.host.os'$/;"	v	class:EmbeddedOS
 _namespace_	src/EffectiveCouscous/entities/infrastructure.py	/^    _namespace_ = 'maltego'$/;"	v	class:IPv4Address
 _namespace_	src/EffectiveCouscous/entities/infrastructure.py	/^    _namespace_ = 'maltego'$/;"	v	class:Netblock
-_namespace_	src/EffectiveCouscous/entities/service/base.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.service'$/;"	v	class:MetasploitService
+_namespace_	src/EffectiveCouscous/entities/service/base.py	/^    _namespace_ = 'EffectiveCouscous'$/;"	v	class:MetasploitService
 _namespace_	src/EffectiveCouscous/entities/service/web.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.service.web'$/;"	v	class:ApacheHttpd
 _namespace_	src/EffectiveCouscous/entities/service/web.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.service.web'$/;"	v	class:ApachePHP
 _namespace_	src/EffectiveCouscous/entities/service/web.py	/^    _namespace_ = 'EffectiveCouscous.metasploit.service.web'$/;"	v	class:ApacheTomcat
@@ -1003,7 +1003,6 @@ _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.p
 _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    _namespace_ = 'sploitego'$/;"	v	class:Service
 _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    _namespace_ = 'sploitego'$/;"	v	class:SiteCategory
 _namespace_	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    _namespace_ = 'yourorganization'$/;"	v	class:NetworkService
-_type_	src/EffectiveCouscous/entities/service/base.py	/^    _type_ = 'Metasploit Service' $/;"	v	class:MetasploitService
 additional	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    additional = StringEntityField('additional', display_name='Additional Info')$/;"	v	class:PossibleEntryPoint
 after	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    after = DateEntityField('after', display_name='After')$/;"	v	class:Hash
 ajp	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ajp(Entity):$/;"	c
@@ -1057,7 +1056,7 @@ created_at	src/EffectiveCouscous/entities/host/hosts.py	/^    created_at = Strin
 created_at	src/EffectiveCouscous/entities/host/hosts.py	/^    created_at = StringEntityField('created_at', display_name='Created At')$/;"	v	class:LinuxHost
 created_at	src/EffectiveCouscous/entities/host/hosts.py	/^    created_at = StringEntityField('created_at', display_name='Created At')$/;"	v	class:MetasploitHost
 created_at	src/EffectiveCouscous/entities/host/hosts.py	/^    created_at = StringEntityField('created_at', display_name='Created At')$/;"	v	class:WindowsHost
-created_at	src/EffectiveCouscous/entities/service/base.py	/^    created_at = StringEntityField('created_at', display_name='Created at')$/;"	v	class:MetasploitService
+created_at	src/EffectiveCouscous/entities/service/base.py	/^    created_at = StringEntityField('created_at', display_name='Created At')$/;"	v	class:MetasploitService
 cred_count	src/EffectiveCouscous/entities/host/hosts.py	/^    cred_count = IntegerEntityField('cred_count', display_name='Credential Count')$/;"	v	class:AppleHost
 cred_count	src/EffectiveCouscous/entities/host/hosts.py	/^    cred_count = IntegerEntityField('cred_count', display_name='Credential Count')$/;"	v	class:LinuxHost
 cred_count	src/EffectiveCouscous/entities/host/hosts.py	/^    cred_count = IntegerEntityField('cred_count', display_name='Credential Count')$/;"	v	class:MetasploitHost
@@ -1077,7 +1076,7 @@ detected_arch	src/EffectiveCouscous/entities/host/hosts.py	/^    detected_arch =
 device	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    device = StringEntityField('properties.device', display_name='Device')$/;"	v	class:Device
 devices	src/EffectiveCouscous/resource.py	/^devices = dict($/;"	v
 directplaysrvr	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class directplaysrvr(Entity):$/;"	c
-display_name	src/EffectiveCouscous/entities/service/base.py	/^    display_name = StringEntityField('display_name', display_name='Display Name', is_value=True)$/;"	v	class:MetasploitService
+display	src/EffectiveCouscous/entities/service/base.py	/^    display = StringEntityField('display', display_name='Display Name', is_value=True)$/;"	v	class:MetasploitService
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    display_name = "To Metasploit Host Workspace"$/;"	v	class:HostToMetasploitWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/ipv4address.py	/^    display_name = 'Append Host Properties'$/;"	v	class:AppendHostProperties
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/netblock.py	/^    display_name = "To Metasploit Workspace"$/;"	v	class:NetblockToMetasploitWorkspace
@@ -1154,6 +1153,7 @@ getOsEntity	src/EffectiveCouscous/entitytools/os_factory.py	/^def getOsEntity(os
 getOsIcon	src/EffectiveCouscous/entitytools/os_factory.py	/^def getOsIcon(host, os):$/;"	f
 getServiceEntity	src/EffectiveCouscous/entitytools/service_factory.py	/^def getServiceEntity(service_name, service_info):$/;"	f
 getServiceIcon	src/EffectiveCouscous/entitytools/service_factory.py	/^def getServiceIcon(service, service_info):$/;"	f
+getStateIcon	src/EffectiveCouscous/entitytools/service_factory.py	/^def getStateIcon(service, state):$/;"	f
 get_json_dict	src/EffectiveCouscous/msftools/apitools.py	/^def get_json_dict(url, config, params=None, headers=None):$/;"	f
 get_raw_json	src/EffectiveCouscous/msftools/apitools.py	/^def get_raw_json(url, config, params=None, headers=None):$/;"	f
 gps	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    gps = StringEntityField('properties.gps', display_name='GPS Co-ordinate')$/;"	v	class:GPS
@@ -1313,6 +1313,7 @@ origin_tool	src/EffectiveCouscous/entities/host/hosts.py	/^    origin_tool = Str
 origin_tool	src/EffectiveCouscous/entities/host/hosts.py	/^    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOrig/;"	v	class:WindowsHost
 origin_tool	src/EffectiveCouscous/entities/infrastructure.py	/^    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOrig/;"	v	class:IPv4Address
 origin_tool	src/EffectiveCouscous/entities/infrastructure.py	/^    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOrig/;"	v	class:Netblock
+origin_tool	src/EffectiveCouscous/entities/service/base.py	/^    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOrig/;"	v	class:MetasploitService
 origin_type	src/EffectiveCouscous/entities/credential/credentials.py	/^    origin_type = Field('origin_type', display_name='Origin Type')$/;"	v	class:MetasploitCredential
 os_family	src/EffectiveCouscous/entities/host/hosts.py	/^    os_family = StringEntityField('os_family', display_name='OS Family')$/;"	v	class:AppleHost
 os_family	src/EffectiveCouscous/entities/host/hosts.py	/^    os_family = StringEntityField('os_family', display_name='OS Family')$/;"	v	class:LinuxHost
@@ -1458,7 +1459,8 @@ state	src/EffectiveCouscous/entities/host/hosts.py	/^    state = StringEntityFie
 state	src/EffectiveCouscous/entities/host/hosts.py	/^    state = StringEntityField('state', display_name='State')$/;"	v	class:LinuxHost
 state	src/EffectiveCouscous/entities/host/hosts.py	/^    state = StringEntityField('state', display_name='State')$/;"	v	class:MetasploitHost
 state	src/EffectiveCouscous/entities/host/hosts.py	/^    state = StringEntityField('state', display_name='State')$/;"	v	class:WindowsHost
-state	src/EffectiveCouscous/entities/service/base.py	/^    state = StringEntityField('state', display_name='State')$/;"	v	class:MetasploitService
+state	src/EffectiveCouscous/entities/service/base.py	/^    state = StringEntityField('state', display_name='State', decorator=getStateIcon)$/;"	v	class:MetasploitService
+state_icon	src/EffectiveCouscous/entities/service/base.py	/^    state_icon = StringEntityField('state_icon', display_name='State Icon')$/;"	v	class:MetasploitService
 streetaddress	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    streetaddress = StringEntityField('streetaddress', display_name='Street Address')$/;"	v	class:Location
 subscriber_count	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    subscriber_count = StringEntityField('twitter.list.subscribers', display_name='Subscriber Co/;"	v	class:TwitterUserList
 systems	src/EffectiveCouscous/resource.py	/^systems = dict($/;"	v
@@ -1478,6 +1480,7 @@ tool_icon	src/EffectiveCouscous/entities/host/hosts.py	/^    tool_icon = StringE
 tool_icon	src/EffectiveCouscous/entities/host/hosts.py	/^    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')$/;"	v	class:WindowsHost
 tool_icon	src/EffectiveCouscous/entities/infrastructure.py	/^    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')$/;"	v	class:IPv4Address
 tool_icon	src/EffectiveCouscous/entities/infrastructure.py	/^    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')$/;"	v	class:Netblock
+tool_icon	src/EffectiveCouscous/entities/service/base.py	/^    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')$/;"	v	class:MetasploitService
 tools	src/EffectiveCouscous/resource.py	/^tools = dict($/;"	v
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:HostToMetasploitWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/ipv4address.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:AppendHostProperties
@@ -1524,7 +1527,7 @@ updated_at	src/EffectiveCouscous/entities/host/hosts.py	/^    updated_at = Strin
 updated_at	src/EffectiveCouscous/entities/host/hosts.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated At')$/;"	v	class:LinuxHost
 updated_at	src/EffectiveCouscous/entities/host/hosts.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated At')$/;"	v	class:MetasploitHost
 updated_at	src/EffectiveCouscous/entities/host/hosts.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated At')$/;"	v	class:WindowsHost
-updated_at	src/EffectiveCouscous/entities/service/base.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated at')$/;"	v	class:MetasploitService
+updated_at	src/EffectiveCouscous/entities/service/base.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated At')$/;"	v	class:MetasploitService
 uri	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    uri = StringEntityField('twitter.list.uri', display_name='URI')$/;"	v	class:TwitterUserList
 url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    url = StringEntityField('fullImage', display_name='URL')$/;"	v	class:Image
 url	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    url = StringEntityField('url', display_name='None')$/;"	v	class:PossibleInjectionPoint

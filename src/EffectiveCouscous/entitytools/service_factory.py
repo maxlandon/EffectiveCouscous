@@ -2,16 +2,12 @@
 
 # -------------------- Imports --------------------- #
 
-# Fields
-from canari.maltego.message import *
-
 # Custom Entities
 # This line is not supposed to be here. In functions, import * is not possible.
 # This should be changed so as to avoid circular references.
 from EffectiveCouscous.entities.service.web import *
 
 # Icons
-from EffectiveCouscous.resource import (openport, closedport, timedoutport, unavailableport)
 from EffectiveCouscous.resource import services
 # -------------------------------------------------- #
 
@@ -47,6 +43,9 @@ __status__ = 'Development'
 # 2) getServiceIcon(service, service_info):     Responsible for determining the type of Icon to be
 #                                               returned for a given Entity Field of a Service.
 
+# 3) getStateIcon(service, state):  Responsible for determining the listening state of a Service,
+#                                   and for returning the good icon.
+
 
 
 
@@ -65,7 +64,6 @@ def getServiceEntity(service_name, service_info):
     from EffectiveCouscous.entities.service.base import MetasploitService
 
     service_entity = MetasploitService()
-    service_entity.icon_url = services['generic_service']
     name = service_name.lower()
     info = service_info.lower()
 
@@ -145,3 +143,15 @@ def getServiceEntity(service_name, service_info):
 
 def getServiceIcon(service, service_info):
     pass
+
+
+def getStateIcon(service, state):
+    from EffectiveCouscous.resource import (openport, closedport, timedoutport, unavailableport)
+    if state == 'open':
+        service.state_icon = openport
+    if state == 'closed':
+        service.state_icon = closedport
+    if state == 'filtered':
+        service.state_icon = timedoutport
+    if state == 'unknown':
+        service.state_icon = unavailableport

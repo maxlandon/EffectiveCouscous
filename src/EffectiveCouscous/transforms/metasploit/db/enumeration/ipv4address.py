@@ -20,9 +20,6 @@ from EffectiveCouscous.entitytools.os_factory import getOsEntity
 
 # Service Factory
 from EffectiveCouscous.entitytools.service_factory import getServiceEntity
-
-# Icons
-from EffectiveCouscous.resource import (networkinterface, openport, closedport, timedoutport, unavailableport)
 # ---------------------------------------------------- #
 
 
@@ -181,7 +178,7 @@ class EnumerateServices(Transform):
                 # Get Service Entity
                 msfService = getServiceEntity(service['name'], service['info'])
                 
-                msfService.display_name = "{port}:{proto}/{name}".format(port=service['port'],
+                msfService.display = "{port}:{proto}/{name}".format(port=service['port'],
                                                                 proto=service['proto'],
                                                                 name=service['name'])
                 msfService.info = service['info']
@@ -194,15 +191,10 @@ class EnumerateServices(Transform):
                 msfService.created_at = service['created_at']
                 msfService.updated_at = service['updated_at']
                 msfService.state = service['state']
-                # Added Dynamic Icon Selection here, but should placed somewhere else
-                #  if service['state'] == 'open':
-                #      msfService.icon_url = openport
-                #  if service['state'] == 'closed':
-                #      msfService.icon_url = closedport
-                #  if service['state'] == 'filtered':
-                #      msfService.icon_url = timedoutport
-                #  if service['state'] == 'unknown':
-                #      msfService.icon_url = unavailableport
+
+                # Icons
+                msfService.origin_tool = 'Metasploit'
+
                 # Link Style
                 msfService.link_color = LinkColor.LightGray
                 msfService.link_thickness = 3
