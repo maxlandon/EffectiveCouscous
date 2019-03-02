@@ -116,17 +116,18 @@ services = dict(
 
     #________________
     # Samba Services
-        )
+    )
 
 
 
 #                   Logos
 #------------------------------------------------------
 
-nmap = imagepath('logos', 'nmap.gif')
-metasploit = imagepath('logos', 'metasploit.png')
-nessus = imagepath('logos', 'nessus.png')
-
+tools = dict(
+    metasploit = imageicon('logos', 'metasploit.png'),
+    nmap = imageicon('logos', 'nmap.gif'),
+    nessus = imageicon('logos', 'nessus.png')
+    )
 
 
 
