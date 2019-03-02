@@ -7,10 +7,7 @@ from EffectiveCouscous.transforms.metasploit.db.push_pull.netblock import (Netbl
                                                                            NetblockPullWorkspace,
                                                                            NetblockDeleteWorkspace)
 # Custom Entities
-from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
-                                                   WindowsHost,
-                                                   LinuxHost,
-                                                   AppleHost)
+from EffectiveCouscous.entities.host.hosts import MetasploitHost
 
 # Maltego Messages
 from canari.maltego.message import MaltegoException
@@ -66,88 +63,6 @@ class HostDeleteWorkspace(NetblockDeleteWorkspace):
     display_name = 'Delete Host Workspace'
     transform_set = 'Metasploit | DB | Workspace'
     input_type = MetasploitHost 
-
-
-
-# Windows 0S
-#--------------------------------------------------
-class WindowsPushWorkspace(NetblockPushWorkspace):
-    """ Push Metasploit properties to Maltego workspace."""
-
-    display_name = 'Push Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = WindowsHost
-
-
-class WindowsPullWorkspace(NetblockPullWorkspace):
-    """ Pull Metasploit properties to Maltego workspace."""
-
-    display_name = 'Pull Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = WindowsHost
-
-
-class WindowsDeleteWorkspace(NetblockDeleteWorkspace):
-    """ Delete Workspace associated to this Netblock."""
-
-    display_name = 'Delete Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = WindowsHost
-
-
-
-# Linux OS
-#--------------------------------------------------
-class LinuxPushWorkspace(NetblockPushWorkspace):
-    """ Push Metasploit properties to Maltego workspace."""
-
-    display_name = 'Push Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = LinuxHost
-
-
-class LinuxPullWorkspace(NetblockPullWorkspace):
-    """ Pull Metasploit properties to Maltego workspace."""
-
-    display_name = 'Pull Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = LinuxHost
-
-
-class LinuxDeleteWorkspace(NetblockDeleteWorkspace):
-    """ Delete Workspace associated to this Netblock."""
-
-    display_name = 'Delete Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = LinuxHost
-
-
-
-# Apple OS
-#--------------------------------------------------
-class ApplePushWorkspace(NetblockPushWorkspace):
-    """ Push Metasploit properties to Maltego workspace. NEEDS TO BE A WORKSPACE !"""
-
-    display_name = 'Push Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = AppleHost
-
-
-class ApplePullWorkspace(NetblockPullWorkspace):
-    """ Pull Metasploit properties to Maltego workspace. NEEDS TO BE A WORKSPACE !"""
-
-    display_name = 'Pull Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = AppleHost
-
-
-class AppleDeleteWorkspace(NetblockDeleteWorkspace):
-    """ Delete Workspace associated to this Netblock. NEEDS TO BE A WORKSPACE !"""
-
-    display_name = 'Delete Host Workspace'
-    transform_set = 'Metasploit | DB | Workspace'
-    input_type = AppleHost
-
 
 
 
@@ -280,84 +195,3 @@ class DeleteHost(Transform):
         data = '{ "ids": [%s] }' % msfHost['id']
         delete = apitools.delete_json(url, data, config)
         return response
-
-
-
-# Windows 0S
-#--------------------------------------------------
-class WindowsPushHost(PushHost):
-    """ Push Maltego properties to Metasploit Host"""
-    
-    display_name = 'Push Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = WindowsHost
-
-
-class WindowsPullHost(PullHost):
-    """ Pull Maltego properties to Metasploit Host"""
-    
-    display_name = 'Pull Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = WindowsHost
-
-
-class WindowsDeleteHost(DeleteHost):
-    """ Delete Metasploit Host associated to this Host Entity"""
-    
-    display_name = 'Delete Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = WindowsHost
-
-
-
-# Linux 0S
-#--------------------------------------------------
-class LinuxPushHost(PushHost):
-    """ Push Maltego properties to Metasploit Host"""
-    
-    display_name = 'Push Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = LinuxHost
-
-
-class LinuxPullHost(PullHost):
-    """ Pull Maltego properties to Metasploit Host"""
-    
-    display_name = 'Pull Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = LinuxHost
-
-
-class LinuxDeleteHost(DeleteHost):
-    """ Delete Metasploit Host associated to this Host Entity"""
-    
-    display_name = 'Delete Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = LinuxHost
-
-
-
-# Apple 0S
-#--------------------------------------------------
-class ApplePushHost(PushHost):
-    """ Push Maltego properties to Metasploit Host"""
-    
-    display_name = 'Push Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = AppleHost
-
-
-class ApplePullHost(PullHost):
-    """ Pull Maltego properties to Metasploit Host"""
-    
-    display_name = 'Pull Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = AppleHost
-
-
-class AppleDeleteHost(DeleteHost):
-    """ Delete Metasploit Host associated to this Host Entity"""
-    
-    display_name = 'Delete Host'
-    transform_set = 'Metasploit | DB | Host'
-    input_type = AppleHost

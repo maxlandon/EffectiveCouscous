@@ -12,10 +12,7 @@ from canari.maltego.message import Field
 from canari.maltego.transform import Transform
 
 # Custom Host Entities
-from EffectiveCouscous.entities.host.hosts import (MetasploitHost, 
-                                                    LinuxHost, 
-                                                    WindowsHost, 
-                                                    AppleHost)
+from EffectiveCouscous.entities.host.hosts import MetasploitHost
 
 # API
 import json
@@ -52,36 +49,3 @@ class HostToMetasploitWorkspace(NetblockToMetasploitWorkspace):
     display_name = "To Metasploit Host Workspace"
     transform_set = 'Metasploit | DB | Association'
     input_type = MetasploitHost
-    
-
-
-# Windows OS
-#-----------------------------------------------------------------
-class WindowsHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):
-    """Adds properties associated to a Metasploit workspace"""
-
-    display_name = "To Metasploit Host Workspace"
-    transform_set = 'Metasploit | DB | Association'
-    input_type = WindowsHost
-    
-
-# Apple OS
-#-----------------------------------------------------------------
-class AppleHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):
-    """Adds properties associated to a Metasploit workspace"""
-
-    display_name = "To Metasploit Host Workspace"
-    transform_set = 'Metasploit | DB | Association'
-    input_type = AppleHost
-    
-
-# Linux OS
-#-----------------------------------------------------------------
-class LinuxHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):
-    """Adds properties associated to a Metasploit workspace"""
-
-    display_name = "To Metasploit Host Workspace"
-    transform_set = 'Metasploit | DB | Association'
-    input_type = LinuxHost
-    
-

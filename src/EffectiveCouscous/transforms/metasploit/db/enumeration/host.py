@@ -3,10 +3,7 @@
 # -------------------- Imports ----------------------- #
 
 # Custom Entities
-from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
-                                                    WindowsHost,
-                                                    LinuxHost,
-                                                    AppleHost)
+from EffectiveCouscous.entities.host.hosts import MetasploitHost
 
 # Custom Entities
 from EffectiveCouscous.entities.infrastructure import IPv4Address
@@ -90,34 +87,3 @@ class EnumerateHostIP(Transform):
                 response += entity
 
         return response
-
-
-#   Windows OS
-#---------------------------------------------------
-class WindowsEnumerateHostIP(EnumerateHostIP):
-    """ Enumerates all IP addresses that match this Host in Metasploit."""
-
-    display_name = "Enumerate Host IPs"
-    transform_set = 'Metasploit | DB | Enumerate'
-    input_type = WindowsHost
-
-
-#   Linux OS
-#---------------------------------------------------
-class LinuxEnumerateHostIP(EnumerateHostIP):
-    """ Enumerates all IP addresses that match this Host in Metasploit."""
-
-    display_name = "Enumerate Host IPs"
-    transform_set = 'Metasploit | DB | Enumerate'
-    input_type = LinuxHost
-
-
-#   Apple OS
-#---------------------------------------------------
-class AppleEnumerateHostIP(EnumerateHostIP):
-    """ Enumerates all IP addresses that match this Host in Metasploit."""
-
-    display_name = "Enumerate Host IPs"
-    transform_set = 'Metasploit | DB | Enumerate'
-    input_type = AppleHost
-

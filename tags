@@ -18,15 +18,7 @@ ApachePHP	src/EffectiveCouscous/entities/service/web.py	/^class ApachePHP(WebSer
 ApacheTomcat	src/EffectiveCouscous/entities/service/web.py	/^class ApacheTomcat(WebService):$/;"	c
 ApacheVulnerability	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class ApacheVulnerability(Entity):$/;"	c
 AppendHostProperties	src/EffectiveCouscous/transforms/metasploit/db/association/ipv4address.py	/^class AppendHostProperties(Transform):$/;"	c
-AppleDeleteHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class AppleDeleteHost(DeleteHost):$/;"	c
-AppleDeleteWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class AppleDeleteWorkspace(NetblockDeleteWorkspace):$/;"	c
-AppleEnumerateHostIP	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^class AppleEnumerateHostIP(EnumerateHostIP):$/;"	c
 AppleHost	src/EffectiveCouscous/entities/host/hosts.py	/^class AppleHost(Entity):$/;"	c
-AppleHostToMetasploitWorkspace	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^class AppleHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):$/;"	c
-ApplePullHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class ApplePullHost(PullHost):$/;"	c
-ApplePullWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class ApplePullWorkspace(NetblockPullWorkspace):$/;"	c
-ApplePushHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class ApplePushHost(PushHost):$/;"	c
-ApplePushWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class ApplePushWorkspace(NetblockPushWorkspace):$/;"	c
 Bacnet	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Bacnet(Entity):$/;"	c
 Banner	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Banner(Entity):$/;"	c
 Bebo	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Bebo(Entity):$/;"	c
@@ -100,16 +92,8 @@ Landesk	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^
 Lansource	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Lansource(Entity):$/;"	c
 Lighttpd	src/EffectiveCouscous/entities/service/web.py	/^class Lighttpd(WebService):$/;"	c
 Linkedin	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Linkedin(Entity):$/;"	c
-LinuxDeleteHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxDeleteHost(DeleteHost):$/;"	c
-LinuxDeleteWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxDeleteWorkspace(NetblockDeleteWorkspace):$/;"	c
-LinuxEnumerateHostIP	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^class LinuxEnumerateHostIP(EnumerateHostIP):$/;"	c
 LinuxHost	src/EffectiveCouscous/entities/host/hosts.py	/^class LinuxHost(Entity):$/;"	c
-LinuxHostToMetasploitWorkspace	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^class LinuxHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):$/;"	c
 LinuxOperatingSystem	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class LinuxOperatingSystem(Entity):$/;"	c
-LinuxPullHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxPullHost(PullHost):$/;"	c
-LinuxPullWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxPullWorkspace(NetblockPullWorkspace):$/;"	c
-LinuxPushHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxPushHost(PushHost):$/;"	c
-LinuxPushWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class LinuxPushWorkspace(NetblockPushWorkspace):$/;"	c
 Location	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Location(Entity):$/;"	c
 LootFile	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class LootFile(Entity):$/;"	c
 MSExchangeLogCopier	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class MSExchangeLogCopier(Entity):$/;"	c
@@ -235,17 +219,9 @@ Windows2003	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.p
 Windows2008	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Windows2008(Entity):$/;"	c
 Windows2012	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Windows2012(Entity):$/;"	c
 Windows7	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class Windows7(Entity):$/;"	c
-WindowsDeleteHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsDeleteHost(DeleteHost):$/;"	c
-WindowsDeleteWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsDeleteWorkspace(NetblockDeleteWorkspace):$/;"	c
-WindowsEnumerateHostIP	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^class WindowsEnumerateHostIP(EnumerateHostIP):$/;"	c
 WindowsHost	src/EffectiveCouscous/entities/host/hosts.py	/^class WindowsHost(Entity):$/;"	c
-WindowsHostToMetasploitWorkspace	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^class WindowsHostToMetasploitWorkspace(NetblockToMetasploitWorkspace):$/;"	c
 WindowsMasterBrowser	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WindowsMasterBrowser(Entity):$/;"	c
 WindowsOperatingSystem	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WindowsOperatingSystem(Entity):$/;"	c
-WindowsPullHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsPullHost(PullHost):$/;"	c
-WindowsPullWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsPullWorkspace(NetblockPullWorkspace):$/;"	c
-WindowsPushHost	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsPushHost(PushHost):$/;"	c
-WindowsPushWorkspace	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^class WindowsPushWorkspace(NetblockPushWorkspace):$/;"	c
 WindowsXP	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WindowsXP(Entity):$/;"	c
 WordpressInfo	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class WordpressInfo(Entity):$/;"	c
 X11	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class X11(Entity):$/;"	c
@@ -1102,17 +1078,11 @@ device	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^ 
 devices	src/EffectiveCouscous/resource.py	/^devices = dict($/;"	v
 directplaysrvr	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^class directplaysrvr(Entity):$/;"	c
 display_name	src/EffectiveCouscous/entities/service/base.py	/^    display_name = StringEntityField('display_name', display_name='Display Name', is_value=True)$/;"	v	class:MetasploitService
-display_name	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    display_name = "To Metasploit Host Workspace"$/;"	v	class:AppleHostToMetasploitWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    display_name = "To Metasploit Host Workspace"$/;"	v	class:HostToMetasploitWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    display_name = "To Metasploit Host Workspace"$/;"	v	class:LinuxHostToMetasploitWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    display_name = "To Metasploit Host Workspace"$/;"	v	class:WindowsHostToMetasploitWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/ipv4address.py	/^    display_name = 'Append Host Properties'$/;"	v	class:AppendHostProperties
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/netblock.py	/^    display_name = "To Metasploit Workspace"$/;"	v	class:NetblockToMetasploitWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/association/service.py	/^    display_name = 'To Metasploit Service'$/;"	v	class:ToMetasploitService
-display_name	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    display_name = "Enumerate Host IPs"$/;"	v	class:AppleEnumerateHostIP
 display_name	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    display_name = "Enumerate Host IPs"$/;"	v	class:EnumerateHostIP
-display_name	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    display_name = "Enumerate Host IPs"$/;"	v	class:LinuxEnumerateHostIP
-display_name	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    display_name = "Enumerate Host IPs"$/;"	v	class:WindowsEnumerateHostIP
 display_name	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    display_name = "Enumerate Subnet IPs"$/;"	v	class:EnumerateSubnetIP
 display_name	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    display_name = 'Enumerate Host'$/;"	v	class:EnumerateHost
 display_name	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    display_name = 'Enumerate Services'$/;"	v	class:EnumerateServices
@@ -1121,30 +1091,12 @@ display_name	src/EffectiveCouscous/transforms/metasploit/db/enumeration/service.
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    display_name = 'Delete Credential'$/;"	v	class:DeleteCredential
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    display_name = 'Pull Credential'$/;"	v	class:PullCredential
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    display_name = 'Push Credential'$/;"	v	class:PushCredential
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Delete Host Workspace'$/;"	v	class:AppleDeleteWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Delete Host Workspace'$/;"	v	class:HostDeleteWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Delete Host Workspace'$/;"	v	class:LinuxDeleteWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Delete Host Workspace'$/;"	v	class:WindowsDeleteWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Delete Host'$/;"	v	class:AppleDeleteHost
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Delete Host'$/;"	v	class:DeleteHost
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Delete Host'$/;"	v	class:LinuxDeleteHost
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Delete Host'$/;"	v	class:WindowsDeleteHost
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Pull Host Workspace'$/;"	v	class:ApplePullWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Pull Host Workspace'$/;"	v	class:HostPullWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Pull Host Workspace'$/;"	v	class:LinuxPullWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Pull Host Workspace'$/;"	v	class:WindowsPullWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Pull Host'$/;"	v	class:ApplePullHost
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Pull Host'$/;"	v	class:LinuxPullHost
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Pull Host'$/;"	v	class:PullHost
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Pull Host'$/;"	v	class:WindowsPullHost
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Push Host Workspace'$/;"	v	class:ApplePushWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Push Host Workspace'$/;"	v	class:HostPushWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Push Host Workspace'$/;"	v	class:LinuxPushWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Push Host Workspace'$/;"	v	class:WindowsPushWorkspace
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Push Host'$/;"	v	class:ApplePushHost
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Push Host'$/;"	v	class:LinuxPushHost
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Push Host'$/;"	v	class:PushHost
-display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    display_name = 'Push Host'$/;"	v	class:WindowsPushHost
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    display_name = 'Delete Netblock Workspace'$/;"	v	class:NetblockDeleteWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    display_name = 'Pull Netblock Workspace'$/;"	v	class:NetblockPullWorkspace
 display_name	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    display_name = 'Push Netblock workspace'$/;"	v	class:NetblockPushWorkspace
@@ -1245,17 +1197,11 @@ info	src/EffectiveCouscous/entities/host/hosts.py	/^    info = StringEntityField
 info	src/EffectiveCouscous/entities/host/hosts.py	/^    info = StringEntityField('info', display_name='Info')$/;"	v	class:WindowsHost
 info	src/EffectiveCouscous/entities/service/base.py	/^    info = StringEntityField('info', display_name='Info')$/;"	v	class:MetasploitService
 info	src/EffectiveCouscous/transforms/common/entities_msploitego_backup.py	/^    info = StringEntityField('info', display_name='Info')$/;"	v	class:MetasploitService
-input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = AppleHost$/;"	v	class:AppleHostToMetasploitWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxHostToMetasploitWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = MetasploitHost$/;"	v	class:HostToMetasploitWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsHostToMetasploitWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/association/ipv4address.py	/^    input_type = IPv4Address $/;"	v	class:AppendHostProperties
 input_type	src/EffectiveCouscous/transforms/metasploit/db/association/netblock.py	/^    input_type = Netblock$/;"	v	class:NetblockToMetasploitWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/association/service.py	/^    input_type = Service $/;"	v	class:ToMetasploitService
-input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = AppleHost$/;"	v	class:AppleEnumerateHostIP
-input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxEnumerateHostIP
 input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = MetasploitHost$/;"	v	class:EnumerateHostIP
-input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsEnumerateHostIP
 input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    input_type = IPv4Address $/;"	v	class:EnumerateSubnetIP
 input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    input_type = IPv4Address$/;"	v	class:EnumerateHost
 input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    input_type = IPv4Address$/;"	v	class:EnumerateServices
@@ -1264,30 +1210,12 @@ input_type	src/EffectiveCouscous/transforms/metasploit/db/enumeration/service.py
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    input_type = MetasploitCredential $/;"	v	class:DeleteCredential
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    input_type = MetasploitCredential$/;"	v	class:PullCredential
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    input_type = MetasploitCredential$/;"	v	class:PushCredential
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:AppleDeleteHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:AppleDeleteWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:ApplePullHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:ApplePullWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:ApplePushHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = AppleHost$/;"	v	class:ApplePushWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxDeleteHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxDeleteWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxPullHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxPullWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxPushHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = LinuxHost$/;"	v	class:LinuxPushWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost $/;"	v	class:DeleteHost
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost $/;"	v	class:HostDeleteWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost $/;"	v	class:HostPullWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost$/;"	v	class:HostPushWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost$/;"	v	class:PullHost
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = MetasploitHost$/;"	v	class:PushHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsDeleteHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsDeleteWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsPullHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsPullWorkspace
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsPushHost
-input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    input_type = WindowsHost$/;"	v	class:WindowsPushWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    input_type = Netblock $/;"	v	class:NetblockDeleteWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    input_type = Netblock $/;"	v	class:NetblockPullWorkspace
 input_type	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    input_type = Netblock $/;"	v	class:NetblockPushWorkspace
@@ -1551,17 +1479,11 @@ tool_icon	src/EffectiveCouscous/entities/host/hosts.py	/^    tool_icon = StringE
 tool_icon	src/EffectiveCouscous/entities/infrastructure.py	/^    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')$/;"	v	class:IPv4Address
 tool_icon	src/EffectiveCouscous/entities/infrastructure.py	/^    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')$/;"	v	class:Netblock
 tools	src/EffectiveCouscous/resource.py	/^tools = dict($/;"	v
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:AppleHostToMetasploitWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:HostToMetasploitWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:LinuxHostToMetasploitWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/host.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:WindowsHostToMetasploitWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/ipv4address.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:AppendHostProperties
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/netblock.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:NetblockToMetasploitWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/association/service.py	/^    transform_set = 'Metasploit | DB | Association'$/;"	v	class:ToMetasploitService
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    transform_set = 'Metasploit | DB | Enumerate'$/;"	v	class:AppleEnumerateHostIP
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    transform_set = 'Metasploit | DB | Enumerate'$/;"	v	class:EnumerateHostIP
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    transform_set = 'Metasploit | DB | Enumerate'$/;"	v	class:LinuxEnumerateHostIP
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/enumeration/host.py	/^    transform_set = 'Metasploit | DB | Enumerate'$/;"	v	class:WindowsEnumerateHostIP
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    transform_set = 'Metasploit | DB | Enumerate'$/;"	v	class:EnumerateHost
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    transform_set = 'Metasploit | DB | Enumerate'$/;"	v	class:EnumerateServices
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/enumeration/ipv4address.py	/^    transform_set = 'Metasploit | DB | Enumerate'$/;"	v	class:EnumerateSubnetIP
@@ -1570,30 +1492,12 @@ transform_set	src/EffectiveCouscous/transforms/metasploit/db/enumeration/service
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    transform_set = 'Metasploit | DB | Credential'$/;"	v	class:DeleteCredential
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    transform_set = 'Metasploit | DB | Credential'$/;"	v	class:PullCredential
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/credential.py	/^    transform_set = 'Metasploit | DB | Credential'$/;"	v	class:PushCredential
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:AppleDeleteHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:ApplePullHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:ApplePushHost
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:DeleteHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:LinuxDeleteHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:LinuxPullHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:LinuxPushHost
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:PullHost
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:PushHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:WindowsDeleteHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:WindowsPullHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Host'$/;"	v	class:WindowsPushHost
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:AppleDeleteWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:ApplePullWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:ApplePushWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:HostDeleteWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:HostPullWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:HostPushWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:LinuxDeleteWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:LinuxPullWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:LinuxPushWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:WindowsDeleteWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:WindowsPullWorkspace
-transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/host.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:WindowsPushWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:NetblockDeleteWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:NetblockPullWorkspace
 transform_set	src/EffectiveCouscous/transforms/metasploit/db/push_pull/netblock.py	/^    transform_set = 'Metasploit | DB | Workspace'$/;"	v	class:NetblockPushWorkspace
