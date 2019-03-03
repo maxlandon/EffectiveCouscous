@@ -67,7 +67,7 @@ The documentation for the EffectiveCouscous project is articulated around the fo
 6. [Previous Approaches & Implementations](https://github.com/maxlandon/EffectiveCouscous/wiki/Previous-Approaches-&-Implementations)
 7. [Transforms List](https://github.com/maxlandon/EffectiveCouscous/wiki/Transforms-List)
 8. [Machines List](https://github.com/maxlandon/EffectiveCouscous/wiki/Machines-List)
-9. [Issues & Todo](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues-&-Todo) 
+9. [Issues & Todo](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues,-ToDo-&-DoNot)
 
 ## Warmest Thanks
 To @allfro, for the Canari Framework, an absolutely amazing tool.
