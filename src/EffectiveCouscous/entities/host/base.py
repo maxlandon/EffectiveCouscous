@@ -62,8 +62,6 @@ class MetasploitHost(Entity):
 
     name = StringEntityField('name', display_name='Host Name', is_value=True)
     ipv4address = StringEntityField('ipv4address', display_name='IPv4 Address')
-    id = StringEntityField('id', display_name='Host ID')
-    created_at = StringEntityField('created_at', display_name='Created At')
     mac = StringEntityField('mac', display_name='MAC')
     comm = StringEntityField('comm', display_name='Comm')
     state = StringEntityField('state', display_name='State')
@@ -72,20 +70,22 @@ class MetasploitHost(Entity):
     os_sp = StringEntityField('os_sp', display_name='OS SP')
     os_lang = StringEntityField('os_lang', display_name='OS Language')
     arch = StringEntityField('arch', display_name='Architecture')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    updated_at = StringEntityField('updated_at', display_name='Updated At')
+    detected_arch = StringEntityField('detected_arch', display_name='Detected Architecture')
     purpose = StringEntityField('purpose', display_name='Purpose')
     info = StringEntityField('info', display_name='Info')
     comments = StringEntityField('comments', display_name='Comments')
     scope = StringEntityField('scope', display_name='Scope')
     virtual_host = StringEntityField('virtual_host', display_name='Virtual Host')
+    id = StringEntityField('id', display_name='Host ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
     note_count = IntegerEntityField('note_count', display_name='Note Count')
     service_count = IntegerEntityField('service_count', display_name='Service Count')
     vuln_count = IntegerEntityField('vuln_count', display_name='Vulnerability Count')
     exploit_attempt_count = IntegerEntityField('exploit_attempt_count', display_name='Exploit Attempt Count')
     host_detail_count = IntegerEntityField('host_detail_count', display_name='Host Detail Count')
     cred_count = IntegerEntityField('cred_count', display_name='Credential Count')
-    detected_arch = StringEntityField('detected_arch', display_name='Detected Architecture')
     os_family = StringEntityField('os_family', display_name='OS Family')
 
     # Icon Properties
@@ -107,30 +107,30 @@ class LinuxHost(Entity):
 
     name = StringEntityField('name', display_name='Host Name', is_value=True)
     ipv4address = StringEntityField('ipv4address', display_name='IPv4 Address')
-    id = StringEntityField('id', display_name='Host ID')
     mac = StringEntityField('mac', display_name='MAC')
-    created_at = StringEntityField('created_at', display_name='Created At')
-    state = StringEntityField('state', display_name='State')
     comm = StringEntityField('comm', display_name='Comm')
+    state = StringEntityField('state', display_name='State')
     os_name = StringEntityField('os_name', display_name='OS Name', decorator=getOsIcon)
     os_flavor = StringEntityField('os_flavor', display_name='OS Flavor')
     os_sp = StringEntityField('os_sp', display_name='OS SP')
     os_lang = StringEntityField('os_lang', display_name='OS Language')
     arch = StringEntityField('arch', display_name='Architecture')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    updated_at = StringEntityField('updated_at', display_name='Updated At')
+    detected_arch = StringEntityField('detected_arch', display_name='Detected Architecture')
     purpose = StringEntityField('purpose', display_name='Purpose')
     info = StringEntityField('info', display_name='Info')
     comments = StringEntityField('comments', display_name='Comments')
     scope = StringEntityField('scope', display_name='Scope')
     virtual_host = StringEntityField('virtual_host', display_name='Virtual Host')
+    id = StringEntityField('id', display_name='Host ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
     note_count = IntegerEntityField('note_count', display_name='Note Count')
     service_count = IntegerEntityField('service_count', display_name='Service Count')
     vuln_count = IntegerEntityField('vuln_count', display_name='Vulnerability Count')
     exploit_attempt_count = IntegerEntityField('exploit_attempt_count', display_name='Exploit Attempt Count')
     host_detail_count = IntegerEntityField('host_detail_count', display_name='Host Detail Count')
     cred_count = IntegerEntityField('cred_count', display_name='Credential Count')
-    detected_arch = StringEntityField('detected_arch', display_name='Detected Architecture')
     os_family = StringEntityField('os_family', display_name='OS Family')
 
     # Icon Properties
@@ -146,8 +146,6 @@ class WindowsHost(Entity):
 
     name = StringEntityField('name', display_name='Host Name', is_value=True)
     ipv4address = StringEntityField('ipv4address', display_name='IPv4 Address')
-    id = StringEntityField('id', display_name='Host ID')
-    created_at = StringEntityField('created_at', display_name='Created At')
     mac = StringEntityField('mac', display_name='MAC')
     comm = StringEntityField('comm', display_name='Comm')
     state = StringEntityField('state', display_name='State')
@@ -156,20 +154,22 @@ class WindowsHost(Entity):
     os_sp = StringEntityField('os_sp', display_name='OS SP')
     os_lang = StringEntityField('os_lang', display_name='OS Language')
     arch = StringEntityField('arch', display_name='Architecture')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    updated_at = StringEntityField('updated_at', display_name='Updated At')
+    detected_arch = StringEntityField('detected_arch', display_name='Detected Architecture')
     purpose = StringEntityField('purpose', display_name='Purpose')
     info = StringEntityField('info', display_name='Info')
     comments = StringEntityField('comments', display_name='Comments')
     scope = StringEntityField('scope', display_name='Scope')
     virtual_host = StringEntityField('virtual_host', display_name='Virtual Host')
+    id = StringEntityField('id', display_name='Host ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
     note_count = IntegerEntityField('note_count', display_name='Note Count')
     service_count = IntegerEntityField('service_count', display_name='Service Count')
     vuln_count = IntegerEntityField('vuln_count', display_name='Vulnerability Count')
     exploit_attempt_count = IntegerEntityField('exploit_attempt_count', display_name='Exploit Attempt Count')
     host_detail_count = IntegerEntityField('host_detail_count', display_name='Host Detail Count')
     cred_count = IntegerEntityField('cred_count', display_name='Credential Count')
-    detected_arch = StringEntityField('detected_arch', display_name='Detected Architecture')
     os_family = StringEntityField('os_family', display_name='OS Family')
 
     # Icon Properties
@@ -185,8 +185,6 @@ class AppleHost(Entity):
 
     name = StringEntityField('name', display_name='Host Name', is_value=True)
     ipv4address = StringEntityField('ipv4address', display_name='IPv4 Address')
-    id = StringEntityField('id', display_name='Host ID')
-    created_at = StringEntityField('created_at', display_name='Created At')
     mac = StringEntityField('mac', display_name='MAC')
     comm = StringEntityField('comm', display_name='Comm')
     state = StringEntityField('state', display_name='State')
@@ -195,35 +193,37 @@ class AppleHost(Entity):
     os_sp = StringEntityField('os_sp', display_name='OS SP')
     os_lang = StringEntityField('os_lang', display_name='OS Language')
     arch = StringEntityField('arch', display_name='Architecture')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    updated_at = StringEntityField('updated_at', display_name='Updated At')
+    detected_arch = StringEntityField('detected_arch', display_name='Detected Architecture')
     purpose = StringEntityField('purpose', display_name='Purpose')
     info = StringEntityField('info', display_name='Info')
     comments = StringEntityField('comments', display_name='Comments')
     scope = StringEntityField('scope', display_name='Scope')
     virtual_host = StringEntityField('virtual_host', display_name='Virtual Host')
+    id = StringEntityField('id', display_name='Host ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
     note_count = IntegerEntityField('note_count', display_name='Note Count')
     service_count = IntegerEntityField('service_count', display_name='Service Count')
     vuln_count = IntegerEntityField('vuln_count', display_name='Vulnerability Count')
     exploit_attempt_count = IntegerEntityField('exploit_attempt_count', display_name='Exploit Attempt Count')
     host_detail_count = IntegerEntityField('host_detail_count', display_name='Host Detail Count')
     cred_count = IntegerEntityField('cred_count', display_name='Credential Count')
-    detected_arch = StringEntityField('detected_arch', display_name='Detected Architecture')
     os_family = StringEntityField('os_family', display_name='OS Family')
 
-    # Icon Properties 
+    # Icon Properties
     origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
     tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
 
 
 #   Embedded
 #_________________________________
-class EmbeddedOS(LinuxHost):
-    # Static Properties
-    _category_ = 'Operating Systems'
-    _namespace_ = 'EffectiveCouscous.metasploit.host.os'
-
-
+#  class EmbeddedOS(LinuxHost):
+#      # Static Properties
+#      _category_ = 'Operating Systems'
+#      _namespace_ = 'EffectiveCouscous.metasploit.host.os'
+#  
+#  
 #   Others
 #_________________________________
 

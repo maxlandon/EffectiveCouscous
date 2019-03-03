@@ -52,7 +52,7 @@ __status__ = 'Development'
 # ----------------------------   General Functions   --------------------------------- #
 
 def getOsEntity(os_name, name):
-    from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
+    from EffectiveCouscous.entities.host.base import (MetasploitHost,
                                                         WindowsHost,
                                                         LinuxHost,
                                                         AppleHost)
@@ -134,7 +134,7 @@ def getOsEntity(os_name, name):
 # ----------------------------   Decorator Functions   ------------------------------- #
 
 def getOsIcon(host, os):
-    from EffectiveCouscous.entities.host.hosts import (MetasploitHost,
+    from EffectiveCouscous.entities.host.base import (MetasploitHost,
                                                         WindowsHost,
                                                         LinuxHost,
                                                         AppleHost)

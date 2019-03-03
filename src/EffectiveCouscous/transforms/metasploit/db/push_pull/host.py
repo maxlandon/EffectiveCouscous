@@ -7,7 +7,7 @@ from EffectiveCouscous.transforms.metasploit.db.push_pull.netblock import (Netbl
                                                                            NetblockPullWorkspace,
                                                                            NetblockDeleteWorkspace)
 # Custom Entities
-from EffectiveCouscous.entities.host.hosts import MetasploitHost
+from EffectiveCouscous.entities.host.base import MetasploitHost
 
 # Maltego Messages
 from canari.maltego.message import MaltegoException

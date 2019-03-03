@@ -3,7 +3,7 @@
 # -------------------- Imports ----------------------- #
 
 # Custom Entities
-from EffectiveCouscous.entities.host.hosts import MetasploitHost
+from EffectiveCouscous.entities.host.base import MetasploitHost
 
 # Custom Entities
 from EffectiveCouscous.entities.infrastructure import IPv4Address
