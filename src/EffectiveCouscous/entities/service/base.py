@@ -5,9 +5,8 @@
 # Fields
 from canari.maltego.message import * 
 
-# Icons
-from EffectiveCouscous.entitytools.tool_factory import getOriginTool
-from EffectiveCouscous.entitytools.service_factory import getStateIcon
+# System-wide Icons
+from EffectiveCouscous.entitytools.icon_factory import getOriginTool, getStateIcon
 # -------------------------------------------------- #
 
 
@@ -23,14 +22,11 @@ __status__ = 'Development'
 
 
 
-#_____________________________________________________________________________________________#
 
-#                                           SERVICES 
-#_____________________________________________________________________________________________#
+# Base Metasploit Service----------------------------------------------------------------------#
 
-
-# Generic Service
 class MetasploitService(Entity):
+    
     _category_ = 'Metasploit | Services'
     _namespace_ = 'EffectiveCouscous'
 

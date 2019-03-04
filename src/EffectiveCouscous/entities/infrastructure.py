@@ -8,8 +8,8 @@ from canari.maltego.entities import Entity
 # Fields
 from canari.maltego.message import StringEntityField
 
-# Tool Factory
-from EffectiveCouscous.entitytools.tool_factory import getOriginTool
+# System-wide Icons
+from EffectiveCouscous.entitytools.icon_factory import getOriginTool
 # -------------------------------------------------- #
 
 

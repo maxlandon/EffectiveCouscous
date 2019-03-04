@@ -5,14 +5,11 @@
 # Maltego Entities
 from canari.maltego.entities import Service
 
-# Maltego Transforms
-from canari.maltego.transform import Transform
-
 # Custom Entities
 from EffectiveCouscous.entities.service.base import MetasploitService
 
-# Config
-from EffectiveCouscous.resource import (systems, openport, closedport, timedoutport, unavailableport)
+# Maltego Transforms
+from canari.maltego.transform import Transform
 
 # API
 import json

@@ -8,11 +8,8 @@ from canari.maltego.entities import Entity
 # Fields
 from canari.maltego.message import *
 
-# OS Factory
-from EffectiveCouscous.entitytools.os_factory import getOsIcon, getOsEntity
-
-# Tool Factory
-from EffectiveCouscous.entitytools.tool_factory import getOriginTool
+# Icons 
+from EffectiveCouscous.entitytools.icon_factory import getOriginTool, getOsIcon
 # -------------------------------------------------- #
 
 
@@ -50,11 +47,13 @@ __status__ = 'Development'
 
 
 
-#_____________________________________________________________________________________________#
+#_____________________________________________________________________________________________
+#                                                                                             |
+#                                           HOSTS                                             |
+#_____________________________________________________________________________________________|
 
-#                                           HOSTS
-#_____________________________________________________________________________________________#
 
+# Base Metasploit Host --------------------------------------------------------------------- #
 
 class MetasploitHost(Entity):
     _category_ = 'Metasploit | Hosts'
@@ -95,12 +94,9 @@ class MetasploitHost(Entity):
 
 
 
-#---------------------------------------------------------------
-#                   Operating System Base Hosts                |
-#---------------------------------------------------------------
+# Operating-System based Hosts ------------------------------------------------------------- #
 
-#   Linux
-#_________________________________
+    # Linux ------------------------- /
 class LinuxHost(Entity):
     _category_ = 'Metasploit | Hosts'
     _namespace_ = 'EffectiveCouscous.host.MetasploitHost'
@@ -138,8 +134,9 @@ class LinuxHost(Entity):
     tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
 
 
-#   Windows
-#_________________________________
+
+
+    # Windows ------------------------ /
 class WindowsHost(Entity):
     _category_ = 'Metasploit | Hosts'
     _namespace_ = 'EffectiveCouscous.host.MetasploitHost'
@@ -177,8 +174,9 @@ class WindowsHost(Entity):
     tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
 
 
-#   Apple
-#_________________________________
+
+
+    # Apple ------------------------- /
 class AppleHost(Entity):
     _category_ = 'Metasploit | Hosts'
     _namespace_ = 'EffectiveCouscous.host.MetasploitHost'
@@ -216,14 +214,6 @@ class AppleHost(Entity):
     tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
 
 
-#   Embedded
-#_________________________________
-#  class EmbeddedOS(LinuxHost):
-#      # Static Properties
-#      _category_ = 'Operating Systems'
-#      _namespace_ = 'EffectiveCouscous.metasploit.host.os'
-#  
-#  
-#   Others
-#_________________________________
+
+
 
