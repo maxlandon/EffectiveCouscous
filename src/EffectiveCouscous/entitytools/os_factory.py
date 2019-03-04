@@ -30,8 +30,8 @@ __status__ = 'Development'
 #                                        OS FACTORY                                     #
 #---------------------------------------------------------------------------------------#
 
-# The OS Factory is responsible for determining various values related to Operating 
-# Systems, throughout EffectiveCouscous.
+# The OS Factory is responsible for determining the Type of Entity to be spawn, related 
+# to Operating Systems, throughout EffectiveCouscous.
 
 
 # I - General Functions
@@ -40,12 +40,6 @@ __status__ = 'Development'
 #                                   to be returned for transforms spawning Hosts.
 #                                   It looks at different fields of a Metasploit Host, 
 #                                   prioritizes them and finds the good Entity.
-
-# II - Decorator Functions
-#__________________________________
-# 2) getOsIcon(host, os):           Responsible for determining the type of Icon to be
-#                                   returned for a given Entity Field of a Host.
-
 
 
 
@@ -125,80 +119,5 @@ def getOsEntity(os_name, name):
     # A Host needs to be returned anyway
     return os_entity
 
-
-
-
-
-# ----------------------------   Decorator Functions   ------------------------------- #
-
-def getOsIcon(host, os):
-    from EffectiveCouscous.entities.host.base import MetasploitHost, AppleHost, LinuxHost, WindowsHost
-
-    if host.os_name or host.name:
-        if host.name:
-            # 1) ________________________________________________________
-            # Try with Name first, more reliable for Apple devices
-            #....................................
-            # Apple
-            if re.search("macbook", host.name.lower(), re.I):
-                host.value = host.name
-                host.icon_url = devices['macbook']
-                return host
-            elif re.search("ipad", host.name.lower(), re.I):
-                host.value = host.name
-                host.icon_url = devices['ipad']
-                return host
-            #....................................
-            # Linux
-            elif ".home" in host.name.lower():
-                host.icon_url = systems['linux']
-            # 2) ________________________________________________________
-            # If the Name has not confirmed any device, use OS Name 
-            elif host.os_name:
-                    #....................................
-                    # Windows
-                    if "windows" in host.os_name.lower():
-                        if "windows 2003" in host.os_name.lower():
-                            host.icon_url = systems['windows2003']
-                        elif "windows 2000" in host.os_name.lower():
-                            host.icon_url = systems['windows2000']
-                        elif "windows 2008" in host.os_name.lower():
-                            host.icon_url = systems['windows2008']
-                        elif "windows 2012" in host.os_name.lower():
-                            host.icon_url = systems['windows2012']
-                        elif "windows xp" in host.os_name.lower():
-                            host.icon_url = systems['windowsxp']
-                        elif "windows 7" in host.os_name.lower():
-                            host.icon_url = systems['windows7']
-                        elif "windows vista" in host.os_name.lower():
-                            host.icon_url = systems['windowsvista']
-                        elif "windows 10" in host.os_name.lower():
-                            host.icon_url = systems['windows10']
-                        else:
-                            host.icon_url = systems['windows']
-                    #....................................
-                    # Apple
-                    elif re.search("ios", host.os_name.lower(), re.I):
-                        host.icon_url = systems['apple']
-
-                    #....................................
-                    # Linux
-                    elif "linux" in host.os_name.lower():
-                        if "arch" in host.os_name.lower():
-                            host.icon_url = systems['archlinux']
-                        #  if "debian"
-                        #  if "ubuntu", etc...
-                        else:
-                            host.icon_url = systems['linux']
-                    #....................................
-                    # BSD
-                    #....................................
-                    # Embedded
-                    elif "embedded" in host.os_name.lower():
-                        host.icon_url = systems['generic']
-        # 3) _______________________________________________________________
-        # Both lookup methods failed if this point is reached. Spawn generic
-        else:
-            pass
 
 

@@ -74,11 +74,12 @@ def getServiceEntity(service_name, service_info):
         #                   WEB SERVICES
         #_________________________________________________________
         if any(x in service_name for x in webservices):
+            service_entity = WebService()
             if service_info:
                 #-------------------------------------
                 # Microsoft
                 if 'iis' in info:
-                    service_entity = IISWebservice()
+                    service_entity = IISWebService()
                 elif 'httpapi' in info:
                     service_entity = MicrosoftHTTPAPI()
                 #-------------------------------------
