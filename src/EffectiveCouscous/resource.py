@@ -39,19 +39,17 @@ def imagepath(cat, name):
 #_____________________________________________________________________________________________#
 
 
-#               Operating Systems
-#------------------------------------------------------
+# Operating Systems --------------------------------------------------------------------------#
 
 systems = dict(
-    #________________
-    # Linux
+    # Linux --------------------------------- /
     archlinux = imageicon('os', 'archlinux.png'),
     debian = imageicon('os', 'debian.png'),
     gentoo = imageicon('os', 'gentoo.png'),
     linux = imageicon('os', 'linux.png'),
     ubuntu = imageicon('os', 'ubuntu.png'),
-    #________________
-    # Microsoft
+
+    # Microsoft ----------------------------- /
     windows = imageicon('os', 'windows.png'),
     windows2000 = imageicon('os', 'windows2000.jpeg'),
     windowsxp = imageicon('os', 'windowsxp.jpeg'),
@@ -62,67 +60,67 @@ systems = dict(
     windows7 = imageicon('os', 'windows7.jpeg'),
     #  windows10
     
-    #________________
-    # HP
+
+    # HP ------------------------------------ /
     hp = imageicon('os', 'hp.png'),
-    #________________
-    # Apple
+
+    # Apple --------------------------------- /
     apple = imageicon('os', 'apple.gif'),
-    #________________
-    # Cisco
+
+    # Cisco --------------------------------- /
     cisco = imageicon('os', 'cisco.gif'),
-    #________________
-    # BSD
+
+    # BSD ----------------------------------- /
     freebsd = imageicon('os', 'freebsd.png'),
-    #________________
-    # Others
-    #________________
-    # Generic
+
+    # Others -------------------------------- /
+    # Generic ------------------------------- /
     generic = imageicon('os', 'generic_host.png' )
+
 )
 
 
-#                   Devices
-#------------------------------------------------------
+# Devices ------------------------------------------------------------------------------------#
 
 devices = dict(
-    #________________
-    # Apple
+    # Apple --------------------------------- /
     ipad = imageicon('device', 'ipad.png'),
     macbook = imageicon('device', 'macbook.png')
+
+    # Others -------------------------------- /
 )
 
 
-#                   Networking
-#------------------------------------------------------
+# Networking ---------------------------------------------------------------------------------#
 
-# Ports
+    # Ports ----------------------- /
 unavailableport = imageicon('networking', 'unavailableport.gif')
 openport = imageicon('networking', 'openport.gif')
 timedoutport = imageicon('networking', 'timedoutport.gif')
 closedport = imageicon('networking', 'closedport.gif')
 
-# Interfaces
+    # Interfaces ------------------ /
 networkinterface = imageicon('networking', 'networkinterface.png')
 
 
-#                   Services
-#------------------------------------------------------
+
+# Services -----------------------------------------------------------------------------------#
 
 services = dict(
+    # Generic ---------------------------- / 
     generic_service = imageicon('services', 'service-icon.png'),
-    #________________
-    # Web Services
-    iis_web_service = imageicon('services.web', 'microsoft-iis.png')
 
-    #________________
-    # Samba Services
+    # Web Services ----------------------- / 
+    generic_webservice = imageicon('services.web', 'web-service.png'),
+    iis_web_service = imageicon('services.web', 'microsoft-iis.png'),
+    nginx_web_service = imageicon('services.web', 'nginx.png')
+
+    # Samba Services ----------------------- / 
     )
 
 
 
-#                   Logos
-#------------------------------------------------------
+# Tools --------------------------------------------------------------------------------------#
 
 tools = dict(
     metasploit = imageicon('logos', 'metasploit.png'),
