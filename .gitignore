@@ -8,3 +8,10 @@ __pycache__/
 
 #------------ Config Files -------------#
 ~/src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf
+
+
+# Notes -----------------------------------#
+~/transform_categorization_test.txt
+
+# Backup Files -----------------------------#
+~/backup/
