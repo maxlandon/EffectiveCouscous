@@ -6,7 +6,7 @@
 from canari.maltego.message import * 
 
 # System-wide Icons
-from EffectiveCouscous.entitytools.icon_factory import getOriginTool, getStateIcon
+from EffectiveCouscous.tools.entitytools.icon_factory import getOriginTool, getStateIcon
 # -------------------------------------------------- #
 
 

@@ -9,7 +9,7 @@ from canari.maltego.entities import Entity
 from canari.maltego.message import *
 
 # System-wide Icons
-from EffectiveCouscous.entitytools.icon_factory import getOriginTool, getStateIcon
+from EffectiveCouscous.tools.entitytools.icon_factory import getOriginTool, getStateIcon
 # -------------------------------------------------- #
 
 
@@ -34,7 +34,6 @@ __status__ = 'Development'
 # Base Web Service ---------------------------------------------------------------------------#
 
 class WebService(Entity):
-
     _category_ = 'Metasploit | Services | Web'
     _namespace_ = 'EffectiveCouscous.MetasploitService'
 
@@ -60,153 +59,142 @@ class WebService(Entity):
 # Microsoft ----------------------------------------------------------------------------------#
 
 class IISWebService(Entity):
-
-    _category_ = 'Penetration Testing'
+    _category_ = 'Metasploit | Services | Web'
     _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class MicrosoftHTTPAPI(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Microsoft HTTP API'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
-# RPC
-#________________________________
+
+
+# RPC ----------------------------------------------------------------------------------------#
+
 class RPCoverHttp(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'RPC over HTTP'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
-# Database
-#________________________________
+
+
+# Database -----------------------------------------------------------------------------------#
+
 class OracleXMLDB(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Oracle XML DB'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
-# Apache
-#________________________________
+
+
+# Apache -------------------------------------------------------------------------------------#
+
 class ApacheTomcat(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Apache Tomcat'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class ApachePHP(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Apache PHP'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class ApacheHttpd(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Apache HTTPd'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
-# File Servers
-#________________________________
+
+
+# HTTP File Servers --------------------------------------------------------------------------#
+
 class HTTPFileServer(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'HTTP File Server'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
-# VPN
-#________________________________
+
+
+# VPN ----------------------------------------------------------------------------------------#
+
 class CiscoVPN(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Cisco VPN'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
-# Other Web Servers
-#________________________________
+
+
+# Other Web Servers --------------------------------------------------------------------------#
+
 class Lighttpd(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Lighttpd'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class Nginx(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Nginx'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
+
+    # Entity properties
+    display = StringEntityField('display', display_name='Display Name', is_value=True)
+    proto = StringEntityField('proto', display_name='Protocol')
+    name = StringEntityField('name', display_name='Name')
+    info = StringEntityField('info', display_name='Info')
+    port = StringEntityField('port', display_name='Port')
+    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
+    host_id = StringEntityField('host_id', display_name='Host ID')
+    id = StringEntityField('id', display_name='Service ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
+
+    # Decorator properties
+    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
+    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
+    state_icon = StringEntityField('state_icon', display_name='State Icon')
 
 
 class Jetty(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Jetty'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class NodeJS(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Node JS'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class WAF(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'WAF'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class OracleHTTPServer(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Oracle HTTP Server'
-
-
-class GoAheadWebServer(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'GoAhead Web Server'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class Webmin(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Webmin'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class RocketWebServer(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Rocket Web Server'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class SquidProxyServer(WebService):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'Squid Proxy Server'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
 
 class CommuniGatePro(Entity):
-    # Static properties
-    _category_ = 'Penetration Testing'
-    _namespace_ = 'EffectiveCouscous.metasploit.service.web'
-    _alias_ = 'CommuniDate Pro'
+    _category_ = 'Metasploit | Services | Web'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
+
+
+
 
 

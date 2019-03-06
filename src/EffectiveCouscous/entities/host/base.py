@@ -9,7 +9,7 @@ from canari.maltego.entities import Entity
 from canari.maltego.message import *
 
 # Icons 
-from EffectiveCouscous.entitytools.icon_factory import getOriginTool, getOsIcon
+from EffectiveCouscous.tools.entitytools.icon_factory import getOriginTool, getOsIcon
 # -------------------------------------------------- #
 
 
