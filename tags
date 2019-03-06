@@ -665,7 +665,7 @@ updated_at	src/EffectiveCouscous/entities/infrastructure.py	/^    updated_at = S
 updated_at	src/EffectiveCouscous/entities/service/base.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated At')$/;"	v	class:MetasploitService
 updated_at	src/EffectiveCouscous/entities/service/web.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated At')$/;"	v	class:Nginx
 updated_at	src/EffectiveCouscous/entities/service/web.py	/^    updated_at = StringEntityField('updated_at', display_name='Updated At')$/;"	v	class:WebService
-userapitoken	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^userapitoken = c3fab752a8496f3e5809ded19caa23359081a5cd54607364342a4a65fe2affb5712ae61e326a6ba4$/;"	k	section:EffectiveCouscous.local
+userapitoken	src/EffectiveCouscous/resources/etc/EffectiveCouscous.conf	/^userapitoken = $/;"	k	section:EffectiveCouscous.local
 variables	.mrbob.ini	/^[variables]$/;"	s
 version	.mrbob.ini	/^canari.version = 3.3.9$/;"	k	section:variables
 virtual_host	src/EffectiveCouscous/entities/host/base.py	/^    virtual_host = StringEntityField('virtual_host', display_name='Virtual Host')$/;"	v	class:AppleHost
