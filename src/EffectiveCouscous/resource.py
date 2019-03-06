@@ -100,7 +100,7 @@ timedoutport = imageicon('networking', 'timedoutport.gif')
 closedport = imageicon('networking', 'closedport.gif')
 
     # Interfaces ------------------ /
-networkinterface = imageicon('networking', 'networkinterface.png')
+network_interface = imageicon('networking', 'networkinterface.png')
 
 
 
