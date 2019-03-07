@@ -22,21 +22,20 @@ etc = 'EffectiveCouscous.resources.etc'
 
 
 
-# Utility Functions   ------------------------- #
+# Image Directory Search Functions   ------------------------- #
 
 def imageicon(cat, name):
     return 'file://%s' % resource_filename('.'.join([ images, cat ]), name)
 
 def imagepath(cat, name):
     return '%s' % resource_filename('.'.join([ images, cat ]), name)
+#------------------------------------------------------------- #
 
 
 
-
-#_____________________________________________________________________________________________________________________________________#
-                                                                                                                                      #
-#                                                               IMAGES                                                                #
-#_____________________________________________________________________________________________________________________________________#
+#####################################################################################################
+#                                              IMAGES                                               #
+#####################################################################################################
 
 
 # Operating Systems --------------------------------------------------------------------------#
@@ -60,7 +59,7 @@ systems = dict(
     #  windowsvista
     windows2012 = imageicon('os', 'windows-server-2012.jpg'),
     windows7 = imageicon('os', 'windows7.jpeg'),
-    #  windows10
+    windows10 = imageicon('os', 'windows-10.jpg'),
     
 
     # HP ------------------------------------ /
@@ -133,6 +132,7 @@ services = dict(
     node_js = imageicon('services.application.web', 'node-js.png'),
     # Others .........../ 
     nginx_web_service = imageicon('services.application.web', 'nginx.png'),
+    glassfish = imageicon('services.application.web.application', 'glassfish.jpg'),
 
     # RPC ----------------------------------------------------------/
     ms_rpc = imageicon('services.application.rpc', 'rpc-service.png'),
@@ -152,6 +152,24 @@ services = dict(
     # SSH ----------------------------------------------------------/
     ssh_service = imageicon('services.application.ssh', 'ssh-service.png'),
     putty = imageicon('services.application.ssh', 'putty.png'),
+
+    # DNS ----------------------------------------------------------/
+    dns_service = imageicon('services.application.dns', 'DNS.png'),
+
+    # SQL ----------------------------------------------------------/
+    sql_service = imageicon('services.application.sql', 'sql-service.png'),
+    sql_server = imageicon('services.application.sql', 'sql-server.jpg'),
+    postgresql = imageicon('services.application.sql', 'postgresql.jpg'),
+    mariadb = imageicon('services.application.sql', 'mariadb.jpg'),
+    mysql = imageicon('services.application.sql', 'my-sql.svg'),
+
+    # Virtualization -----------------------------------------------/
+    virtualization_software = imageicon('services.application.virtualization', 'virtualization-software.jpg'),
+    vwmare_workstation = imageicon('services.application.virtualization', 'vmware.png'),
+
+    # Others -------------------------------------------------------/
+    elastic_search_api = imageicon('services.application', 'elastic-search.png'),
+
 
 
     )
