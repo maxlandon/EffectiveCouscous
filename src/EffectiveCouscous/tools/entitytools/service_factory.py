@@ -14,6 +14,12 @@ from EffectiveCouscous.entities.service.application.smb import *
 from EffectiveCouscous.entities.service.application.rdp import *
 # SSH
 from EffectiveCouscous.entities.service.application.ssh import *
+# DNS
+from EffectiveCouscous.entities.service.application.dns import *
+# SQL
+from EffectiveCouscous.entities.service.application.sql import *
+# Virtualization
+from EffectiveCouscous.entities.service.application.virtualization import *
 
 # Icons
 from EffectiveCouscous.resource import services
@@ -32,13 +38,10 @@ __status__ = 'Development'
 
 
 
-# The Service Factory is responsible for determining the Entity spawned, related to various types of Services (web, samba, sntp, smtp, ssh, etc.)
 
+# Application Layer Protocol Identification Strings -------------------------------------------------------------------------------------------- #
 
-
-# Services & Protocol Identification Strings -------------------------------------------------------------------------------------------- #
-
-web_services = ['http', 
+web_protocols = ['http', 
                 'https', 
                 'possible_wls', 
                 "www", 
@@ -48,7 +51,7 @@ web_services = ['http',
                 "http-proxy", 
                 'wsdapi'        # Windows Http API
                 ]
-samba_services = ['samba', 
+samba_protocols = ['samba', 
                 'netbios-ssn', 
                 'smb', 
                 'microsoft-ds', 
@@ -56,14 +59,26 @@ samba_services = ['samba',
                 'netbios-dgm', 
                 'netbios',
                 ]
-vpn_services = ['vpn', ]
-rpc_services = ['rpc', 
+vpn_protocols = ['vpn', ]
+rpc_protocols = ['rpc', 
                 'msrpc',
                 ]
-rdp_services = ['ms-wbt-server',
+rdp_protocols = ['ms-wbt-server',
                 'rdp',
                 ]
-ssh_services = ['ssh', ]
+ssh_protocols = ['ssh', ]
+dns_protocols = ['domain', ]
+sql_protocols = ['mysql', ]
+
+
+# Service Info & Banner Identification Strings ------------------------------------------------------------------------------------------------- #
+web_application_infos = ['tomcat',
+                        'nodejs',
+                        'jetty',
+                        'iis',
+                        'glassfish',]
+virtualization_infos = ['vmware',]
+others_infos = ['elasticsearch',]
 
 
 
@@ -80,12 +95,24 @@ def getServiceEntity(service_name, service_info):
          #  Test directly for service names & service info: unlikely to have info without name
 
         #  Web ------------------------------------------------------------------------------------- //
-        if any(x in name for x in web_services):
+        if any(x in name for x in web_protocols):
             service_entity = WebService()
             if service_info:
+                #  Web Application ------------------- //
+                if any(x in info for x in web_application_infos):
+                    if 'glassfish' in info:
+                        service_entity = OracleGlassFish()
+                    elif 'iis' in info:
+                        service_entity = IISWebService()
+                    elif 'jetty' in info:
+                        service_entity = Jetty()
+                    elif 'tomcat' in info:
+                        service_entity = ApacheTomcat()
+                    elif 'nodejs' in info:
+                        service_entity = NodeJS()
+                    return service_entity 
+
                 # Microsoft ............................/
-                if 'iis' in info:
-                    service_entity = IISWebService()
                 elif 'httpapi' in info:
                     service_entity = MicrosoftHTTPAPI()
                 # RPC ................................../
@@ -96,8 +123,6 @@ def getServiceEntity(service_name, service_info):
                     service_entity = OracleXMLDB()
                 # Apache .............................../
                 elif 'apache' in info:
-                    if 'apache tomcat' in info:
-                        service_entity = ApacheTomcat()
                     if 'apache php' in info:
                         service_entity = ApachePHP()
                     if 'apache httpd' in info:
@@ -109,11 +134,6 @@ def getServiceEntity(service_name, service_info):
                 elif 'webrick' in info:
                     service_entity = WEBrick()
                 # Java ................................./
-                elif 'jetty' in info:
-                    service_entity = Jetty()
-                # JavaScript .........................../
-                elif 'nodejs' in info:
-                    service_entity = NodeJS()
                 # Other Web Servers ..................../
                 elif 'lighttpd' in info:
                     service_entity = Lighttpd()
@@ -139,13 +159,13 @@ def getServiceEntity(service_name, service_info):
 
         #  VPN ------------------------------------------------------------------------------------- //
         # TO BE CHANGED TO ACCOUNT FOR SPECIFIC VENDORS/SOFTWARE
-        elif any(x in name for x in vpn_services):
+        elif any(x in name for x in vpn_protocols):
             # Cisco ................................/
             if 'vpn' in info:
                 service_entity = CiscoVPN()
                 
         #  RPC ------------------------------------------------------------------------------------- //
-        elif any(x in name for x in rpc_services):
+        elif any(x in name for x in rpc_protocols):
             # Microsoft ............................/
             if ('msprc' in name) or ('windows rpc' in info):
                 service_entity = MicrosoftWindowsRPC()
@@ -156,12 +176,12 @@ def getServiceEntity(service_name, service_info):
      
 
         #  SMB --------------------------------------------------------------------------------------//
-        elif any(x in name for x in samba_services):
+        elif any(x in name for x in samba_protocols):
             service_entity = SMBService()
 
 
         #  RDP ------------------------------------------------------------------------------------- //
-        elif any(x in name for x in rdp_services):
+        elif any(x in name for x in rdp_protocols):
             if 'ms-wbt-server' in name:
                 service_entity = MicrosoftWindowsTerminal()
             elif 'rdp' in name:
@@ -169,7 +189,7 @@ def getServiceEntity(service_name, service_info):
 
 
         #  SSH ------------------------------------------------------------------------------------- //
-        elif any(x in name for x in ssh_services):
+        elif any(x in name for x in ssh_protocols):
             if 'openssh' in info:
                 service_entity = OpenSSH()
             elif 'weonlydo ssh' in info:
@@ -178,6 +198,36 @@ def getServiceEntity(service_name, service_info):
             else:
                 service_entity = SSHService()
 
+
+        #  DNS ------------------------------------------------------------------------------------- //
+        elif any(x in name for x in dns_protocols):
+            if 'dnsmasq' in info:
+                service_entity = DNSService()
+            else:
+                service_entity = DNSService()
+
+
+        #  SQL ------------------------------------------------------------------------------------- //
+        elif any(x in name for x in sql_protocols):
+            if 'mysql' in name:
+                service_entity = MySQL()
+                return service_entity
+            elif 'sql' in name:
+                service_entity = SQLService()
+
+
+        #  Virtualization -------------------------------------------------------------------------- //
+        elif any(x in info for x in virtualization_infos):
+            if 'vmware' in info:
+                service_entity = VMWareWorkstation()
+            else:
+                service_entity = VirtualizationSoftware()
+
+
+        #  Others ---------------------------------------------------------------------------------- //
+    elif any(x in info for x in others_infos):
+        if 'elasticsearch' in info:
+            service_entity = 'test' 
 
 
 

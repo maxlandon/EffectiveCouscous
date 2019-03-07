@@ -28,5 +28,5 @@ class HostToMetasploitWorkspace(NetblockToMetasploitWorkspace):
     """Adds properties associated to a Metasploit workspace"""
 
     display_name = "To Host Workspace"
-    transform_set = 'Msf__DB                    | Host                     | Enumerate'
+    transform_set = 'Msf__DB                    | Host                     | Associate'
     input_type = MetasploitHost

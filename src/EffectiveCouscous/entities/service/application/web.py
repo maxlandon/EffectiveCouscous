@@ -24,14 +24,12 @@ __email__ = 'maximelandon@gmail.com'
 __status__ = 'Development'
 
 
-
-#_____________________________________________________________________________________________#
-
-#                                       WEB SERVICES 
-#_____________________________________________________________________________________________#
+#####################################################################################################
+#                                           WEB SERVICES                                            #
+#####################################################################################################
 
 
-# Base Web Service ---------------------------------------------------------------------------#
+#  Base Web Service --------------------------------------------------------------------- {{{1 # 
 
 class WebService(Entity):
     _category_ = 'Metasploit | Services | Web'
@@ -56,29 +54,7 @@ class WebService(Entity):
     state_icon = StringEntityField('state_icon', display_name='State Icon')
 
 
-# Microsoft ----------------------------------------------------------------------------------#
-
-class IISWebService(Entity):
-    _category_ = 'Metasploit | Services | Web'
-    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
-
-    # Entity properties
-    display = StringEntityField('display', display_name='Display Name', is_value=True)
-    proto = StringEntityField('proto', display_name='Protocol')
-    name = StringEntityField('name', display_name='Name')
-    info = StringEntityField('info', display_name='Info')
-    port = StringEntityField('port', display_name='Port')
-    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
-    host_id = StringEntityField('host_id', display_name='Host ID')
-    id = StringEntityField('id', display_name='Service ID')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    created_at = StringEntityField('created_at', display_name='Created At')
-    updated_at = StringEntityField('updated_at', display_name='Updated At')
-
-    # Decorator properties
-    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
-    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
-    state_icon = StringEntityField('state_icon', display_name='State Icon')
+#  Microsoft ---------------------------------------------------------------------------- {{{2 # 
 
 class MicrosoftHTTPAPI(WebService):
     _category_ = 'Metasploit | Services | Web'
@@ -104,7 +80,7 @@ class MicrosoftHTTPAPI(WebService):
 
 
 
-# RPC ----------------------------------------------------------------------------------------#
+#  RPC ---------------------------------------------------------------------------------- {{{3 # 
 
 class RPCoverHttp(WebService):
     _category_ = 'Metasploit | Services | Web'
@@ -130,7 +106,7 @@ class RPCoverHttp(WebService):
 
 
 
-# Database -----------------------------------------------------------------------------------#
+#  Oracle ------------------------------------------------------------------------------- {{{4 # 
 
 class OracleXMLDB(WebService):
     _category_ = 'Metasploit | Services | Web'
@@ -156,29 +132,7 @@ class OracleXMLDB(WebService):
 
 
 
-# Apache -------------------------------------------------------------------------------------#
-
-class ApacheTomcat(WebService):
-    _category_ = 'Metasploit | Services | Web'
-    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
-
-    # Entity properties
-    display = StringEntityField('display', display_name='Display Name', is_value=True)
-    proto = StringEntityField('proto', display_name='Protocol')
-    name = StringEntityField('name', display_name='Name')
-    info = StringEntityField('info', display_name='Info')
-    port = StringEntityField('port', display_name='Port')
-    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
-    host_id = StringEntityField('host_id', display_name='Host ID')
-    id = StringEntityField('id', display_name='Service ID')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    created_at = StringEntityField('created_at', display_name='Created At')
-    updated_at = StringEntityField('updated_at', display_name='Updated At')
-
-    # Decorator properties
-    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
-    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
-    state_icon = StringEntityField('state_icon', display_name='State Icon')
+#  Apache ------------------------------------------------------------------------------- {{{5 #
 
 class ApachePHP(WebService):
     _category_ = 'Metasploit | Services | Web'
@@ -226,7 +180,7 @@ class ApacheHttpd(WebService):
 
 
 
-# HTTP File Servers --------------------------------------------------------------------------#
+#  HTTP --------------------------------------------------------------------------------- {{{6 # 
 
 class HTTPFileServer(WebService):
     _category_ = 'Metasploit | Services | Web'
@@ -252,59 +206,9 @@ class HTTPFileServer(WebService):
 
 
 
-# Ruby ---------------------------------------------------------------------------------------#
+#  Ruby --------------------------------------------------------------------------------- {{{7 # 
 
 class WEBrick(WebService):
-    _category_ = 'Metasploit | Services | Web'
-    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
-
-    # Entity properties
-    display = StringEntityField('display', display_name='Display Name', is_value=True)
-    proto = StringEntityField('proto', display_name='Protocol')
-    name = StringEntityField('name', display_name='Name')
-    info = StringEntityField('info', display_name='Info')
-    port = StringEntityField('port', display_name='Port')
-    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
-    host_id = StringEntityField('host_id', display_name='Host ID')
-    id = StringEntityField('id', display_name='Service ID')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    created_at = StringEntityField('created_at', display_name='Created At')
-    updated_at = StringEntityField('updated_at', display_name='Updated At')
-
-    # Decorator properties
-    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
-    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
-    state_icon = StringEntityField('state_icon', display_name='State Icon')
-
-
-# Java ---------------------------------------------------------------------------------------#
-
-class Jetty(WebService):
-    _category_ = 'Metasploit | Services | Web'
-    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
-
-    # Entity properties
-    display = StringEntityField('display', display_name='Display Name', is_value=True)
-    proto = StringEntityField('proto', display_name='Protocol')
-    name = StringEntityField('name', display_name='Name')
-    info = StringEntityField('info', display_name='Info')
-    port = StringEntityField('port', display_name='Port')
-    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
-    host_id = StringEntityField('host_id', display_name='Host ID')
-    id = StringEntityField('id', display_name='Service ID')
-    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
-    created_at = StringEntityField('created_at', display_name='Created At')
-    updated_at = StringEntityField('updated_at', display_name='Updated At')
-
-    # Decorator properties
-    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
-    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
-    state_icon = StringEntityField('state_icon', display_name='State Icon')
-
-
-# JavaScript ---------------------------------------------------------------------------------#
-
-class NodeJS(WebService):
     _category_ = 'Metasploit | Services | Web'
     _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
 
@@ -510,6 +414,138 @@ class CommuniGatePro(Entity):
     origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
     tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
     state_icon = StringEntityField('state_icon', display_name='State Icon')
+
+
+
+
+
+
+#  APPLICATION SERVERS ______________________________________________________________________________ {{{1 # 
+
+#  Java -------------------------------------------------------------------------- {{{1 # 
+class Jetty(WebService):
+    _category_ = 'Metasploit | Services | Web | Application'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
+
+    # Entity properties
+    display = StringEntityField('display', display_name='Display Name', is_value=True)
+    proto = StringEntityField('proto', display_name='Protocol')
+    name = StringEntityField('name', display_name='Name')
+    info = StringEntityField('info', display_name='Info')
+    port = StringEntityField('port', display_name='Port')
+    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
+    host_id = StringEntityField('host_id', display_name='Host ID')
+    id = StringEntityField('id', display_name='Service ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
+
+    # Decorator properties
+    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
+    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
+    state_icon = StringEntityField('state_icon', display_name='State Icon')
+
+
+#  Apache Tomcat ----------------------------------------------------------------- {{{2 # 
+
+class ApacheTomcat(WebService):
+    _category_ = 'Metasploit | Services | Web | Application'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
+
+    # Entity properties
+    display = StringEntityField('display', display_name='Display Name', is_value=True)
+    proto = StringEntityField('proto', display_name='Protocol')
+    name = StringEntityField('name', display_name='Name')
+    info = StringEntityField('info', display_name='Info')
+    port = StringEntityField('port', display_name='Port')
+    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
+    host_id = StringEntityField('host_id', display_name='Host ID')
+    id = StringEntityField('id', display_name='Service ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
+
+    # Decorator properties
+    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
+    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
+    state_icon = StringEntityField('state_icon', display_name='State Icon')
+
+
+#  Micosoft----------------------------------------------------------------------- {{{3 # 
+
+class IISWebService(Entity):
+    _category_ = 'Metasploit | Services | Web | Application'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
+
+    # Entity properties
+    display = StringEntityField('display', display_name='Display Name', is_value=True)
+    proto = StringEntityField('proto', display_name='Protocol')
+    name = StringEntityField('name', display_name='Name')
+    info = StringEntityField('info', display_name='Info')
+    port = StringEntityField('port', display_name='Port')
+    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
+    host_id = StringEntityField('host_id', display_name='Host ID')
+    id = StringEntityField('id', display_name='Service ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
+
+    # Decorator properties
+    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
+    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
+    state_icon = StringEntityField('state_icon', display_name='State Icon')
+
+    
+#  JavaScript -------------------------------------------------------------------- {{{4 # 
+
+class NodeJS(WebService):
+    _category_ = 'Metasploit | Services | Web | Application'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
+
+    # Entity properties
+    display = StringEntityField('display', display_name='Display Name', is_value=True)
+    proto = StringEntityField('proto', display_name='Protocol')
+    name = StringEntityField('name', display_name='Name')
+    info = StringEntityField('info', display_name='Info')
+    port = StringEntityField('port', display_name='Port')
+    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
+    host_id = StringEntityField('host_id', display_name='Host ID')
+    id = StringEntityField('id', display_name='Service ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
+
+    # Decorator properties
+    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
+    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
+    state_icon = StringEntityField('state_icon', display_name='State Icon')
+
+
+#  Glassfish --------------------------------------------------------------------- {{{5 # 
+
+class OracleGlassFish(WebService):
+    _category_ = 'Metasploit | Services | Web | Application'
+    _namespace_ = 'EffectiveCouscous.MetasploitService.WebService'
+
+    # Entity properties
+    display = StringEntityField('display', display_name='Display Name', is_value=True)
+    proto = StringEntityField('proto', display_name='Protocol')
+    name = StringEntityField('name', display_name='Name')
+    info = StringEntityField('info', display_name='Info')
+    port = StringEntityField('port', display_name='Port')
+    state = StringEntityField('state', display_name='State', decorator=getStateIcon)
+    host_id = StringEntityField('host_id', display_name='Host ID')
+    id = StringEntityField('id', display_name='Service ID')
+    workspace_id = StringEntityField('workspace_id', display_name='Workspace ID')
+    created_at = StringEntityField('created_at', display_name='Created At')
+    updated_at = StringEntityField('updated_at', display_name='Updated At')
+
+    # Decorator properties
+    origin_tool = StringEntityField('origin_tool', display_name='Origin Tool', decorator=getOriginTool)
+    tool_icon = StringEntityField('tool_icon', display_name='Tool Icon')
+    state_icon = StringEntityField('state_icon', display_name='State Icon')
+
+
 
 
 
