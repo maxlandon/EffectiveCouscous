@@ -50,12 +50,20 @@ The major benefits would be:
     on a host entity, a netblock entity, a service in a netblock, etc...
 
 *   **Taking advantage of Maltego's inference capabilities**, so to find corresponding entities/attributes
-    in complex graphs. These inference capacibilities are also highly modular (thanks to MatchingRules).
+    in complex graphs. This is particularly important because it may analyze the full dataset contained in
+    the graph while never setting any connection of any sort in the target network.
+    One example can be found with passwords: There might be cases where Maltego can infer the services and
+    domains that are accessible for a given credential set, without ever actually logging into them.
+    This serves the main purpose of this project: **offering visualization and discovery capabilities to
+    a black-box security audit, which requires a level of discretion and attention to detail that is 
+    significantly higher than for defensive security audits.**
+    Maltego's inference capacibilities are also highly modular (thanks to MatchingRules).
 
 <!-- *A demonstration of Maltego transforms interacting with Metasploit Database. (Much faster than what -->
 <!-- the Gif demo implies.)* -->
 <!-- ![full_demo](./docpics/full_demo.gif)  -->
 
+______
 
   Documentation
 -----------------------------------
@@ -71,6 +79,8 @@ The documentation for the EffectiveCouscous project is articulated around the fo
 7. [Transforms List](https://github.com/maxlandon/EffectiveCouscous/wiki/Transforms-List)
 8. [Machines List](https://github.com/maxlandon/EffectiveCouscous/wiki/Machines-List)
 9. [Issues, ToDo & DoNot](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues,-ToDo-&-DoNot)
+
+______
 
 ## Warmest Thanks
 To @allfro, for the Canari Framework, an absolutely amazing tool.
