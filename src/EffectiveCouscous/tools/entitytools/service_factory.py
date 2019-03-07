@@ -2,8 +2,18 @@
 
 # -------------------- Imports --------------------- #
 
-# Custom Entities
-from EffectiveCouscous.entities.service.web import *
+# Web 
+from EffectiveCouscous.entities.service.application.web import *
+# VPN 
+from EffectiveCouscous.entities.service.application.vpn import *
+# RPC
+from EffectiveCouscous.entities.service.application.rpc import *
+# SMB
+from EffectiveCouscous.entities.service.application.smb import *
+# RDP
+from EffectiveCouscous.entities.service.application.rdp import *
+# SSH
+from EffectiveCouscous.entities.service.application.ssh import *
 
 # Icons
 from EffectiveCouscous.resource import services
@@ -21,23 +31,43 @@ __email__ = 'maximelandon@gmail.com'
 __status__ = 'Development'
 
 
-#---------------------------------------------------------------------------------------#
-#                                   SERVICE FACTORY                                     #
-#---------------------------------------------------------------------------------------#
 
-# The Service Factory is responsible for determining the Entity spawned, related to various
-# types of Services (web, samba, sntp, smtp, ssh, etc.)
+# The Service Factory is responsible for determining the Entity spawned, related to various types of Services (web, samba, sntp, smtp, ssh, etc.)
 
 
 
-# Services Classification & Identification Strings ------------------------------------- #
+# Services & Protocol Identification Strings -------------------------------------------------------------------------------------------- #
 
-webservices = ['http', 'https', 'possible_wls', "www", "ncacn_http", "ccproxy-http", "ssl/http", "http-proxy"]
-sambaservices = ['samba', 'netbios-ssn', 'smb', 'microsoft-ds', 'netbios-ns', 'netbios-dgm', 'netbios']
+web_services = ['http', 
+                'https', 
+                'possible_wls', 
+                "www", 
+                "ncacn_http", 
+                "ccproxy-http", 
+                "ssl/http", 
+                "http-proxy", 
+                'wsdapi'        # Windows Http API
+                ]
+samba_services = ['samba', 
+                'netbios-ssn', 
+                'smb', 
+                'microsoft-ds', 
+                'netbios-ns', 
+                'netbios-dgm', 
+                'netbios',
+                ]
+vpn_services = ['vpn', ]
+rpc_services = ['rpc', 
+                'msrpc',
+                ]
+rdp_services = ['ms-wbt-server',
+                'rdp',
+                ]
+ssh_services = ['ssh', ]
 
 
 
-# Entity Generation -------------------------------------------------------------------- #
+# Entity Generation --------------------------------------------------------------------------------------------------------------------------- #
 
 def getServiceEntity(service_name, service_info):
     from EffectiveCouscous.entities.service.base import MetasploitService
@@ -49,8 +79,8 @@ def getServiceEntity(service_name, service_info):
     if service_name or service_info:
          #  Test directly for service names & service info: unlikely to have info without name
 
-        #  Web Services -------------------------------------------------- //
-        if any(x in service_name for x in webservices):
+        #  Web ------------------------------------------------------------------------------------- //
+        if any(x in name for x in web_services):
             service_entity = WebService()
             if service_info:
                 # Microsoft ............................/
@@ -70,23 +100,25 @@ def getServiceEntity(service_name, service_info):
                         service_entity = ApacheTomcat()
                     if 'apache php' in info:
                         service_entity = ApachePHP()
-                    if 'apachehttpd' in info:
+                    if 'apache httpd' in info:
                         service_entity = ApacheHttpd()
-                # VPN ................................../
-                elif 'vpn' in info:
-                    service_entity = CiscoVPN()
                 # HTTP File Servers ..................../
                 elif 'httpfileserver' in info:
                     service_entity = HTTPFileServer()
+                # Ruby on Rails Servers ................/
+                elif 'webrick' in info:
+                    service_entity = WEBrick()
+                # Java ................................./
+                elif 'jetty' in info:
+                    service_entity = Jetty()
+                # JavaScript .........................../
+                elif 'nodejs' in info:
+                    service_entity = NodeJS()
                 # Other Web Servers ..................../
                 elif 'lighttpd' in info:
                     service_entity = Lighttpd()
                 elif 'nginx' in info:
                     service_entity = Nginx()
-                elif 'jetty' in info:
-                    service_entity = Jetty()
-                elif 'nodejs' in info:
-                    service_entity = NodeJS()
                 elif 'waf' in info:
                     service_entity = WAF()
                 elif 'oracle http server' in info:
@@ -104,6 +136,50 @@ def getServiceEntity(service_name, service_info):
 
                 """ Return Web Service if one is found """                 
                 return service_entity
+
+        #  VPN ------------------------------------------------------------------------------------- //
+        # TO BE CHANGED TO ACCOUNT FOR SPECIFIC VENDORS/SOFTWARE
+        elif any(x in name for x in vpn_services):
+            # Cisco ................................/
+            if 'vpn' in info:
+                service_entity = CiscoVPN()
+                
+        #  RPC ------------------------------------------------------------------------------------- //
+        elif any(x in name for x in rpc_services):
+            # Microsoft ............................/
+            if ('msprc' in name) or ('windows rpc' in info):
+                service_entity = MicrosoftWindowsRPC()
+                return service_entity
+            # Generic ............................../
+            elif 'rpc' in name:
+                service_entity = RPCService()
+     
+
+        #  SMB --------------------------------------------------------------------------------------//
+        elif any(x in name for x in samba_services):
+            service_entity = SMBService()
+
+
+        #  RDP ------------------------------------------------------------------------------------- //
+        elif any(x in name for x in rdp_services):
+            if 'ms-wbt-server' in name:
+                service_entity = MicrosoftWindowsTerminal()
+            elif 'rdp' in name:
+                service_info = RDPService()
+
+
+        #  SSH ------------------------------------------------------------------------------------- //
+        elif any(x in name for x in ssh_services):
+            if 'openssh' in info:
+                service_entity = OpenSSH()
+            elif 'weonlydo ssh' in info:
+                service_entity = WeOnlyDoSSH()
+            # Add filter for puTTY SSH Service
+            else:
+                service_entity = SSHService()
+
+
+
 
     # Return Service Entity anyway
     return service_entity
