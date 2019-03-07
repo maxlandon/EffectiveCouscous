@@ -22,7 +22,7 @@ etc = 'EffectiveCouscous.resources.etc'
 
 
 
-# -----------------------   Utility Functions   ------------------------- #
+# Utility Functions   ------------------------- #
 
 def imageicon(cat, name):
     return 'file://%s' % resource_filename('.'.join([ images, cat ]), name)
@@ -33,15 +33,17 @@ def imagepath(cat, name):
 
 
 
-#_____________________________________________________________________________________________#
-
-#                                           IMAGES     
-#_____________________________________________________________________________________________#
+#_____________________________________________________________________________________________________________________________________#
+                                                                                                                                      #
+#                                                               IMAGES                                                                #
+#_____________________________________________________________________________________________________________________________________#
 
 
 # Operating Systems --------------------------------------------------------------------------#
 
 systems = dict(
+    # Generic ------------------------------- /
+    generic = imageicon('os', 'generic_host.png' ),
     # Linux --------------------------------- /
     archlinux = imageicon('os', 'archlinux.png'),
     debian = imageicon('os', 'debian.png'),
@@ -74,8 +76,6 @@ systems = dict(
     freebsd = imageicon('os', 'freebsd.png'),
 
     # Others -------------------------------- /
-    # Generic ------------------------------- /
-    generic = imageicon('os', 'generic_host.png' )
 
 )
 
@@ -107,15 +107,53 @@ network_interface = imageicon('networking', 'networkinterface.png')
 # Services -----------------------------------------------------------------------------------#
 
 services = dict(
-    # Generic ---------------------------- / 
-    generic_service = imageicon('services', 'service-icon.png'),
+    # __________________________APPLICATION____________________________ #
+    # Generic ----------------------------------------------------- / 
+    generic_service = imageicon('services', 'metasploit-service.png'),
 
-    # Web Services ----------------------- / 
-    generic_webservice = imageicon('services.web', 'web-service.png'),
-    iis_web_service = imageicon('services.web', 'microsoft-iis.png'),
-    nginx_web_service = imageicon('services.web', 'nginx.png')
+    # Web --------------------------------------------------------- / 
+    generic_webservice = imageicon('services.application.web', 'web-service.png'),
+    # Microsoft ......../
+    iis_web_service = imageicon('services.application.web', 'microsoft-iis.png'),
+    microsoft_http_api = imageicon('services.application.web', 'microsoft-http-api.jpg'),
+    # RPC ............../
+    # Database ........./
+    oracle_xml_db = imageicon('services.application.web', 'oracle_xml-db.png'),
+    # Apache .........../
+    apache_server = imageicon('services.application.web', 'apache-server.jpg'),
+    apache_tomcat = imageicon('services.application.web', 'apache-tomcat.png'),
+    apache_php = imageicon('services.application.web', 'apache-php.jpeg'),
+    # HTTP File Server../
+    http_file_server = imageicon('services.application.web', 'http-file-server.jpeg'),
+    # Ruby ............./
+    webrick = imageicon('services.application.web', 'ruby-on-rails.png'),
+    # Java ............./
+    jetty_server = imageicon('services.application.web', 'jetty-server.jpeg'),
+    # JavaScript ......./
+    node_js = imageicon('services.application.web', 'node-js.png'),
+    # Others .........../ 
+    nginx_web_service = imageicon('services.application.web', 'nginx.png'),
 
-    # Samba Services ----------------------- / 
+    # RPC ----------------------------------------------------------/
+    ms_rpc = imageicon('services.application.rpc', 'rpc-service.png'),
+    generic_rpc = imageicon('services.application.rpc', 'rpc-service.png'),
+    java_rmi = imageicon('services.application.rpc', 'java-rmi.png'),
+
+    # VPN ----------------------------------------------------------/ 
+    cisco_vpn = imageicon('services.application.vpn', 'cisco-vpn-client.png'),
+    vpn_service = imageicon('services.application.vpn', 'vpn-service.png'),
+
+    # Samba --------------------------------------------------------/ 
+    smb_service = imageicon('services.application.smb', 'smb-service.png'),
+    
+    # RDP ----------------------------------------------------------/
+    rdp_service = imageicon('services.application.rdp', 'rdp-service.png'),
+
+    # SSH ----------------------------------------------------------/
+    ssh_service = imageicon('services.application.ssh', 'ssh-service.png'),
+    putty = imageicon('services.application.ssh', 'putty.png'),
+
+
     )
 
 
