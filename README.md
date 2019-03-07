@@ -2,6 +2,9 @@ Effective Couscous - Metasploit & Maltego for Python 3.X
 ================================================================
 
 
+![home-pic](./docpics/home-pic.png) 
+
+
   Overview
 -----------------------------------
 
