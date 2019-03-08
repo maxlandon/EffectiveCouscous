@@ -10,15 +10,14 @@ __copyright__ = 'Copyright 2019, EffectiveCouscous Project'
 __credits__ = []
 
 __license__ = 'GPL'
-__version__ = '0.2'
+__version__ = '0.3'
 __maintainer__ = 'Maxime Landon'
 __email__ = 'maximelandon@gmail.com'
 __status__ = 'Development'
 
 
 
-# GET METHODS
-#------------------------------------------------
+#  GET Methods -------------------------------------------------------------------------------------------- {{{ ## 
 def get_raw_json(url, config, params=None, headers=None):
     headers = {
         'accept': 'application/json',
@@ -46,8 +45,7 @@ def get_json_dict(url, config, params=None, headers=None):
     return json_dict 
     
 
-# POST METHODS
-#------------------------------------------------
+#  POST Methods -------------------------------------------------------------------------------------------- {{{ ## 
 def post_json(url, data, config, headers=None):
     headers = {
             'accept': 'application/json',
@@ -59,8 +57,7 @@ def post_json(url, data, config, headers=None):
     return response
 
 
-# PUT METHODS
-#------------------------------------------------
+#  PUT Methods --------------------------------------------------------------------------------------------- {{{ ## 
 def put_json(url, data, config, headers=None):
     headers = {
             'accept': 'application/json',
@@ -72,8 +69,7 @@ def put_json(url, data, config, headers=None):
     return response
 
 
-# DELETE METHODS
-#------------------------------------------------
+#  DELETE Methods ------------------------------------------------------------------------------------------ {{{ ## 
 def delete_json(url, data, config, headers=None):
     headers = {
             'accept': 'application/json',

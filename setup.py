@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 setup(
     name='EffectiveCouscous',
     author='Maxime Landon',
-    version='1.0',
+    version='0.3',
     author_email='maximelandon@gmail.com',
     description='A structured set of transforms that interface the Metasploit Framework, and other tools.',
     license='GPLv3',
