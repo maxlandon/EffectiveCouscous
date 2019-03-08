@@ -2,23 +2,15 @@
 
 # -------------------- Imports --------------------- #
 
-# Web 
+# Service entities 
 from EffectiveCouscous.entities.service.application.web import *
-# VPN 
 from EffectiveCouscous.entities.service.application.vpn import *
-# RPC
 from EffectiveCouscous.entities.service.application.rpc import *
-# SMB
 from EffectiveCouscous.entities.service.application.smb import *
-# RDP
 from EffectiveCouscous.entities.service.application.rdp import *
-# SSH
 from EffectiveCouscous.entities.service.application.ssh import *
-# DNS
 from EffectiveCouscous.entities.service.application.dns import *
-# SQL
 from EffectiveCouscous.entities.service.application.sql import *
-# Virtualization
 from EffectiveCouscous.entities.service.application.virtualization import *
 
 # Icons
@@ -40,7 +32,6 @@ __status__ = 'Development'
 
 
 # Application Layer Protocol Identification Strings -------------------------------------------------------------------------------------------- #
-
 web_protocols = ['http', 
                 'https', 
                 'possible_wls', 
@@ -82,7 +73,7 @@ others_infos = ['elasticsearch',]
 
 
 
-# Entity Generation --------------------------------------------------------------------------------------------------------------------------- #
+# Entity Generation ----------------------------------------------------------------------------------------------------------------------------- #
 
 def getServiceEntity(service_name, service_info):
     from EffectiveCouscous.entities.service.base import MetasploitService
@@ -235,5 +226,5 @@ def getServiceEntity(service_name, service_info):
     return service_entity
 
 
-
-
+#  Analyse Application Layer Protocol {{{ ##
+def 
