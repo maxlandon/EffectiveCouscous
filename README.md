@@ -70,15 +70,24 @@ ______
 
 The documentation for the EffectiveCouscous project is articulated around the following pages:
 
-1. [Installation](https://github.com/maxlandon/EffectiveCouscous/wiki/Installation)
-2. [Usage](https://github.com/maxlandon/EffectiveCouscous/wiki/Usage)
-3. [Data Model Presentation](https://github.com/maxlandon/EffectiveCouscous/wiki/Data-Model-Presentation)
-4. [Entity Code Structure (Developers)](https://github.com/maxlandon/EffectiveCouscous/wiki/Entity-Code-Structure-(Developers))
-5. [Transform Code Structure (Developers)](https://github.com/maxlandon/EffectiveCouscous/wiki/Transform-Code-Structure-(Developers))
-6. [Previous Approaches & Implementations](https://github.com/maxlandon/EffectiveCouscous/wiki/Previous-Approaches-&-Implementations)
-7. [Transforms List](https://github.com/maxlandon/EffectiveCouscous/wiki/Transforms-List)
-8. [Machines List](https://github.com/maxlandon/EffectiveCouscous/wiki/Machines-List)
-9. [Issues, ToDo & DoNot](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues,-ToDo-&-DoNot)
+1. [**Installation**](https://github.com/maxlandon/EffectiveCouscous/wiki/Installation)
+
+2. [**Usage**](https://github.com/maxlandon/EffectiveCouscous/wiki/Usage)
+
+3. [**Previous Approaches & Implementations**](https://github.com/maxlandon/EffectiveCouscous/wiki/Previous-Approaches-&-Implementations)
+
+4. [**Tool Integration**](https://github.com/maxlandon/EffectiveCouscous/wiki/Tool-Integration)
+    * [Metasploit](https://github.com/maxlandon/EffectiveCouscous/wiki/Metasploit)
+
+5. [**Code Structure**](https://github.com/maxlandon/EffectiveCouscous/wiki/Code-Structure)
+    * [Transform Code Structure](https://github.com/maxlandon/EffectiveCouscous/wiki/Transform-Code-Structure)
+    * [Entity Code Structure](https://github.com/maxlandon/EffectiveCouscous/wiki/Entity-Code-Structure)
+
+6. [**Transforms List**](https://github.com/maxlandon/EffectiveCouscous/wiki/Transforms-List)
+
+7. [**Machines List**](https://github.com/maxlandon/EffectiveCouscous/wiki/Machines-List)
+
+8. [**Issues, ToDo & DoNot**](https://github.com/maxlandon/EffectiveCouscous/wiki/Issues,-Todo-&-DoNot)
 
 ______
 
